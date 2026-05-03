@@ -1,6 +1,6 @@
 # Plan: Implement All Architecture Steps (BBM → Steg 6)
 
-Eight versions of the same 4 use cases, each demonstrating a different architectural style. Steg 6 (current `src/`) is the reference implementation. Each step adds one clear concept.
+Eight versions of the same 4 use cases, each demonstrating a different architectural style. Steg 6 (current `states/steg-6/`) is the reference implementation. Each step adds one clear concept.
 
 ## Reference: Steg 6 (current code)
 
@@ -207,18 +207,18 @@ src/main/kotlin/
 
 ## Implementation order (one session each)
 
-Work backwards from steg-6 (already implemented in `src/`). Each session removes one architectural concept to produce the simpler prior step.
+Work backwards from steg-6 (already implemented in `states/steg-6`). Each session removes one architectural concept to produce the simpler prior step.
 
-| Session | Task | Input |
-|---------|------|-------|
-| 1 | Restructure `states/` folders, copy steg-6 from `src/` to `states/steg-6/`, update README.md | This plan |
-| 2 | Implement `steg-5/` | This plan + steg-6 code (flatten slices into layer-first, keep ports & ACL) |
-| 3 | Implement `steg-4/` | This plan + steg-5 code (remove ports & ACL, LaanVerktoyUseCase uses repos directly) |
-| 4 | Implement `steg-3/` | This plan + steg-4 code (remove interfaces & factory, flatten layers into PBF, keep use case split) |
-| 5 | Implement `steg-2-pbf/` | This plan + steg-3 code (collapse use cases back into god-services) |
-| 6 | Implement `steg-2-pbl/` | This plan + steg-2-pbf code (reorganize from feature packages to layer packages) |
-| 7 | Implement `steg-1/` | This plan + steg-2-pbl code (remove all packages, flat files) |
-| 8 | Implement `utgangspunkt/` | This plan + steg-1 code (merge everything into 1–3 files) |
+| Session | Task                                                                   | Input |
+|---------|------------------------------------------------------------------------|-------|
+| 1 | Restructure `states/` folders if needed, update README.md              | This plan |
+| 2 | Implement `steg-5/`                                                    | This plan + steg-6 code (flatten slices into layer-first, keep ports & ACL) |
+| 3 | Implement `steg-4/`                                                    | This plan + steg-5 code (remove ports & ACL, LaanVerktoyUseCase uses repos directly) |
+| 4 | Implement `steg-3/`                                                    | This plan + steg-4 code (remove interfaces & factory, flatten layers into PBF, keep use case split) |
+| 5 | Implement `steg-2-pbf/`                                                | This plan + steg-3 code (collapse use cases back into god-services) |
+| 6 | Implement `steg-2-pbl/`                                                | This plan + steg-2-pbf code (reorganize from feature packages to layer packages) |
+| 7 | Implement `steg-1/`                                                    | This plan + steg-2-pbl code (remove all packages, flat files) |
+| 8 | Implement `utgangspunkt/`                                              | This plan + steg-1 code (merge everything into 1–3 files) |
 | 9 | Final review — verify all steps compile, update README, update mindmap | All steps |
 
 ## Rules for every session
