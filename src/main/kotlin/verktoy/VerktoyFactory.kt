@@ -1,27 +1,32 @@
 package verktoy
 
-import verktoy.application.AddToolUseCase
-import verktoy.application.DeleteToolUseCase
-import verktoy.application.ListToolsUseCase
-import verktoy.application.UpdateToolUseCase
-import verktoy.core.ToolRepository
-import verktoy.infrastructure.InMemoryToolRepository
-import verktoy.presentation.ToolController
+import verktoy.application.LeggTilVerktoyUseCase
+import verktoy.application.ListVerktoyUseCase
+import verktoy.application.OppdaterVerktoyUseCase
+import verktoy.application.SlettVerktoyUseCase
+import verktoy.core.VerktoyRepository
+import verktoy.infrastructure.database.VerktoyRepositoryAdapter
+import verktoy.presentation.api.VerktoyController
 
 object VerktoyFactory {
 
-    fun createToolController(toolRepository: ToolRepository = InMemoryToolRepository()): ToolController {
+    fun opprettVerktoyController(verktoyRepository: VerktoyRepository = VerktoyRepositoryAdapter()): VerktoyController {
 
-        val addToolUseCase = AddToolUseCase(toolRepository)
-        val listToolsUseCase = ListToolsUseCase(toolRepository)
-        val deleteToolUseCase = DeleteToolUseCase(toolRepository)
-        val updateToolUseCase = UpdateToolUseCase(toolRepository)
+        val leggTilVerktoyUseCase = LeggTilVerktoyUseCase(verktoyRepository)
+        val listVerktoyUseCase = ListVerktoyUseCase(verktoyRepository)
+        val slettVerktoyUseCase = SlettVerktoyUseCase(verktoyRepository)
+        val oppdaterVerktoyUseCase = OppdaterVerktoyUseCase(verktoyRepository)
 
-        return ToolController(
-            addToolUseCase = addToolUseCase,
-            listToolsUseCase = listToolsUseCase,
-            deleteToolUseCase = deleteToolUseCase,
-            updateToolUseCase = updateToolUseCase
+        return VerktoyController(
+            leggTilVerktoyUseCase = leggTilVerktoyUseCase,
+            listVerktoyUseCase = listVerktoyUseCase,
+            slettVerktoyUseCase = slettVerktoyUseCase,
+            oppdaterVerktoyUseCase = oppdaterVerktoyUseCase
         )
     }
+
+    fun opprettListVerktoyUseCase(verktoyRepository: VerktoyRepository): ListVerktoyUseCase {
+        return ListVerktoyUseCase(verktoyRepository)
+    }
 }
+

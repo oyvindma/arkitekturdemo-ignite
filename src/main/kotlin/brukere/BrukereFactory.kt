@@ -1,30 +1,35 @@
 package brukere
 
-import brukere.application.DeleteUserUseCase
-import brukere.application.GetUserUseCase
-import brukere.application.ListUsersUseCase
-import brukere.application.RegisterUserUseCase
-import brukere.application.UpdateUserUseCase
-import brukere.core.UserRepository
-import brukere.infrastructure.InMemoryUserRepository
-import brukere.presentation.UserController
+import brukere.application.HentBrukerUseCase
+import brukere.application.ListBrukereUseCase
+import brukere.application.OppdaterBrukerUseCase
+import brukere.application.RegistrerBrukerUseCase
+import brukere.application.SlettBrukerUseCase
+import brukere.core.BrukerRepository
+import brukere.infrastructure.database.BrukerRepositoryAdapter
+import brukere.presentation.api.BrukerController
 
 object BrukereFactory {
 
-    fun createUserController(userRepository: UserRepository = InMemoryUserRepository()): UserController {
+    fun opprettBrukerController(brukerRepository: BrukerRepository = BrukerRepositoryAdapter()): BrukerController {
 
-        val registerUserUseCase = RegisterUserUseCase(userRepository)
-        val listUsersUseCase = ListUsersUseCase(userRepository)
-        val getUserUseCase = GetUserUseCase(userRepository)
-        val updateUserUseCase = UpdateUserUseCase(userRepository)
-        val deleteUserUseCase = DeleteUserUseCase(userRepository)
+        val registrerBrukerUseCase = RegistrerBrukerUseCase(brukerRepository)
+        val listBrukereUseCase = ListBrukereUseCase(brukerRepository)
+        val hentBrukerUseCase = HentBrukerUseCase(brukerRepository)
+        val oppdaterBrukerUseCase = OppdaterBrukerUseCase(brukerRepository)
+        val slettBrukerUseCase = SlettBrukerUseCase(brukerRepository)
 
-        return UserController(
-            registerUserUseCase = registerUserUseCase,
-            listUsersUseCase = listUsersUseCase,
-            getUserUseCase = getUserUseCase,
-            updateUserUseCase = updateUserUseCase,
-            deleteUserUseCase = deleteUserUseCase
+        return BrukerController(
+            registrerBrukerUseCase = registrerBrukerUseCase,
+            listBrukereUseCase = listBrukereUseCase,
+            hentBrukerUseCase = hentBrukerUseCase,
+            oppdaterBrukerUseCase = oppdaterBrukerUseCase,
+            slettBrukerUseCase = slettBrukerUseCase
         )
     }
+
+    fun opprettHentBrukerUseCase(brukerRepository: BrukerRepository): HentBrukerUseCase {
+        return HentBrukerUseCase(brukerRepository)
+    }
 }
+

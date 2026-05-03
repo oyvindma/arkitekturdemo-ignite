@@ -1,24 +1,30 @@
 import brukere.BrukereFactory
-import brukere.infrastructure.InMemoryUserRepository
-import brukere.presentation.UserController
-import nettbutikk.NettbutikkFactory
-import nettbutikk.presentation.NettbutikkController
+import brukere.application.HentBrukerUseCase
+import brukere.infrastructure.database.BrukerRepositoryAdapter
+import brukere.presentation.api.BrukerController
+import utlaan.UtlaanFactory
+import utlaan.presentation.api.UtlaanController
 import verktoy.VerktoyFactory
-import verktoy.infrastructure.InMemoryToolRepository
-import verktoy.presentation.ToolController
+import verktoy.application.ListVerktoyUseCase
+import verktoy.infrastructure.database.VerktoyRepositoryAdapter
+import verktoy.presentation.api.VerktoyController
 
 /**
- * Top-level wiring: creates and connects all bounded contexts.
- * Shared repository instances are passed across context boundaries
- * only through ACL adapters — never raw domain objects.
+ * Toppnivaa-kobling: oppretter og kobler sammen alle bounded contexts.
+ * Delte repository-instanser sendes paa tvers av kontekstgrenser
+ * kun gjennom ACL-adaptere — aldri raa domeneobjekter.
  */
 class ApplicationFactory {
 
-    private val toolRepository = InMemoryToolRepository()
-    private val userRepository = InMemoryUserRepository()
+    private val verktoyRepository = VerktoyRepositoryAdapter()
+    private val brukerRepository = BrukerRepositoryAdapter()
 
-    val toolController: ToolController = VerktoyFactory.createToolController(toolRepository)
-    val userController: UserController = BrukereFactory.createUserController(userRepository)
-    val nettbutikkController: NettbutikkController =
-        NettbutikkFactory.createNettbutikkController(toolRepository, userRepository)
+    val verktoyController: VerktoyController = VerktoyFactory.opprettVerktoyController(verktoyRepository)
+    val brukerController: BrukerController = BrukereFactory.opprettBrukerController(brukerRepository)
+
+    val utlaanController: UtlaanController = UtlaanFactory.opprettUtlaanController(
+        listVerktoyUseCase = ListVerktoyUseCase(verktoyRepository),
+        hentBrukerUseCase = HentBrukerUseCase(brukerRepository),
+        verktoyRepository = verktoyRepository
+    )
 }
