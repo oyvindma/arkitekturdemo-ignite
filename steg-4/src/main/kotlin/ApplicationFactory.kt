@@ -1,4 +1,5 @@
 import application.*
+import core.*
 import infrastructure.*
 import presentation.*
 class ApplicationFactory {
