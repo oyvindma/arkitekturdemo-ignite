@@ -25,7 +25,7 @@ import kotlin.test.assertTrue
  *   Ingen whenever().thenReturn()-kjeder.
  *
  * FORBEDRING vs steg-2:
- * - I tillegg til alt over: klassen har SRP (som steg-3), OG avhengighetene er
+ * - I tillegg til alt over: klassen har Single Responsibility (som steg-3), OG avhengighetene er
  *   abstrakte (ports). Dobbel gevinst: fokusert klasse + enkle fakes.
  *
  * EKSTRA FORDEL — Anti-Corruption Layer:

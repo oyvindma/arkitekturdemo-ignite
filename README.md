@@ -24,30 +24,33 @@ Alle steg implementerer de **samme 4 use casene** slik at man kan sammenligne ko
 
 - Separert i controller, service og repository — én fil per klasse
 - Flat struktur, ingen underpakker
-- **Løser:** Lettere å se om noe er teknologi vs forretning
-- **Problem:** Ingen organisering utover lag, god-services
+- **Løser:** Lettere å se om noe er teknologi vs forretningslogikk
+- **Problem:** Ingen organisering, alt i samme mappe, god-services
 
 ### `2-package-by-feature/` — Package-by-feature
 
 - Pakker etter feature/bounded context (`brukere/`, `verktoy/`, `utlaan/`)
 - God-services (én service per feature med alle metoder)
 - **Løser:** Funksjonell encapsulation, locality of behaviour
-- **Problem:** Servicene vokser, vanskelig å vite konsekvens av endring
+- **Problem:** Servicene vokser, vanskelig å vite konsekvens av endring. Teknologiske bekymringer (f.eks. hvordan
+  repositories fungerer) er spredt over alle pakker — endringer i infrastruktur krever endring i hver feature-pakke.
+  Vanskelig å sikre konsistens på tvers.
 
 ### `2-package-by-layer/` — Package-by-layer
 
 - Pakker etter teknologi (`controllers/`, `services/`, `repositories/`, `domain/`)
 - God-services (én service per domene med alle metoder)
 - **Løser:** Lik teknologi samlet, lik teststrategi
-- **Problem:** Mange filer i samme pakke, ingen funksjonell gruppering
+- **Problem:** Servicene vokser, vanskelig å vite konsekvens av endring. Mange filer i samme pakke. Ingen funksjonell
+  gruppering — en endring i utlån krever navigering på tvers av alle lag.
 
 ### `3-PBL-splitt-service-til-commands/` — Commmand (use case) split
 
-- En command per klasse (SRP)
+- En command per klasse (Single Responsibility)
 - Pakker etter bounded context
 - Direkte kryssreferanser mellom kontekster (ingen ACL)
 - Repositories er fortsatt konkrete klasser
-- **Løser:** SRP, fokuserte klasser, lav kognitiv last
+- **Løser:** Single Responsibility, fokuserte klasser, lav kognitiv last
 - **Problem:** Kontekster lekker inn i hverandre, ingen IoC
 
 ### `4-ny-lagdeling_explicit-architecture/` — Eksplisitt arkitektur

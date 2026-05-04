@@ -30,7 +30,7 @@ import kotlin.test.assertTrue
  *    (f.eks. nye metoder, endret intern tilstand) kan brekke tester selv om
  *    forretningslogikken er uendret.
  *
- * Sammenlign med steg-3 (SRP) og steg-5 (ports/interfaces) for å se forbedringene.
+ * Sammenlign med steg-3 (Single Responsibility) og steg-5 (ports/interfaces) for å se forbedringene.
  */
 class UtlaanServiceLaanVerktoyTest {
 
