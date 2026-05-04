@@ -10,14 +10,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>arkitekturkurs-steg-2-pbl</artifactId>
+    <artifactId>6-vertical-slices_bounded-context-first</artifactId>
     <packaging>jar</packaging>
 
-
-    <dependencies>
-        <dependency>
-            <groupId>org.jetbrains.kotlin</groupId>
-            <artifactId>kotlin-stdlib</artifactId>
-        </dependency>
-    </dependencies>
 </project>

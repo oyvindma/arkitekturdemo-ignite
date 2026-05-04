@@ -10,15 +10,15 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>arbeidsmappe</module>
-        <module>steg-0</module>
-        <module>steg-1</module>
-        <module>steg-2-pbf</module>
-        <module>steg-2-pbl</module>
-        <module>steg-3</module>
-        <module>steg-4</module>
-        <module>steg-5</module>
-        <module>steg-6</module>
+        <module>0-arbeidsmappe</module>
+        <module>0-big-ball-of-mud</module>
+        <module>1-flere-klasser_flat-filstruktur</module>
+        <module>2-package-by-feature</module>
+        <module>2-package-by-layer</module>
+        <module>3-PBL_splitt-service-til-commands</module>
+        <module>4-ny-lagdeling_explicit-architecture</module>
+        <module>5-ports-and-adapters_anti-corruption-layers</module>
+        <module>6-vertical-slices_bounded-context-first</module>
     </modules>
 
     <properties>

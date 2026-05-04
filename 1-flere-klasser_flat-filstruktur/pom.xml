@@ -10,14 +10,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>arkitekturkurs-steg-1</artifactId>
+    <artifactId>1-flere-klasser_flat-filstruktur</artifactId>
     <packaging>jar</packaging>
 
-
-    <dependencies>
-        <dependency>
-            <groupId>org.jetbrains.kotlin</groupId>
-            <artifactId>kotlin-stdlib</artifactId>
-        </dependency>
-    </dependencies>
 </project>
