@@ -1,43 +1,43 @@
 package verktoy.presentation.api
 
-import verktoy.application.LeggTilVerktoyUseCase
-import verktoy.application.ListVerktoyUseCase
-import verktoy.application.OppdaterVerktoyUseCase
-import verktoy.application.SlettVerktoyUseCase
+import verktoy.application.LeggTilVerktoyCommand
+import verktoy.application.ListVerktoyCommand
+import verktoy.application.OppdaterVerktoyCommand
+import verktoy.application.SlettVerktoyCommand
 import verktoy.application.VerktoyDto
 
 class VerktoyController(
-    private val leggTilVerktoyUseCase: LeggTilVerktoyUseCase,
-    private val listVerktoyUseCase: ListVerktoyUseCase,
-    private val slettVerktoyUseCase: SlettVerktoyUseCase,
-    private val oppdaterVerktoyUseCase: OppdaterVerktoyUseCase
+    private val leggTilVerktoyCommand: LeggTilVerktoyCommand,
+    private val listVerktoyCommand: ListVerktoyCommand,
+    private val slettVerktoyCommand: SlettVerktoyCommand,
+    private val oppdaterVerktoyCommand: OppdaterVerktoyCommand
 ) {
 
     fun leggTilVerktoy(navn: String, beskrivelse: String, taalerRegn: Boolean): VerktoyDto {
-        val command = LeggTilVerktoyUseCase.Command(
+        val command = LeggTilVerktoyCommand.Command(
             navn = navn,
             beskrivelse = beskrivelse,
             taalerRegn = taalerRegn
         )
-        return leggTilVerktoyUseCase.execute(command)
+        return leggTilVerktoyCommand.execute(command)
     }
 
     fun listVerktoy(): List<VerktoyDto> {
-        return listVerktoyUseCase.execute()
+        return listVerktoyCommand.execute()
     }
 
     fun slettVerktoy(verktoyId: String) {
-        slettVerktoyUseCase.execute(verktoyId)
+        slettVerktoyCommand.execute(verktoyId)
     }
 
     fun oppdaterVerktoy(verktoyId: String, navn: String, beskrivelse: String, taalerRegn: Boolean): VerktoyDto {
-        val command = OppdaterVerktoyUseCase.Command(
+        val command = OppdaterVerktoyCommand.Command(
             verktoyId = verktoyId,
             navn = navn,
             beskrivelse = beskrivelse,
             taalerRegn = taalerRegn
         )
-        return oppdaterVerktoyUseCase.execute(command)
+        return oppdaterVerktoyCommand.execute(command)
     }
 }
 

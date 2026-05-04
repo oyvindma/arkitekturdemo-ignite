@@ -1,6 +1,6 @@
 package utlaan.infrastructure.acl
 
-import brukere.application.HentBrukerUseCase
+import brukere.application.HentBrukerCommand
 import brukere.application.BrukerDto
 import utlaan.core.BrukerQueryPort
 import utlaan.core.BrukerVisning
@@ -10,12 +10,12 @@ import utlaan.core.BrukerVisning
  * Forhindrer at brukere-kontekstens interne modell lekker inn i utlaan-konteksten.
  */
 class BrukerQueryAdapter(
-    private val hentBrukerUseCase: HentBrukerUseCase
+    private val hentBrukerCommand: HentBrukerCommand
 ) : BrukerQueryPort {
 
     override fun finnBrukerMedId(id: String): BrukerVisning? {
         return try {
-            val dto = hentBrukerUseCase.execute(id)
+            val dto = hentBrukerCommand.execute(id)
             tilVisning(dto)
         } catch (e: IllegalStateException) {
             null

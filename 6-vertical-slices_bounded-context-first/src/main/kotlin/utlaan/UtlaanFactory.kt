@@ -1,40 +1,40 @@
 package utlaan
 
-import brukere.application.HentBrukerUseCase
-import utlaan.application.LaanVerktoyUseCase
-import utlaan.application.ReturnerVerktoyUseCase
-import utlaan.application.SoekVerktoyUseCase
+import brukere.application.HentBrukerCommand
+import utlaan.application.LaanVerktoyCommand
+import utlaan.application.ReturnerVerktoyCommand
+import utlaan.application.SoekVerktoyCommand
 import utlaan.infrastructure.acl.BrukerQueryAdapter
 import utlaan.infrastructure.acl.VerktoyQueryAdapter
 import utlaan.infrastructure.acl.VerktoyStatusAdapter
 import utlaan.infrastructure.database.UtlaanRepositoryAdapter
 import utlaan.infrastructure.external.StubVermeldingAdapter
 import utlaan.presentation.api.UtlaanController
-import verktoy.application.ListVerktoyUseCase
+import verktoy.application.ListVerktoyCommand
 import verktoy.core.VerktoyRepository
 
 object UtlaanFactory {
 
     fun opprettUtlaanController(
-        listVerktoyUseCase: ListVerktoyUseCase,
-        hentBrukerUseCase: HentBrukerUseCase,
+        listVerktoyCommand: ListVerktoyCommand,
+        hentBrukerCommand: HentBrukerCommand,
         verktoyRepository: VerktoyRepository
     ): UtlaanController {
         val utlaanRepository = UtlaanRepositoryAdapter()
         val vaerPort = StubVermeldingAdapter()
 
-        val verktoyQueryPort = VerktoyQueryAdapter(listVerktoyUseCase)
-        val brukerQueryPort = BrukerQueryAdapter(hentBrukerUseCase)
+        val verktoyQueryPort = VerktoyQueryAdapter(listVerktoyCommand)
+        val brukerQueryPort = BrukerQueryAdapter(hentBrukerCommand)
         val verktoyStatusPort = VerktoyStatusAdapter(verktoyRepository)
 
-        val soekVerktoyUseCase = SoekVerktoyUseCase(verktoyQueryPort)
-        val laanVerktoyUseCase = LaanVerktoyUseCase(utlaanRepository, verktoyQueryPort, brukerQueryPort, vaerPort, verktoyStatusPort)
-        val returnerVerktoyUseCase = ReturnerVerktoyUseCase(utlaanRepository, verktoyStatusPort)
+        val soekVerktoyCommand = SoekVerktoyCommand(verktoyQueryPort)
+        val laanVerktoyCommand = LaanVerktoyCommand(utlaanRepository, verktoyQueryPort, brukerQueryPort, vaerPort, verktoyStatusPort)
+        val returnerVerktoyCommand = ReturnerVerktoyCommand(utlaanRepository, verktoyStatusPort)
 
         return UtlaanController(
-            soekVerktoyUseCase = soekVerktoyUseCase,
-            laanVerktoyUseCase = laanVerktoyUseCase,
-            returnerVerktoyUseCase = returnerVerktoyUseCase
+            soekVerktoyCommand = soekVerktoyCommand,
+            laanVerktoyCommand = laanVerktoyCommand,
+            returnerVerktoyCommand = returnerVerktoyCommand
         )
     }
 }

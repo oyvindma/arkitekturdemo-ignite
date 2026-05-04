@@ -1,22 +1,22 @@
 package controllers
 
 import commands.bruker.BrukerDto
-import commands.bruker.HentBrukerUseCase
-import commands.bruker.ListBrukereUseCase
-import commands.bruker.OppdaterBrukerUseCase
-import commands.bruker.RegistrerBrukerUseCase
-import commands.bruker.SlettBrukerUseCase
+import commands.bruker.HentBrukerCommand
+import commands.bruker.ListBrukereCommand
+import commands.bruker.OppdaterBrukerCommand
+import commands.bruker.RegistrerBrukerCommand
+import commands.bruker.SlettBrukerCommand
 
 class BrukerController(
-    private val registrerBrukerUseCase: RegistrerBrukerUseCase,
-    private val listBrukereUseCase: ListBrukereUseCase,
-    private val hentBrukerUseCase: HentBrukerUseCase,
-    private val oppdaterBrukerUseCase: OppdaterBrukerUseCase,
-    private val slettBrukerUseCase: SlettBrukerUseCase
+    private val registrerBrukerCommand: RegistrerBrukerCommand,
+    private val listBrukereCommand: ListBrukereCommand,
+    private val hentBrukerCommand: HentBrukerCommand,
+    private val oppdaterBrukerCommand: OppdaterBrukerCommand,
+    private val slettBrukerCommand: SlettBrukerCommand
 ) {
-    fun registrerBruker(navn: String): BrukerDto = registrerBrukerUseCase.execute(RegistrerBrukerUseCase.Command(navn = navn))
-    fun listBrukere(): List<BrukerDto> = listBrukereUseCase.execute()
-    fun hentBruker(brukerId: String): BrukerDto = hentBrukerUseCase.execute(brukerId)
-    fun oppdaterBruker(brukerId: String, navn: String): BrukerDto = oppdaterBrukerUseCase.execute(OppdaterBrukerUseCase.Command(brukerId = brukerId, navn = navn))
-    fun slettBruker(brukerId: String) = slettBrukerUseCase.execute(brukerId)
+    fun registrerBruker(navn: String): BrukerDto = registrerBrukerCommand.execute(RegistrerBrukerCommand.Command(navn = navn))
+    fun listBrukere(): List<BrukerDto> = listBrukereCommand.execute()
+    fun hentBruker(brukerId: String): BrukerDto = hentBrukerCommand.execute(brukerId)
+    fun oppdaterBruker(brukerId: String, navn: String): BrukerDto = oppdaterBrukerCommand.execute(OppdaterBrukerCommand.Command(brukerId = brukerId, navn = navn))
+    fun slettBruker(brukerId: String) = slettBrukerCommand.execute(brukerId)
 }

@@ -1,11 +1,11 @@
 import brukere.BrukereFactory
-import brukere.application.HentBrukerUseCase
+import brukere.application.HentBrukerCommand
 import brukere.infrastructure.database.BrukerRepositoryAdapter
 import brukere.presentation.api.BrukerController
 import utlaan.UtlaanFactory
 import utlaan.presentation.api.UtlaanController
 import verktoy.VerktoyFactory
-import verktoy.application.ListVerktoyUseCase
+import verktoy.application.ListVerktoyCommand
 import verktoy.infrastructure.database.VerktoyRepositoryAdapter
 import verktoy.presentation.api.VerktoyController
 
@@ -23,8 +23,8 @@ class ApplicationFactory {
     val brukerController: BrukerController = BrukereFactory.opprettBrukerController(brukerRepository)
 
     val utlaanController: UtlaanController = UtlaanFactory.opprettUtlaanController(
-        listVerktoyUseCase = ListVerktoyUseCase(verktoyRepository),
-        hentBrukerUseCase = HentBrukerUseCase(brukerRepository),
+        listVerktoyCommand = ListVerktoyCommand(verktoyRepository),
+        hentBrukerCommand = HentBrukerCommand(brukerRepository),
         verktoyRepository = verktoyRepository
     )
 }

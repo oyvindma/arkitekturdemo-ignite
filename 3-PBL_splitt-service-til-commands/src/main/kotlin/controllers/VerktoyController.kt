@@ -1,21 +1,21 @@
 package controllers
 
-import commands.verktoy.LeggTilVerktoyUseCase
-import commands.verktoy.ListVerktoyUseCase
-import commands.verktoy.OppdaterVerktoyUseCase
-import commands.verktoy.SlettVerktoyUseCase
+import commands.verktoy.LeggTilVerktoyCommand
+import commands.verktoy.ListVerktoyCommand
+import commands.verktoy.OppdaterVerktoyCommand
+import commands.verktoy.SlettVerktoyCommand
 import commands.verktoy.VerktoyDto
 
 class VerktoyController(
-    private val leggTilVerktoyUseCase: LeggTilVerktoyUseCase,
-    private val listVerktoyUseCase: ListVerktoyUseCase,
-    private val slettVerktoyUseCase: SlettVerktoyUseCase,
-    private val oppdaterVerktoyUseCase: OppdaterVerktoyUseCase
+    private val leggTilVerktoyCommand: LeggTilVerktoyCommand,
+    private val listVerktoyCommand: ListVerktoyCommand,
+    private val slettVerktoyCommand: SlettVerktoyCommand,
+    private val oppdaterVerktoyCommand: OppdaterVerktoyCommand
 ) {
     fun leggTilVerktoy(navn: String, beskrivelse: String, taalerRegn: Boolean): VerktoyDto =
-        leggTilVerktoyUseCase.execute(LeggTilVerktoyUseCase.Command(navn = navn, beskrivelse = beskrivelse, taalerRegn = taalerRegn))
-    fun listVerktoy(): List<VerktoyDto> = listVerktoyUseCase.execute()
-    fun slettVerktoy(verktoyId: String) = slettVerktoyUseCase.execute(verktoyId)
+        leggTilVerktoyCommand.execute(LeggTilVerktoyCommand.Command(navn = navn, beskrivelse = beskrivelse, taalerRegn = taalerRegn))
+    fun listVerktoy(): List<VerktoyDto> = listVerktoyCommand.execute()
+    fun slettVerktoy(verktoyId: String) = slettVerktoyCommand.execute(verktoyId)
     fun oppdaterVerktoy(verktoyId: String, navn: String, beskrivelse: String, taalerRegn: Boolean): VerktoyDto =
-        oppdaterVerktoyUseCase.execute(OppdaterVerktoyUseCase.Command(verktoyId = verktoyId, navn = navn, beskrivelse = beskrivelse, taalerRegn = taalerRegn))
+        oppdaterVerktoyCommand.execute(OppdaterVerktoyCommand.Command(verktoyId = verktoyId, navn = navn, beskrivelse = beskrivelse, taalerRegn = taalerRegn))
 }

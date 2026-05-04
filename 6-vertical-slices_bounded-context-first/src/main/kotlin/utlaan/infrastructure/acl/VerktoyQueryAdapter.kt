@@ -2,7 +2,7 @@ package utlaan.infrastructure.acl
 
 import utlaan.core.VerktoyQueryPort
 import utlaan.core.VerktoyVisning
-import verktoy.application.ListVerktoyUseCase
+import verktoy.application.ListVerktoyCommand
 import verktoy.application.VerktoyDto
 
 /**
@@ -10,23 +10,23 @@ import verktoy.application.VerktoyDto
  * Forhindrer at verktoy-kontekstens interne modell lekker inn i utlaan-konteksten.
  */
 class VerktoyQueryAdapter(
-    private val listVerktoyUseCase: ListVerktoyUseCase
+    private val listVerktoyCommand: ListVerktoyCommand
 ) : VerktoyQueryPort {
 
     override fun finnTilgjengeligeVerktoy(): List<VerktoyVisning> {
-        return listVerktoyUseCase.execute()
+        return listVerktoyCommand.execute()
             .filter { it.tilgjengelig }
             .map { tilVisning(it) }
     }
 
     override fun finnVerktoyMedNavn(navn: String): List<VerktoyVisning> {
-        return listVerktoyUseCase.execute()
+        return listVerktoyCommand.execute()
             .filter { it.navn.contains(navn, ignoreCase = true) }
             .map { tilVisning(it) }
     }
 
     override fun finnVerktoyMedId(id: String): VerktoyVisning? {
-        return listVerktoyUseCase.execute()
+        return listVerktoyCommand.execute()
             .firstOrNull { it.id == id }
             ?.let { tilVisning(it) }
     }

@@ -1,30 +1,30 @@
 package presentation
 import application.bruker.BrukerDto
-import application.bruker.HentBrukerUseCase
-import application.bruker.ListBrukereUseCase
-import application.bruker.OppdaterBrukerUseCase
-import application.bruker.RegistrerBrukerUseCase
-import application.bruker.SlettBrukerUseCase
+import application.bruker.HentBrukerCommand
+import application.bruker.ListBrukereCommand
+import application.bruker.OppdaterBrukerCommand
+import application.bruker.RegistrerBrukerCommand
+import application.bruker.SlettBrukerCommand
 class BrukerController(
-    private val registrerBrukerUseCase: RegistrerBrukerUseCase,
-    private val listBrukereUseCase: ListBrukereUseCase,
-    private val hentBrukerUseCase: HentBrukerUseCase,
-    private val oppdaterBrukerUseCase: OppdaterBrukerUseCase,
-    private val slettBrukerUseCase: SlettBrukerUseCase
+    private val registrerBrukerCommand: RegistrerBrukerCommand,
+    private val listBrukereCommand: ListBrukereCommand,
+    private val hentBrukerCommand: HentBrukerCommand,
+    private val oppdaterBrukerCommand: OppdaterBrukerCommand,
+    private val slettBrukerCommand: SlettBrukerCommand
 ) {
     fun registrerBruker(navn: String): BrukerDto {
-        return registrerBrukerUseCase.execute(RegistrerBrukerUseCase.Command(navn = navn))
+        return registrerBrukerCommand.execute(RegistrerBrukerCommand.Command(navn = navn))
     }
     fun listBrukere(): List<BrukerDto> {
-        return listBrukereUseCase.execute()
+        return listBrukereCommand.execute()
     }
     fun hentBruker(brukerId: String): BrukerDto {
-        return hentBrukerUseCase.execute(brukerId)
+        return hentBrukerCommand.execute(brukerId)
     }
     fun oppdaterBruker(brukerId: String, navn: String): BrukerDto {
-        return oppdaterBrukerUseCase.execute(OppdaterBrukerUseCase.Command(brukerId = brukerId, navn = navn))
+        return oppdaterBrukerCommand.execute(OppdaterBrukerCommand.Command(brukerId = brukerId, navn = navn))
     }
     fun slettBruker(brukerId: String) {
-        slettBrukerUseCase.execute(brukerId)
+        slettBrukerCommand.execute(brukerId)
     }
 }

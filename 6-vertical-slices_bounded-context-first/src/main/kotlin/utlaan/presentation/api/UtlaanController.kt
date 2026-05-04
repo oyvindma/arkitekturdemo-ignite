@@ -1,27 +1,27 @@
 package utlaan.presentation.api
 
-import utlaan.application.LaanVerktoyUseCase
-import utlaan.application.ReturnerVerktoyUseCase
-import utlaan.application.SoekVerktoyUseCase
+import utlaan.application.LaanVerktoyCommand
+import utlaan.application.ReturnerVerktoyCommand
+import utlaan.application.SoekVerktoyCommand
 import utlaan.application.UtlaanDto
 import utlaan.application.VerktoyResultatDto
 
 class UtlaanController(
-    private val soekVerktoyUseCase: SoekVerktoyUseCase,
-    private val laanVerktoyUseCase: LaanVerktoyUseCase,
-    private val returnerVerktoyUseCase: ReturnerVerktoyUseCase
+    private val soekVerktoyCommand: SoekVerktoyCommand,
+    private val laanVerktoyCommand: LaanVerktoyCommand,
+    private val returnerVerktoyCommand: ReturnerVerktoyCommand
 ) {
 
     fun soekTilgjengeligeVerktoy(navn: String? = null): List<VerktoyResultatDto> {
-        return soekVerktoyUseCase.execute(SoekVerktoyUseCase.Command(navn = navn, kunTilgjengelige = true))
+        return soekVerktoyCommand.execute(SoekVerktoyCommand.Command(navn = navn, kunTilgjengelige = true))
     }
 
-    fun laanVerktoy(verktoyId: String, brukerId: String): LaanVerktoyUseCase.LaanResultat {
-        return laanVerktoyUseCase.execute(LaanVerktoyUseCase.Command(verktoyId = verktoyId, brukerId = brukerId))
+    fun laanVerktoy(verktoyId: String, brukerId: String): LaanVerktoyCommand.LaanResultat {
+        return laanVerktoyCommand.execute(LaanVerktoyCommand.Command(verktoyId = verktoyId, brukerId = brukerId))
     }
 
     fun returnerVerktoy(utlaanId: String): UtlaanDto {
-        return returnerVerktoyUseCase.execute(utlaanId)
+        return returnerVerktoyCommand.execute(utlaanId)
     }
 }
 

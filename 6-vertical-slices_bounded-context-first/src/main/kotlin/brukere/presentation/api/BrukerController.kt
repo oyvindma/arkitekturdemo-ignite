@@ -1,38 +1,38 @@
 package brukere.presentation.api
 
 import brukere.application.BrukerDto
-import brukere.application.HentBrukerUseCase
-import brukere.application.ListBrukereUseCase
-import brukere.application.OppdaterBrukerUseCase
-import brukere.application.RegistrerBrukerUseCase
-import brukere.application.SlettBrukerUseCase
+import brukere.application.HentBrukerCommand
+import brukere.application.ListBrukereCommand
+import brukere.application.OppdaterBrukerCommand
+import brukere.application.RegistrerBrukerCommand
+import brukere.application.SlettBrukerCommand
 
 class BrukerController(
-    private val registrerBrukerUseCase: RegistrerBrukerUseCase,
-    private val listBrukereUseCase: ListBrukereUseCase,
-    private val hentBrukerUseCase: HentBrukerUseCase,
-    private val oppdaterBrukerUseCase: OppdaterBrukerUseCase,
-    private val slettBrukerUseCase: SlettBrukerUseCase
+    private val registrerBrukerCommand: RegistrerBrukerCommand,
+    private val listBrukereCommand: ListBrukereCommand,
+    private val hentBrukerCommand: HentBrukerCommand,
+    private val oppdaterBrukerCommand: OppdaterBrukerCommand,
+    private val slettBrukerCommand: SlettBrukerCommand
 ) {
 
     fun registrerBruker(navn: String): BrukerDto {
-        return registrerBrukerUseCase.execute(RegistrerBrukerUseCase.Command(navn = navn))
+        return registrerBrukerCommand.execute(RegistrerBrukerCommand.Command(navn = navn))
     }
 
     fun listBrukere(): List<BrukerDto> {
-        return listBrukereUseCase.execute()
+        return listBrukereCommand.execute()
     }
 
     fun hentBruker(brukerId: String): BrukerDto {
-        return hentBrukerUseCase.execute(brukerId)
+        return hentBrukerCommand.execute(brukerId)
     }
 
     fun oppdaterBruker(brukerId: String, navn: String): BrukerDto {
-        return oppdaterBrukerUseCase.execute(OppdaterBrukerUseCase.Command(brukerId = brukerId, navn = navn))
+        return oppdaterBrukerCommand.execute(OppdaterBrukerCommand.Command(brukerId = brukerId, navn = navn))
     }
 
     fun slettBruker(brukerId: String) {
-        slettBrukerUseCase.execute(brukerId)
+        slettBrukerCommand.execute(brukerId)
     }
 }
 

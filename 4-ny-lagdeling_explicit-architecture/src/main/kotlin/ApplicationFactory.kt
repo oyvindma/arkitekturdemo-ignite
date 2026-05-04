@@ -1,5 +1,4 @@
 import application.*
-import core.*
 import infrastructure.*
 import infrastructure.bruker.InMemoryBrukerRepository
 import infrastructure.utlaan.InMemoryUtlaanRepository
@@ -11,22 +10,22 @@ class ApplicationFactory {
     private val utlaanRepository = InMemoryUtlaanRepository()
     private val vaerService = StubVaermeldingService()
     // Use cases - brukere
-    private val registrerBrukerUseCase = RegistrerBrukerUseCase(brukerRepository)
-    private val listBrukereUseCase = ListBrukereUseCase(brukerRepository)
-    private val hentBrukerUseCase = HentBrukerUseCase(brukerRepository)
-    private val oppdaterBrukerUseCase = OppdaterBrukerUseCase(brukerRepository)
-    private val slettBrukerUseCase = SlettBrukerUseCase(brukerRepository)
+    private val registrerBrukerCommand = RegistrerBrukerCommand(brukerRepository)
+    private val listBrukereCommand = ListBrukereCommand(brukerRepository)
+    private val hentBrukerCommand = HentBrukerCommand(brukerRepository)
+    private val oppdaterBrukerCommand = OppdaterBrukerCommand(brukerRepository)
+    private val slettBrukerCommand = SlettBrukerCommand(brukerRepository)
     // Use cases - verktoy
-    private val leggTilVerktoyUseCase = LeggTilVerktoyUseCase(verktoyRepository)
-    private val listVerktoyUseCase = ListVerktoyUseCase(verktoyRepository)
-    private val slettVerktoyUseCase = SlettVerktoyUseCase(verktoyRepository)
-    private val oppdaterVerktoyUseCase = OppdaterVerktoyUseCase(verktoyRepository)
+    private val leggTilVerktoyCommand = LeggTilVerktoyCommand(verktoyRepository)
+    private val listVerktoyCommand = ListVerktoyCommand(verktoyRepository)
+    private val slettVerktoyCommand = SlettVerktoyCommand(verktoyRepository)
+    private val oppdaterVerktoyCommand = OppdaterVerktoyCommand(verktoyRepository)
     // Use cases - utlaan (uses repos directly, no ports/ACL)
-    private val soekVerktoyUseCase = SoekVerktoyUseCase(verktoyRepository)
-    private val laanVerktoyUseCase = LaanVerktoyUseCase(utlaanRepository, verktoyRepository, brukerRepository, vaerService)
-    private val returnerVerktoyUseCase = ReturnerVerktoyUseCase(utlaanRepository, verktoyRepository)
+    private val soekVerktoyCommand = SoekVerktoyCommand(verktoyRepository)
+    private val laanVerktoyCommand = LaanVerktoyCommand(utlaanRepository, verktoyRepository, brukerRepository, vaerService)
+    private val returnerVerktoyCommand = ReturnerVerktoyCommand(utlaanRepository, verktoyRepository)
     // Controllers
-    val brukerController = BrukerController(registrerBrukerUseCase, listBrukereUseCase, hentBrukerUseCase, oppdaterBrukerUseCase, slettBrukerUseCase)
-    val verktoyController = VerktoyController(leggTilVerktoyUseCase, listVerktoyUseCase, slettVerktoyUseCase, oppdaterVerktoyUseCase)
-    val utlaanController = UtlaanController(soekVerktoyUseCase, laanVerktoyUseCase, returnerVerktoyUseCase)
+    val brukerController = BrukerController(registrerBrukerCommand, listBrukereCommand, hentBrukerCommand, oppdaterBrukerCommand, slettBrukerCommand)
+    val verktoyController = VerktoyController(leggTilVerktoyCommand, listVerktoyCommand, slettVerktoyCommand, oppdaterVerktoyCommand)
+    val utlaanController = UtlaanController(soekVerktoyCommand, laanVerktoyCommand, returnerVerktoyCommand)
 }
