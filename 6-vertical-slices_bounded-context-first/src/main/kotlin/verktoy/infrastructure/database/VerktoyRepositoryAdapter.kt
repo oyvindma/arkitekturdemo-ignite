@@ -1,9 +1,9 @@
 package verktoy.infrastructure.database
 
 import verktoy.core.Verktoy
-import verktoy.core.VerktoyRepository
+import verktoy.core.VerktoyRepositoryPort
 
-class VerktoyRepositoryAdapter : VerktoyRepository {
+class VerktoyRepositoryAdapter : VerktoyRepositoryPort {
 
     private val store: MutableMap<String, Verktoy> = mutableMapOf()
 

@@ -1,7 +1,7 @@
 package application.verktoy
-import core.verktoy.VerktoyRepository
-class ListVerktoyCommand(private val verktoyRepository: VerktoyRepository) {
+import core.verktoy.VerktoyRepositoryPort
+class ListVerktoyCommand(private val verktoyRepositoryPort: VerktoyRepositoryPort) {
     fun execute(): List<VerktoyDto> {
-        return verktoyRepository.finnAlle().map { tilVerktoyDto(it) }
+        return verktoyRepositoryPort.finnAlle().map { tilVerktoyDto(it) }
     }
 }

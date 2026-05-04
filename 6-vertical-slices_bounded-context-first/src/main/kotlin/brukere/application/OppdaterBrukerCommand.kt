@@ -1,16 +1,16 @@
 package brukere.application
 
-import brukere.core.BrukerRepository
+import brukere.core.BrukerRepositoryPort
 
-class OppdaterBrukerCommand(private val brukerRepository: BrukerRepository) {
+class OppdaterBrukerCommand(private val brukerRepositoryPort: BrukerRepositoryPort) {
 
     data class Command(val brukerId: String, val navn: String)
 
     fun execute(command: Command): BrukerDto {
-        val eksisterende = brukerRepository.finnMedId(command.brukerId)
+        val eksisterende = brukerRepositoryPort.finnMedId(command.brukerId)
             ?: error("Bruker med id ${command.brukerId} ikke funnet")
         val oppdatert = eksisterende.copy(navn = command.navn)
-        brukerRepository.lagre(oppdatert)
+        brukerRepositoryPort.lagre(oppdatert)
         return tilDto(oppdatert)
     }
 }

@@ -1,9 +1,9 @@
 package brukere.infrastructure.database
 
 import brukere.core.Bruker
-import brukere.core.BrukerRepository
+import brukere.core.BrukerRepositoryPort
 
-class BrukerRepositoryAdapter : BrukerRepository {
+class BrukerRepositoryAdapter : BrukerRepositoryPort {
 
     private val store: MutableMap<String, Bruker> = mutableMapOf()
 

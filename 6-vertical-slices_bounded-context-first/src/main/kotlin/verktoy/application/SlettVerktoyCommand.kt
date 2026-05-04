@@ -1,18 +1,18 @@
 package verktoy.application
 
-import verktoy.core.VerktoyRepository
+import verktoy.core.VerktoyRepositoryPort
 
-class SlettVerktoyCommand(private val verktoyRepository: VerktoyRepository) {
+class SlettVerktoyCommand(private val verktoyRepositoryPort: VerktoyRepositoryPort) {
 
     fun execute(verktoyId: String) {
-        val verktoy = verktoyRepository.finnMedId(verktoyId)
+        val verktoy = verktoyRepositoryPort.finnMedId(verktoyId)
             ?: error("Verktoy med id $verktoyId ikke funnet")
 
         require(verktoy.erTilgjengelig()) {
             "Kan ikke slette verktoy '${verktoy.navn}' fordi det er utlaant"
         }
 
-        verktoyRepository.slett(verktoyId)
+        verktoyRepositoryPort.slett(verktoyId)
     }
 }
 

@@ -25,6 +25,6 @@ class ApplicationFactory {
     val utlaanController: UtlaanController = UtlaanFactory.opprettUtlaanController(
         listVerktoyCommand = ListVerktoyCommand(verktoyRepository),
         hentBrukerCommand = HentBrukerCommand(brukerRepository),
-        verktoyRepository = verktoyRepository
+        verktoyRepositoryPort = verktoyRepository
     )
 }

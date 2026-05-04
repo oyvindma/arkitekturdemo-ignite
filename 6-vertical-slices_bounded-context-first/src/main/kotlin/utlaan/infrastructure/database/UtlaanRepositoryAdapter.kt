@@ -1,9 +1,9 @@
 package utlaan.infrastructure.database
 
 import utlaan.core.Utlaan
-import utlaan.core.UtlaanRepository
+import utlaan.core.UtlaanRepositoryPort
 
-class UtlaanRepositoryAdapter : UtlaanRepository {
+class UtlaanRepositoryAdapter : UtlaanRepositoryPort {
 
     private val store: MutableMap<String, Utlaan> = mutableMapOf()
 

@@ -1,11 +1,11 @@
 package brukere.application
 
-import brukere.core.BrukerRepository
+import brukere.core.BrukerRepositoryPort
 
-class ListBrukereCommand(private val brukerRepository: BrukerRepository) {
+class ListBrukereCommand(private val brukerRepositoryPort: BrukerRepositoryPort) {
 
     fun execute(): List<BrukerDto> {
-        return brukerRepository.finnAlle().map { tilDto(it) }
+        return brukerRepositoryPort.finnAlle().map { tilDto(it) }
     }
 }
 

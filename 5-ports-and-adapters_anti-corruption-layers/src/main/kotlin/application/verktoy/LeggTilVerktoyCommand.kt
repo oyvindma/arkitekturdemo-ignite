@@ -1,8 +1,8 @@
 package application.verktoy
 import core.verktoy.Verktoy
-import core.verktoy.VerktoyRepository
+import core.verktoy.VerktoyRepositoryPort
 import java.util.UUID
-class LeggTilVerktoyCommand(private val verktoyRepository: VerktoyRepository) {
+class LeggTilVerktoyCommand(private val verktoyRepositoryPort: VerktoyRepositoryPort) {
     data class Command(val navn: String, val beskrivelse: String, val taalerRegn: Boolean)
     fun execute(command: Command): VerktoyDto {
         val verktoy = Verktoy(
@@ -11,7 +11,7 @@ class LeggTilVerktoyCommand(private val verktoyRepository: VerktoyRepository) {
             beskrivelse = command.beskrivelse,
             taalerRegn = command.taalerRegn
         )
-        verktoyRepository.lagre(verktoy)
+        verktoyRepositoryPort.lagre(verktoy)
         return tilVerktoyDto(verktoy)
     }
 }

@@ -1,8 +1,8 @@
 package application.bruker
-import core.bruker.BrukerRepository
-class HentBrukerCommand(private val brukerRepository: BrukerRepository) {
+import core.bruker.BrukerRepositoryPort
+class HentBrukerCommand(private val brukerRepositoryPort: BrukerRepositoryPort) {
     fun execute(brukerId: String): BrukerDto {
-        val bruker = brukerRepository.finnMedId(brukerId)
+        val bruker = brukerRepositoryPort.finnMedId(brukerId)
             ?: error("Bruker med id $brukerId ikke funnet")
         return tilBrukerDto(bruker)
     }

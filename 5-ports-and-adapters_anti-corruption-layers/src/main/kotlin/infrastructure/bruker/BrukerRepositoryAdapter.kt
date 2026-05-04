@@ -1,7 +1,7 @@
 package infrastructure.bruker
 import core.bruker.Bruker
-import core.bruker.BrukerRepository
-class InMemoryBrukerRepository : BrukerRepository {
+import core.bruker.BrukerRepositoryPort
+class BrukerRepositoryAdapter : BrukerRepositoryPort {
     private val store: MutableMap<String, Bruker> = mutableMapOf()
     override fun lagre(bruker: Bruker) { store[bruker.id] = bruker }
     override fun finnMedId(id: String): Bruker? = store[id]

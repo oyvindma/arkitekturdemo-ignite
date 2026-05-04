@@ -1,9 +1,9 @@
 package infrastructure.verktoy
 
 import core.verktoy.Verktoy
-import core.verktoy.VerktoyRepository
+import core.verktoy.VerktoyRepositoryPort
 
-class InMemoryVerktoyRepository : VerktoyRepository {
+class VerktoyRepositoryAdapter : VerktoyRepositoryPort {
     private val store: MutableMap<String, Verktoy> = mutableMapOf()
     override fun lagre(verktoy: Verktoy) { store[verktoy.id] = verktoy }
     override fun finnMedId(id: String): Verktoy? = store[id]

@@ -1,6 +1,5 @@
-package brukere.core
-
-interface BrukerRepository {
+package core.bruker
+interface BrukerRepositoryPort {
     fun lagre(bruker: Bruker)
     fun finnMedId(id: String): Bruker?
     fun finnAlle(): List<Bruker>
@@ -8,4 +7,3 @@ interface BrukerRepository {
     fun slett(id: String)
     fun finnes(id: String): Boolean
 }
-

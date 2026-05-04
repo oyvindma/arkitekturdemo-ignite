@@ -1,15 +1,15 @@
 package application.bruker
 import core.bruker.Bruker
-import core.bruker.BrukerRepository
+import core.bruker.BrukerRepositoryPort
 import java.util.UUID
-class RegistrerBrukerCommand(private val brukerRepository: BrukerRepository) {
+class RegistrerBrukerCommand(private val brukerRepositoryPort: BrukerRepositoryPort) {
     data class Command(val navn: String)
     fun execute(command: Command): BrukerDto {
         val bruker = Bruker(
             id = UUID.randomUUID().toString(),
             navn = command.navn
         )
-        brukerRepository.lagre(bruker)
+        brukerRepositoryPort.lagre(bruker)
         return tilBrukerDto(bruker)
     }
 }

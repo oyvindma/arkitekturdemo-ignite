@@ -1,17 +1,17 @@
 package application.utlaan
 import core.utlaan.Utlaan
-import core.utlaan.UtlaanRepository
+import core.utlaan.UtlaanRepositoryPort
 import core.utlaan.VerktoyQueryPort
 import core.bruker.BrukerQueryPort
-import core.utlaan.VaerPort
+import core.utlaan.VaermeldingPort
 import core.verktoy.VerktoyStatusPort
 import java.time.Instant
 import java.util.UUID
 class LaanVerktoyCommand(
-    private val utlaanRepository: UtlaanRepository,
+    private val utlaanRepositoryPort: UtlaanRepositoryPort,
     private val verktoyQueryPort: VerktoyQueryPort,
     private val brukerQueryPort: BrukerQueryPort,
-    private val vaerPort: VaerPort,
+    private val vaermeldingPort: VaermeldingPort,
     private val verktoyStatusPort: VerktoyStatusPort
 ) {
     data class Command(val verktoyId: String, val brukerId: String)
@@ -25,7 +25,7 @@ class LaanVerktoyCommand(
             return LaanResultat.Feil("Bruker med id ${command.brukerId} ikke funnet")
         }
         if (!verktoy.taalerRegn) {
-            val varsel = vaerPort.hentVarsel()
+            val varsel = vaermeldingPort.hentVarsel()
             if (varsel.blirRegn) {
                 return LaanResultat.Feil(
                     "Verktoy '${verktoy.navn}' kan ikke laanes ut: regn er meldt (${varsel.beskrivelse})"
@@ -38,7 +38,7 @@ class LaanVerktoyCommand(
             brukerId = command.brukerId,
             laantVed = Instant.now()
         )
-        utlaanRepository.lagre(utlaan)
+        utlaanRepositoryPort.lagre(utlaan)
         verktoyStatusPort.markerUtlaant(command.verktoyId, command.brukerId)
         return LaanResultat.Suksess(tilUtlaanDto(utlaan))
     }

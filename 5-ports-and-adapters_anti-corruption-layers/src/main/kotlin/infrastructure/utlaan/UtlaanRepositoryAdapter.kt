@@ -1,9 +1,9 @@
 package infrastructure.utlaan
 
 import core.utlaan.Utlaan
-import core.utlaan.UtlaanRepository
+import core.utlaan.UtlaanRepositoryPort
 
-class InMemoryUtlaanRepository : UtlaanRepository {
+class UtlaanRepositoryAdapter : UtlaanRepositoryPort {
     private val store: MutableMap<String, Utlaan> = mutableMapOf()
     override fun lagre(utlaan: Utlaan) { store[utlaan.id] = utlaan }
     override fun finnMedId(id: String): Utlaan? = store[id]

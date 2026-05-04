@@ -1,7 +1,7 @@
 package utlaan.application
 
 import utlaan.core.Utlaan
-import utlaan.core.UtlaanRepository
+import utlaan.core.UtlaanRepositoryPort
 import utlaan.core.VerktoyQueryPort
 import utlaan.core.BrukerQueryPort
 import utlaan.core.VaerPort
@@ -10,7 +10,7 @@ import java.time.Instant
 import java.util.UUID
 
 class LaanVerktoyCommand(
-    private val utlaanRepository: UtlaanRepository,
+    private val utlaanRepositoryPort: UtlaanRepositoryPort,
     private val verktoyQueryPort: VerktoyQueryPort,
     private val brukerQueryPort: BrukerQueryPort,
     private val vaerPort: VaerPort,
@@ -46,7 +46,7 @@ class LaanVerktoyCommand(
             brukerId = command.brukerId,
             laantVed = Instant.now()
         )
-        utlaanRepository.lagre(utlaan)
+        utlaanRepositoryPort.lagre(utlaan)
         verktoyStatusPort.markerUtlaant(command.verktoyId, command.brukerId)
         return LaanResultat.Suksess(tilUtlaanDto(utlaan))
     }

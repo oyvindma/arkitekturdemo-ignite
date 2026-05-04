@@ -1,8 +1,8 @@
 package verktoy.application
 
-import verktoy.core.VerktoyRepository
+import verktoy.core.VerktoyRepositoryPort
 
-class OppdaterVerktoyCommand(private val verktoyRepository: VerktoyRepository) {
+class OppdaterVerktoyCommand(private val verktoyRepositoryPort: VerktoyRepositoryPort) {
 
     data class Command(
         val verktoyId: String,
@@ -12,7 +12,7 @@ class OppdaterVerktoyCommand(private val verktoyRepository: VerktoyRepository) {
     )
 
     fun execute(command: Command): VerktoyDto {
-        val eksisterende = verktoyRepository.finnMedId(command.verktoyId)
+        val eksisterende = verktoyRepositoryPort.finnMedId(command.verktoyId)
             ?: error("Verktoy med id ${command.verktoyId} ikke funnet")
 
         val oppdatert = eksisterende.copy(
@@ -20,7 +20,7 @@ class OppdaterVerktoyCommand(private val verktoyRepository: VerktoyRepository) {
             beskrivelse = command.beskrivelse,
             taalerRegn = command.taalerRegn
         )
-        verktoyRepository.lagre(oppdatert)
+        verktoyRepositoryPort.lagre(oppdatert)
         return tilDto(oppdatert)
     }
 }

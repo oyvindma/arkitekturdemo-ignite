@@ -11,21 +11,21 @@ import utlaan.infrastructure.database.UtlaanRepositoryAdapter
 import utlaan.infrastructure.external.StubVermeldingAdapter
 import utlaan.presentation.api.UtlaanController
 import verktoy.application.ListVerktoyCommand
-import verktoy.core.VerktoyRepository
+import verktoy.core.VerktoyRepositoryPort
 
 object UtlaanFactory {
 
     fun opprettUtlaanController(
         listVerktoyCommand: ListVerktoyCommand,
         hentBrukerCommand: HentBrukerCommand,
-        verktoyRepository: VerktoyRepository
+        verktoyRepositoryPort: VerktoyRepositoryPort
     ): UtlaanController {
         val utlaanRepository = UtlaanRepositoryAdapter()
         val vaerPort = StubVermeldingAdapter()
 
         val verktoyQueryPort = VerktoyQueryAdapter(listVerktoyCommand)
         val brukerQueryPort = BrukerQueryAdapter(hentBrukerCommand)
-        val verktoyStatusPort = VerktoyStatusAdapter(verktoyRepository)
+        val verktoyStatusPort = VerktoyStatusAdapter(verktoyRepositoryPort)
 
         val soekVerktoyCommand = SoekVerktoyCommand(verktoyQueryPort)
         val laanVerktoyCommand = LaanVerktoyCommand(utlaanRepository, verktoyQueryPort, brukerQueryPort, vaerPort, verktoyStatusPort)

@@ -1,6 +1,5 @@
-package verktoy.core
-
-interface VerktoyRepository {
+package core.verktoy
+interface VerktoyRepositoryPort {
     fun lagre(verktoy: Verktoy)
     fun finnMedId(id: String): Verktoy?
     fun finnAlle(): List<Verktoy>
@@ -9,4 +8,3 @@ interface VerktoyRepository {
     fun slett(id: String)
     fun finnes(id: String): Boolean
 }
-

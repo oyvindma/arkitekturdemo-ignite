@@ -11,11 +11,11 @@ import application.verktoy.ListVerktoyCommand
 import application.verktoy.OppdaterVerktoyCommand
 import application.verktoy.SlettVerktoyCommand
 import infrastructure.bruker.BrukerQueryAdapter
-import infrastructure.bruker.InMemoryBrukerRepository
-import infrastructure.utlaan.InMemoryUtlaanRepository
+import infrastructure.bruker.BrukerRepositoryAdapter
+import infrastructure.utlaan.UtlaanRepositoryAdapter
 import infrastructure.utlaan.StubVaermeldingAdapter
 import infrastructure.utlaan.VerktoyQueryAdapter
-import infrastructure.verktoy.InMemoryVerktoyRepository
+import infrastructure.verktoy.VerktoyRepositoryAdapter
 import infrastructure.verktoy.VerktoyStatusAdapter
 import presentation.*
 /**
@@ -23,9 +23,9 @@ import presentation.*
  * Infrastruktur-implementasjoner injiseres inn i application og presentation via konstruktorar.
  */
 class ApplicationFactory {
-    private val brukerRepository = InMemoryBrukerRepository()
-    private val verktoyRepository = InMemoryVerktoyRepository()
-    private val utlaanRepository = InMemoryUtlaanRepository()
+    private val brukerRepository = BrukerRepositoryAdapter()
+    private val verktoyRepository = VerktoyRepositoryAdapter()
+    private val utlaanRepository = UtlaanRepositoryAdapter()
     // Use cases - brukere
     private val registrerBrukerCommand = RegistrerBrukerCommand(brukerRepository)
     private val listBrukereCommand = ListBrukereCommand(brukerRepository)

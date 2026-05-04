@@ -1,10 +1,10 @@
 package brukere.application
 
 import brukere.core.Bruker
-import brukere.core.BrukerRepository
+import brukere.core.BrukerRepositoryPort
 import java.util.UUID
 
-class RegistrerBrukerCommand(private val brukerRepository: BrukerRepository) {
+class RegistrerBrukerCommand(private val brukerRepositoryPort: BrukerRepositoryPort) {
 
     data class Command(val navn: String)
 
@@ -13,7 +13,7 @@ class RegistrerBrukerCommand(private val brukerRepository: BrukerRepository) {
             id = UUID.randomUUID().toString(),
             navn = command.navn
         )
-        brukerRepository.lagre(bruker)
+        brukerRepositoryPort.lagre(bruker)
         return tilDto(bruker)
     }
 }

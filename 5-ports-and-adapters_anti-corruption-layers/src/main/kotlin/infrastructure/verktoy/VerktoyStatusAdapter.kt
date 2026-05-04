@@ -1,22 +1,22 @@
 package infrastructure.verktoy
 
-import core.verktoy.VerktoyRepository
+import core.verktoy.VerktoyRepositoryPort
 import core.verktoy.VerktoyStatusPort
 
 /**
  * ACL-adapter: oppdaterer verktoy-tilstand ved utlaan/retur.
  */
 class VerktoyStatusAdapter(
-    private val verktoyRepository: VerktoyRepository
+    private val verktoyRepositoryPort: VerktoyRepositoryPort
 ) : VerktoyStatusPort {
     override fun markerUtlaant(verktoyId: String, brukerId: String) {
-        val verktoy = verktoyRepository.finnMedId(verktoyId)
+        val verktoy = verktoyRepositoryPort.finnMedId(verktoyId)
             ?: error("Verktoy med id $verktoyId ikke funnet")
-        verktoyRepository.lagre(verktoy.laanUt(brukerId))
+        verktoyRepositoryPort.lagre(verktoy.laanUt(brukerId))
     }
     override fun markerReturnet(verktoyId: String) {
-        val verktoy = verktoyRepository.finnMedId(verktoyId)
+        val verktoy = verktoyRepositoryPort.finnMedId(verktoyId)
             ?: error("Verktoy med id $verktoyId ikke funnet")
-        verktoyRepository.lagre(verktoy.returner())
+        verktoyRepositoryPort.lagre(verktoy.returner())
     }
 }
