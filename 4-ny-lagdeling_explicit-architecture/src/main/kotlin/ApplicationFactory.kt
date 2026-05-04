@@ -1,12 +1,15 @@
 import application.*
 import core.*
 import infrastructure.*
+import infrastructure.bruker.InMemoryBrukerRepository
+import infrastructure.utlaan.InMemoryUtlaanRepository
+import infrastructure.verktoy.InMemoryVerktoyRepository
 import presentation.*
 class ApplicationFactory {
     private val brukerRepository = InMemoryBrukerRepository()
     private val verktoyRepository = InMemoryVerktoyRepository()
     private val utlaanRepository = InMemoryUtlaanRepository()
-    private val vaerService = StubVaerService()
+    private val vaerService = StubVaermeldingService()
     // Use cases - brukere
     private val registrerBrukerUseCase = RegistrerBrukerUseCase(brukerRepository)
     private val listBrukereUseCase = ListBrukereUseCase(brukerRepository)

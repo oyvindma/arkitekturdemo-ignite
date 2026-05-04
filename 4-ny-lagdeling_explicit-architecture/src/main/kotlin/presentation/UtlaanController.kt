@@ -1,5 +1,7 @@
 package presentation
 import application.*
+import application.utlaan.VerktoyResultatDto
+
 class UtlaanController(
     private val soekVerktoyUseCase: SoekVerktoyUseCase,
     private val laanVerktoyUseCase: LaanVerktoyUseCase,
