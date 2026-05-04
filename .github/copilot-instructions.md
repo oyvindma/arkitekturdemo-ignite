@@ -2,9 +2,12 @@
 
 ## What This Codebase Is
 
-A **teaching codebase** for an architecture course. It contains **multiple steps** (`steg-0` through `steg-6`, plus `arbeidsmappe`) that each implement the **same use cases** at different levels of architectural maturity. See `README.md` for the progression.
+A **teaching codebase** for an architecture course. It contains **multiple steps** (`steg-0` through `steg-6`, plus
+`arbeidsmappe`) that each implement the **same use cases** at different levels of architectural maturity. See
+`README.md` for the progression.
 
-**Each step is intentionally different.** Do not "fix" an earlier step to match a later one — the architectural flaws are the point.
+**Each step is intentionally different.** Do not "fix" an earlier step to match a later one — the architectural flaws
+are the point.
 
 ## Tech Stack
 
@@ -17,11 +20,11 @@ A **teaching codebase** for an architecture course. It contains **multiple steps
 
 The domain is a **tool fleet management system** (verktøyflåte). Three bounded contexts:
 
-| Context | Norwegian name | What it does |
-|---------|------------|-------------|
-| Tool admin | verktøy | Add, list, update, delete tools |
-| User admin | brukere | Register, list, view, update, delete users |
-| Lending | utlån | Search tools, borrow (with weather check), return |
+| Context    | Norwegian name | What it does                                      |
+|------------|----------------|---------------------------------------------------|
+| Tool admin | verktøy        | Add, list, update, delete tools                   |
+| User admin | brukere        | Register, list, view, update, delete users        |
+| Lending    | utlån          | Search tools, borrow (with weather check), return |
 
 Use Norwegian domain terms in code: `Verktoy`, `Bruker`, `Utlaan`, `Vaermelding`, etc.
 
@@ -34,7 +37,8 @@ Use Norwegian domain terms in code: `Verktoy`, `Bruker`, `Utlaan`, `Vaermelding`
 - `steg-2-pbl`: Package-by-layer (`controllers/`, `services/`, `repositories/`). God-services.
 - `steg-2-pbf`: Package-by-feature (`brukere/`, `verktoy/`, `utlaan/`). God-services.
 - `steg-3`: One use case per class. No interfaces, no IoC.
-- `steg-4`: Layer sub-packages (`core/`, `application/`, `infrastructure/`, `presentation/`). Repository interfaces. Manual DI via factories.
+- `steg-4`: Layer sub-packages (`core/`, `application/`, `infrastructure/`, `presentation/`). Repository interfaces.
+  Manual DI via factories.
 - `steg-5`: Ports, adapters, ACL — but flat (not grouped by bounded context).
 - `steg-6`: Full vertical slices. Bounded context first, then layers. Ports, adapters, ACL, factory per context.
 - `arbeidsmappe`: Workshop scratch space for students. Follow `steg-6` conventions unless told otherwise.

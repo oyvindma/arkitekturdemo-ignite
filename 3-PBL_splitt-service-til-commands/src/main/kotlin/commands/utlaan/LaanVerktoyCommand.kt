@@ -1,10 +1,12 @@
 package commands.utlaan
+
 import domain.Utlaan
 import repositories.BrukerRepository
 import repositories.UtlaanRepository
 import repositories.VerktoyRepository
 import java.time.Instant
-import java.util.UUID
+import java.util.*
+
 class LaanVerktoyCommand(
     private val utlaanRepository: UtlaanRepository,
     private val verktoyRepository: VerktoyRepository,
@@ -12,6 +14,7 @@ class LaanVerktoyCommand(
     private val vaerService: StubVaermeldingService
 ) {
     data class Command(val verktoyId: String, val brukerId: String)
+
     fun execute(command: Command): LaanResultat {
         val verktoy = verktoyRepository.finnMedId(command.verktoyId)
             ?: return LaanResultat.Feil("Verktoy med id ${command.verktoyId} ikke funnet")
@@ -39,11 +42,13 @@ class LaanVerktoyCommand(
         verktoyRepository.lagre(verktoy.laanUt(command.brukerId))
         return LaanResultat.Suksess(tilUtlaanDto(utlaan))
     }
+
     sealed class LaanResultat {
         data class Suksess(val utlaan: UtlaanDto) : LaanResultat()
         data class Feil(val grunn: String) : LaanResultat()
     }
 }
+
 fun tilUtlaanDto(utlaan: Utlaan): UtlaanDto = UtlaanDto(
     id = utlaan.id, verktoyId = utlaan.verktoyId, brukerId = utlaan.brukerId,
     laantVed = utlaan.laantVed, returnertVed = utlaan.returnertVed, aktiv = utlaan.erAktiv()

@@ -5,11 +5,19 @@ import core.verktoy.VerktoyRepositoryPort
 
 class VerktoyRepositoryAdapter : VerktoyRepositoryPort {
     private val store: MutableMap<String, Verktoy> = mutableMapOf()
-    override fun lagre(verktoy: Verktoy) { store[verktoy.id] = verktoy }
+    override fun lagre(verktoy: Verktoy) {
+        store[verktoy.id] = verktoy
+    }
+
     override fun finnMedId(id: String): Verktoy? = store[id]
     override fun finnAlle(): List<Verktoy> = store.values.toList()
-    override fun finnMedNavn(navn: String): List<Verktoy> = store.values.filter { it.navn.contains(navn, ignoreCase = true) }
+    override fun finnMedNavn(navn: String): List<Verktoy> =
+        store.values.filter { it.navn.contains(navn, ignoreCase = true) }
+
     override fun finnTilgjengelige(): List<Verktoy> = store.values.filter { it.erTilgjengelig() }
-    override fun slett(id: String) { store.remove(id) }
+    override fun slett(id: String) {
+        store.remove(id)
+    }
+
     override fun finnes(id: String): Boolean = store.containsKey(id)
 }

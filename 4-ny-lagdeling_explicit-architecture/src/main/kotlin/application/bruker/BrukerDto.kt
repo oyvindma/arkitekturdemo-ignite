@@ -1,4 +1,5 @@
 package application
+
 data class BrukerDto(
     val id: String,
     val navn: String,

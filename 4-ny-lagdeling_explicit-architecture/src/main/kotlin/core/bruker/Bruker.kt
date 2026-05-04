@@ -1,4 +1,5 @@
 package core
+
 data class Bruker(
     val id: String,
     val navn: String,

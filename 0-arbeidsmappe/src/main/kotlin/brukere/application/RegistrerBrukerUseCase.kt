@@ -2,7 +2,7 @@ package brukere.application
 
 import brukere.core.Bruker
 import brukere.core.BrukerRepository
-import java.util.UUID
+import java.util.*
 
 class RegistrerBrukerUseCase(private val brukerRepository: BrukerRepository) {
 

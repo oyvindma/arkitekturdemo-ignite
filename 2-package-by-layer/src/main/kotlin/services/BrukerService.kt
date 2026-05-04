@@ -1,7 +1,8 @@
 package services
+
 import domain.Bruker
 import repositories.BrukerRepository
-import java.util.UUID
+import java.util.*
 
 class BrukerService(private val brukerRepository: BrukerRepository) {
 

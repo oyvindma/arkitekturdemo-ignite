@@ -1,12 +1,14 @@
 package application.utlaan
+
+import core.bruker.BrukerQueryPort
 import core.utlaan.Utlaan
 import core.utlaan.UtlaanRepositoryPort
-import core.utlaan.VerktoyQueryPort
-import core.bruker.BrukerQueryPort
 import core.utlaan.VaermeldingPort
+import core.utlaan.VerktoyQueryPort
 import core.verktoy.VerktoyStatusPort
 import java.time.Instant
-import java.util.UUID
+import java.util.*
+
 class LaanVerktoyCommand(
     private val utlaanRepositoryPort: UtlaanRepositoryPort,
     private val verktoyQueryPort: VerktoyQueryPort,
@@ -15,6 +17,7 @@ class LaanVerktoyCommand(
     private val verktoyStatusPort: VerktoyStatusPort
 ) {
     data class Command(val verktoyId: String, val brukerId: String)
+
     fun execute(command: Command): LaanResultat {
         val verktoy = verktoyQueryPort.finnVerktoyMedId(command.verktoyId)
             ?: return LaanResultat.Feil("Verktoy med id ${command.verktoyId} ikke funnet")
@@ -42,11 +45,13 @@ class LaanVerktoyCommand(
         verktoyStatusPort.markerUtlaant(command.verktoyId, command.brukerId)
         return LaanResultat.Suksess(tilUtlaanDto(utlaan))
     }
+
     sealed class LaanResultat {
         data class Suksess(val utlaan: UtlaanDto) : LaanResultat()
         data class Feil(val grunn: String) : LaanResultat()
     }
 }
+
 fun tilUtlaanDto(utlaan: Utlaan): UtlaanDto = UtlaanDto(
     id = utlaan.id,
     verktoyId = utlaan.verktoyId,

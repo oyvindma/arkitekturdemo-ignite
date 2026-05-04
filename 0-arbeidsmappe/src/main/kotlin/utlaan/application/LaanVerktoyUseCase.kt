@@ -1,13 +1,13 @@
 package utlaan.application
 
+import utlaan.core.BrukerQueryPort
 import utlaan.core.Utlaan
 import utlaan.core.UtlaanRepository
-import utlaan.core.VerktoyQueryPort
-import utlaan.core.BrukerQueryPort
 import utlaan.core.VaerPort
+import utlaan.core.VerktoyQueryPort
 import utlaan.core.VerktoyStatusPort
 import java.time.Instant
-import java.util.UUID
+import java.util.*
 
 class LaanVerktoyUseCase(
     private val utlaanRepository: UtlaanRepository,

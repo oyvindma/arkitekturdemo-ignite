@@ -1,4 +1,5 @@
 package core
+
 interface UtlaanRepository {
     fun lagre(utlaan: Utlaan)
     fun finnMedId(id: String): Utlaan?

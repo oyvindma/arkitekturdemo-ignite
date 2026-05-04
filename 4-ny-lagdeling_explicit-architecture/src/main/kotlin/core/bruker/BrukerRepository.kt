@@ -1,4 +1,5 @@
 package core
+
 interface BrukerRepository {
     fun lagre(bruker: Bruker)
     fun finnMedId(id: String): Bruker?

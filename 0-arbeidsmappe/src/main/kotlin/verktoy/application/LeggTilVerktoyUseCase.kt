@@ -2,7 +2,7 @@ package verktoy.application
 
 import verktoy.core.Verktoy
 import verktoy.core.VerktoyRepository
-import java.util.UUID
+import java.util.*
 
 class LeggTilVerktoyUseCase(private val verktoyRepository: VerktoyRepository) {
 

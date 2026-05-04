@@ -5,6 +5,7 @@ import repositories.VerktoyRepository
 
 class SoekVerktoyCommand(private val verktoyRepository: VerktoyRepository) {
     data class Command(val navn: String? = null, val kunTilgjengelige: Boolean = true)
+
     fun execute(command: Command): List<VerktoyOppslagDto> {
         val verktoy = if (command.navn != null) {
             verktoyRepository.finnMedNavn(command.navn)
@@ -18,6 +19,7 @@ class SoekVerktoyCommand(private val verktoyRepository: VerktoyRepository) {
         }
         return filtrert.map { tilResultatDto(it) }
     }
+
     private fun tilResultatDto(verktoy: Verktoy): VerktoyOppslagDto = VerktoyOppslagDto(
         id = verktoy.id, navn = verktoy.navn, beskrivelse = verktoy.beskrivelse,
         taalerRegn = verktoy.taalerRegn, tilgjengelig = verktoy.erTilgjengelig()

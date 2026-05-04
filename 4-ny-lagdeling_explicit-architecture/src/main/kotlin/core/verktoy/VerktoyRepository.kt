@@ -1,4 +1,5 @@
 package core
+
 interface VerktoyRepository {
     fun lagre(verktoy: Verktoy)
     fun finnMedId(id: String): Verktoy?

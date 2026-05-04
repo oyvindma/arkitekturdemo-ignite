@@ -1,7 +1,7 @@
 package infrastructure
 
-import core.Vaermelding
 import core.VaerService
+import core.Vaermelding
 
 class StubVaermeldingService : VaerService {
     override fun hentVarsel(): Vaermelding {

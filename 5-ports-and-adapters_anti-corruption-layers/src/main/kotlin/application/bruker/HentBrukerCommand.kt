@@ -1,5 +1,7 @@
 package application.bruker
+
 import core.bruker.BrukerRepositoryPort
+
 class HentBrukerCommand(private val brukerRepositoryPort: BrukerRepositoryPort) {
     fun execute(brukerId: String): BrukerDto {
         val bruker = brukerRepositoryPort.finnMedId(brukerId)

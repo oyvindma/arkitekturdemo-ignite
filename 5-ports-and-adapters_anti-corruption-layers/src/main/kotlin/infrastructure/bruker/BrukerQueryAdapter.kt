@@ -1,7 +1,9 @@
 package infrastructure.bruker
+
 import application.bruker.HentBrukerCommand
 import core.bruker.BrukerQueryPort
 import core.bruker.BrukerVisning
+
 /**
  * ACL-adapter: oversetter brukere-modellen til utlaan-kontekstens BrukerVisning.
  */
@@ -16,5 +18,6 @@ class BrukerQueryAdapter(
             null
         }
     }
+
     override fun brukerFinnes(id: String): Boolean = finnBrukerMedId(id) != null
 }

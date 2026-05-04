@@ -1,5 +1,6 @@
 package brukere
-import java.util.UUID
+
+import java.util.*
 
 class BrukerService(private val brukerRepository: BrukerRepository) {
 

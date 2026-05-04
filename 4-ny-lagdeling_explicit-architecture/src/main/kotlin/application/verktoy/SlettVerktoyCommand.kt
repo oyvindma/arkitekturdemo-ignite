@@ -1,5 +1,7 @@
 package application
+
 import core.VerktoyRepository
+
 class SlettVerktoyCommand(private val verktoyRepository: VerktoyRepository) {
     fun execute(verktoyId: String) {
         val verktoy = verktoyRepository.finnMedId(verktoyId)

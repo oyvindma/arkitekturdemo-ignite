@@ -1,4 +1,5 @@
 package core.utlaan
+
 /** ACL-port: utlaan-kontekstens syn paa et verktoy. */
 data class VerktoyVisning(
     val id: String,
@@ -7,6 +8,7 @@ data class VerktoyVisning(
     val taalerRegn: Boolean,
     val tilgjengelig: Boolean
 )
+
 interface VerktoyQueryPort {
     fun finnTilgjengeligeVerktoy(): List<VerktoyVisning>
     fun finnVerktoyMedNavn(navn: String): List<VerktoyVisning>

@@ -2,7 +2,7 @@ package brukere.application
 
 import brukere.core.Bruker
 import brukere.core.BrukerRepositoryPort
-import java.util.UUID
+import java.util.*
 
 class RegistrerBrukerCommand(private val brukerRepositoryPort: BrukerRepositoryPort) {
 

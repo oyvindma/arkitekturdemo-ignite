@@ -1,8 +1,11 @@
 package application.utlaan
+
 import core.utlaan.VerktoyQueryPort
 import core.utlaan.VerktoyVisning
+
 class SoekVerktoyCommand(private val verktoyQueryPort: VerktoyQueryPort) {
     data class Command(val navn: String? = null, val kunTilgjengelige: Boolean = true)
+
     fun execute(command: Command): List<VerktoyOppslagDto> {
         val verktoy = if (command.navn != null) {
             verktoyQueryPort.finnVerktoyMedNavn(command.navn)
@@ -16,6 +19,7 @@ class SoekVerktoyCommand(private val verktoyQueryPort: VerktoyQueryPort) {
         }
         return filtrert.map { tilResultatDto(it) }
     }
+
     private fun tilResultatDto(visning: VerktoyVisning): VerktoyOppslagDto = VerktoyOppslagDto(
         id = visning.id,
         navn = visning.navn,

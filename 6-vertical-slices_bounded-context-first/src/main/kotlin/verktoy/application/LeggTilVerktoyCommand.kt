@@ -2,7 +2,7 @@ package verktoy.application
 
 import verktoy.core.Verktoy
 import verktoy.core.VerktoyRepositoryPort
-import java.util.UUID
+import java.util.*
 
 class LeggTilVerktoyCommand(private val verktoyRepositoryPort: VerktoyRepositoryPort) {
 

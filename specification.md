@@ -1,8 +1,10 @@
 Teknologi og arkitektur
+
 - Implementer dette helt uten bibliotek og rammeverk
 - Repositories bruker map som database, men fortsatt med funksjonalitet for å søke og filtrere
-- Bruk Explicit Architecture according to Herberto Graca (see the markdown file "herbert.md") with the packages presentation, infrastructure, application and core
-- 
+- Bruk Explicit Architecture according to Herberto Graca (see the markdown file "herbert.md") with the packages
+  presentation, infrastructure, application and core
+-
 
 Case:
 Administrason av verktøyflåten
@@ -12,7 +14,7 @@ UC 2 Slette verktøy
 UC 3 Endre informasjon om verktøy
 
 Brukeradministrasjon
-UC0 Registrere bruker med navn 
+UC0 Registrere bruker med navn
 UC1 Liste ut brukere
 UC2 Se informasjon om bruker og hvilke verktøy brukeren har lånt
 UC3 Ender informasjon om bruker

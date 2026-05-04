@@ -1,4 +1,5 @@
 package domain
+
 data class Bruker(
     val id: String,
     val navn: String,

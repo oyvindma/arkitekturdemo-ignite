@@ -1,7 +1,7 @@
 package utlaan.infrastructure.acl
 
-import brukere.application.HentBrukerCommand
 import brukere.application.BrukerDto
+import brukere.application.HentBrukerCommand
 import utlaan.core.BrukerQueryPort
 import utlaan.core.BrukerVisning
 

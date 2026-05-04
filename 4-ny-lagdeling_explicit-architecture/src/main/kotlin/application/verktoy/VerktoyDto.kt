@@ -1,4 +1,5 @@
 package application
+
 data class VerktoyDto(
     val id: String,
     val navn: String,

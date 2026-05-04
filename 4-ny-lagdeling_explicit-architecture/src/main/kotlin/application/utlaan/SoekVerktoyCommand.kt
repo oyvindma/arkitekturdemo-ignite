@@ -1,8 +1,8 @@
 package application
 
 import application.utlaan.VerktoyOppslagDto
-import core.VerktoyRepository
 import core.Verktoy
+import core.VerktoyRepository
 
 class SoekVerktoyCommand(private val verktoyRepository: VerktoyRepository) {
     data class Command(val navn: String? = null, val kunTilgjengelige: Boolean = true)

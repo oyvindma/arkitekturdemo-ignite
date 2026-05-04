@@ -1,7 +1,7 @@
 package utlaan.infrastructure.external
 
-import utlaan.core.Vaermelding
 import utlaan.core.VaerPort
+import utlaan.core.Vaermelding
 
 class StubVermeldingAdapter : VaerPort {
 

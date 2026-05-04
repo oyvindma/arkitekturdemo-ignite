@@ -1,4 +1,5 @@
 package core.bruker
+
 interface BrukerRepositoryPort {
     fun lagre(bruker: Bruker)
     fun finnMedId(id: String): Bruker?

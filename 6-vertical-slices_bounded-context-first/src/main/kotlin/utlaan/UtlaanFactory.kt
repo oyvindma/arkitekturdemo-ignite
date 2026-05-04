@@ -28,7 +28,8 @@ object UtlaanFactory {
         val verktoyStatusPort = VerktoyStatusAdapter(verktoyRepositoryPort)
 
         val soekVerktoyCommand = SoekVerktoyCommand(verktoyQueryPort)
-        val laanVerktoyCommand = LaanVerktoyCommand(utlaanRepository, verktoyQueryPort, brukerQueryPort, vaerPort, verktoyStatusPort)
+        val laanVerktoyCommand =
+            LaanVerktoyCommand(utlaanRepository, verktoyQueryPort, brukerQueryPort, vaerPort, verktoyStatusPort)
         val returnerVerktoyCommand = ReturnerVerktoyCommand(utlaanRepository, verktoyStatusPort)
 
         return UtlaanController(

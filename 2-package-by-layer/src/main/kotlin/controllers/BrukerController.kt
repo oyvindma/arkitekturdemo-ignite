@@ -1,4 +1,5 @@
 package controllers
+
 import services.BrukerService
 
 class BrukerController(private val brukerService: BrukerService) {

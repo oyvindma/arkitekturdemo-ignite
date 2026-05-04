@@ -1,4 +1,5 @@
 package core.verktoy
+
 data class Verktoy(
     val id: String,
     val navn: String,

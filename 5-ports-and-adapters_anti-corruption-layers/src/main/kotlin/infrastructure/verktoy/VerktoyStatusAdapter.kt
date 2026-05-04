@@ -14,6 +14,7 @@ class VerktoyStatusAdapter(
             ?: error("Verktoy med id $verktoyId ikke funnet")
         verktoyRepositoryPort.lagre(verktoy.laanUt(brukerId))
     }
+
     override fun markerReturnet(verktoyId: String) {
         val verktoy = verktoyRepositoryPort.finnMedId(verktoyId)
             ?: error("Verktoy med id $verktoyId ikke funnet")

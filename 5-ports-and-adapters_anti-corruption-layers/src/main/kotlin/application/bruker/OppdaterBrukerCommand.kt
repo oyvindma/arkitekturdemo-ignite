@@ -1,7 +1,10 @@
 package application.bruker
+
 import core.bruker.BrukerRepositoryPort
+
 class OppdaterBrukerCommand(private val brukerRepositoryPort: BrukerRepositoryPort) {
     data class Command(val brukerId: String, val navn: String)
+
     fun execute(command: Command): BrukerDto {
         val eksisterende = brukerRepositoryPort.finnMedId(command.brukerId)
             ?: error("Bruker med id ${command.brukerId} ikke funnet")

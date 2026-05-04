@@ -13,7 +13,9 @@ class UtlaanController(
 ) {
     fun soekTilgjengeligeVerktoy(navn: String? = null): List<VerktoyOppslagDto> =
         soekVerktoyCommand.execute(SoekVerktoyCommand.Command(navn = navn, kunTilgjengelige = true))
+
     fun laanVerktoy(verktoyId: String, brukerId: String): LaanVerktoyCommand.LaanResultat =
         laanVerktoyCommand.execute(LaanVerktoyCommand.Command(verktoyId = verktoyId, brukerId = brukerId))
+
     fun returnerVerktoy(utlaanId: String): UtlaanDto = returnerVerktoyCommand.execute(utlaanId)
 }

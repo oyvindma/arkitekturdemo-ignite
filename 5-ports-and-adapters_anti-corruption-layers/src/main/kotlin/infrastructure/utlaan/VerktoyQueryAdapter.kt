@@ -14,12 +14,15 @@ class VerktoyQueryAdapter(
     override fun finnTilgjengeligeVerktoy(): List<VerktoyVisning> {
         return listVerktoyCommand.execute().filter { it.tilgjengelig }.map { tilVisning(it) }
     }
+
     override fun finnVerktoyMedNavn(navn: String): List<VerktoyVisning> {
         return listVerktoyCommand.execute().filter { it.navn.contains(navn, ignoreCase = true) }.map { tilVisning(it) }
     }
+
     override fun finnVerktoyMedId(id: String): VerktoyVisning? {
         return listVerktoyCommand.execute().firstOrNull { it.id == id }?.let { tilVisning(it) }
     }
+
     private fun tilVisning(dto: VerktoyDto): VerktoyVisning = VerktoyVisning(
         id = dto.id,
         navn = dto.navn,
