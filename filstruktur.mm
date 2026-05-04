@@ -3,8 +3,8 @@
 <bookmarks>
     <bookmark nodeId="ID_1090958577" name="Root" opensAsRoot="true"/>
 </bookmarks>
-<node TEXT="New Mindmap" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1777544446911"><hook NAME="MapStyle" background="#2e3440ff" zoom="0.6830134">
-    <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_tags="UNDER_NODES" show_note_icons="true" associatedTemplateLocation="template:/dark_nord_template.mm" fit_to_viewport="false" show_icons="BESIDE_NODES" showTagCategories="false"/>
+<node TEXT="New Mindmap" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1777882893123"><hook NAME="MapStyle" background="#2e3440ff">
+    <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" auto_compact_layout="true" show_note_icons="true" fit_to_viewport="false" show_icons="BESIDE_NODES" associatedTemplateLocation="template:/dark_nord_template.mm" showTagCategories="false" show_tags="UNDER_NODES"/>
     <tags category_separator="::"/>
 
 <map_styles>
@@ -85,717 +85,367 @@
 </hook>
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
 <font BOLD="true"/>
-<node TEXT="Teori" FOLDED="true" POSITION="bottom_or_right" ID="ID_1622043683" CREATED="1777545746721" MODIFIED="1777545749304">
-<node TEXT="Separation of concerns" ID="ID_1433591746" CREATED="1777545761689" MODIFIED="1777545768506"/>
-<node TEXT="Single responsibility" ID="ID_633425701" CREATED="1777545768826" MODIFIED="1777545775995"/>
-<node TEXT="Encapsulation" ID="ID_826549282" CREATED="1777545776768" MODIFIED="1777545781593"/>
-</node>
-<node TEXT="Utgangspunkt - BBM" POSITION="bottom_or_right" ID="ID_217198121" CREATED="1777546462739" MODIFIED="1777555829325">
-<node TEXT="Hva er problemet med koden?" FOLDED="true" POSITION="bottom_or_right" ID="ID_1796638756" CREATED="1777546186649" MODIFIED="1777546192728">
-<node TEXT="Hva skjer i hvilken klasse?" ID="ID_407327665" CREATED="1777546242233" MODIFIED="1777551179327"/>
-<node TEXT="Hvordan lager vi automatiserte tester for dette?" ID="ID_1248105148" CREATED="1777549140691" MODIFIED="1777551048105"/>
-<node TEXT="Merge conflicts" ID="ID_889739518" CREATED="1777546279480" MODIFIED="1777546282834"/>
-<node TEXT="Ekstremt krevende å se hva filen gjør og forstå konsekvensen av endringen" ID="ID_576317159" CREATED="1777546286358" MODIFIED="1777551105564"/>
-</node>
-<node TEXT="Filer" ID="ID_226497468" CREATED="1777545749720" MODIFIED="1777545751153">
-<node TEXT="UserController.kt" FOLDED="true" ID="ID_599449758" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/presentation/UserController.kt">
-<node TEXT="BrukereFactory.kt" ID="ID_1418325734" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/BrukereFactory.kt"/>
-<node TEXT="DeleteUserUseCase.kt" ID="ID_595774978" CREATED="1777544483736" MODIFIED="1777544483736" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/DeleteUserUseCase.kt"/>
-<node TEXT="ListUsersUseCase.kt" ID="ID_1750754016" CREATED="1777544483749" MODIFIED="1777544483750" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/ListUsersUseCase.kt"/>
-<node TEXT="RegisterUserUseCase.kt" ID="ID_1422066591" CREATED="1777544483750" MODIFIED="1777544483750" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/RegisterUserUseCase.kt"/>
-<node TEXT="UpdateUserUseCase.kt" ID="ID_471522798" CREATED="1777544483750" MODIFIED="1777544483750" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/UpdateUserUseCase.kt"/>
-<node TEXT="UserDto.kt" ID="ID_1536848454" CREATED="1777544483750" MODIFIED="1777544483750" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/UserDto.kt"/>
-<node TEXT="GetUserUseCase.kt" ID="ID_1685457690" CREATED="1777544483736" MODIFIED="1777544483749" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/GetUserUseCase.kt"/>
-<node TEXT="InMemoryUserRepository.kt" ID="ID_694537265" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/infrastructure/InMemoryUserRepository.kt"/>
-<node TEXT="UserRepository.kt" ID="ID_455391552" CREATED="1777544483760" MODIFIED="1777544483760" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/core/UserRepository.kt"/>
-<node TEXT="FinnBrukereSomIkkeHarLåntVerktøySiste3MånederUseCase" ID="ID_1389040057" CREATED="1777552939424" MODIFIED="1777552957979"/>
-<node TEXT="LagRapportOverVerktøySomErLevertTilbakeEtterFristenUseCase" ID="ID_305718542" CREATED="1777552958649" MODIFIED="1777552982426"/>
-</node>
-<node TEXT="User.kt" ID="ID_230061105" CREATED="1777544483760" MODIFIED="1777544483760" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/core/User.kt"/>
-<node TEXT="NettbutikkController.kt" FOLDED="true" ID="ID_1795070978" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/presentation/NettbutikkController.kt">
-<node TEXT="NettbutikkFactory.kt" ID="ID_200875189" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/NettbutikkFactory.kt"/>
-<node TEXT="BrukereUserQueryAdapter.kt" ID="ID_1120678338" CREATED="1777544483800" MODIFIED="1777544483800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/infrastructure/BrukereUserQueryAdapter.kt"/>
-<node TEXT="InMemoryLoanRepository.kt" ID="ID_1795174584" CREATED="1777544483800" MODIFIED="1777544483800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/infrastructure/InMemoryLoanRepository.kt"/>
-<node TEXT="StubWeatherAdapter.kt" ID="ID_914626299" CREATED="1777544483800" MODIFIED="1777544483800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/infrastructure/StubWeatherAdapter.kt"/>
-<node TEXT="VerktoyToolQueryAdapter.kt" ID="ID_783080126" CREATED="1777544483800" MODIFIED="1777544483800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/infrastructure/VerktoyToolQueryAdapter.kt"/>
-<node TEXT="Loan.kt" ID="ID_981712412" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/Loan.kt"/>
-<node TEXT="LoanRepository.kt" ID="ID_576414770" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/LoanRepository.kt"/>
-<node TEXT="ToolQueryPort.kt" ID="ID_499062021" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/ToolQueryPort.kt"/>
-<node TEXT="UserQueryPort.kt" ID="ID_1377963494" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/UserQueryPort.kt"/>
-<node TEXT="WeatherService.kt" ID="ID_1717571038" CREATED="1777544483784" MODIFIED="1777544483799" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/WeatherService.kt"/>
-<node TEXT="BorrowToolUseCase.kt" ID="ID_736387357" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/BorrowToolUseCase.kt"/>
-<node TEXT="LoanDto.kt" ID="ID_1264641099" CREATED="1777544483767" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/LoanDto.kt"/>
-<node TEXT="ReturnToolUseCase.kt" ID="ID_848804317" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/ReturnToolUseCase.kt"/>
-<node TEXT="SearchToolsUseCase.kt" ID="ID_1344045870" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/SearchToolsUseCase.kt"/>
-<node TEXT="VerktoyFactory.kt" ID="ID_1520783014" CREATED="1777544483836" MODIFIED="1777544483850" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/VerktoyFactory.kt"/>
-</node>
-<node TEXT="ToolController.kt" FOLDED="true" ID="ID_604503946" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/presentation/ToolController.kt">
-<node TEXT="AddToolUseCase.kt" ID="ID_1284020883" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/AddToolUseCase.kt"/>
-<node TEXT="DeleteToolUseCase.kt" ID="ID_598394186" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/DeleteToolUseCase.kt"/>
-<node TEXT="ListToolsUseCase.kt" ID="ID_699761610" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/ListToolsUseCase.kt"/>
-<node TEXT="ToolDto.kt" ID="ID_546328081" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/ToolDto.kt"/>
-<node TEXT="InMemoryToolRepository.kt" ID="ID_1824213872" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/infrastructure/InMemoryToolRepository.kt"/>
-<node TEXT="ToolRepository.kt" ID="ID_906591944" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/core/ToolRepository.kt"/>
-<node TEXT="UpdateToolUseCase.kt" ID="ID_1633977960" CREATED="1777544483817" MODIFIED="1777544483833" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/UpdateToolUseCase.kt"/>
-</node>
-<node TEXT="Tool.kt" ID="ID_300800844" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/core/Tool.kt"/>
-<node TEXT="ApplicationFactory.kt" ID="ID_1581364766" CREATED="1777544483850" MODIFIED="1777544483850" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/ApplicationFactory.kt"/>
-</node>
-</node>
-<node TEXT="Steg 1 - Skille på teknologi" POSITION="bottom_or_right" ID="ID_1631955161" CREATED="1777544483717" MODIFIED="1777555823143" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/">
-<node TEXT="Target" ID="ID_618023298" CREATED="1777545749720" MODIFIED="1777546490958">
-<node TEXT="UserController.kt" ID="ID_1187014127" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/presentation/UserController.kt"/>
-<node TEXT="UserService" FOLDED="true" ID="ID_1334416432" CREATED="1777544789329" MODIFIED="1777546525718">
-<node TEXT="DeleteUserUseCase.kt" ID="ID_1657911450" CREATED="1777544483736" MODIFIED="1777544483736" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/DeleteUserUseCase.kt"/>
-<node TEXT="ListUsersUseCase.kt" ID="ID_582940610" CREATED="1777544483749" MODIFIED="1777544483750" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/ListUsersUseCase.kt"/>
-<node TEXT="RegisterUserUseCase.kt" ID="ID_146552634" CREATED="1777544483750" MODIFIED="1777544483750" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/RegisterUserUseCase.kt"/>
-<node TEXT="UpdateUserUseCase.kt" ID="ID_505942859" CREATED="1777544483750" MODIFIED="1777544483750" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/UpdateUserUseCase.kt"/>
-<node TEXT="GetUserUseCase.kt" ID="ID_1583852845" CREATED="1777544483736" MODIFIED="1777544483749" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/GetUserUseCase.kt"/>
-<node TEXT="FinnBrukereSomIkkeHarLåntVerktøySiste3MånederUseCase" ID="ID_1871527728" CREATED="1777552939424" MODIFIED="1777552957979"/>
-<node TEXT="LagRapportOverVerktøySomErLevertTilbakeEtterFristenUseCase" ID="ID_148621879" CREATED="1777552958649" MODIFIED="1777552982426"/>
-</node>
-<node TEXT="UserRepository.kt" FOLDED="true" ID="ID_1908169167" CREATED="1777544483760" MODIFIED="1777544483760" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/core/UserRepository.kt">
-<node TEXT="InMemoryUserRepository.kt" ID="ID_400084865" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/infrastructure/InMemoryUserRepository.kt"/>
-</node>
-<node TEXT="User.kt" ID="ID_1273952016" CREATED="1777544483760" MODIFIED="1777544483760" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/core/User.kt"/>
-<node TEXT="NettbutikkController.kt" ID="ID_148148513" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/presentation/NettbutikkController.kt"/>
-<node TEXT="NettbutikkService" FOLDED="true" ID="ID_979161179" CREATED="1777544680202" MODIFIED="1777546572516">
-<node TEXT="WeatherService.kt" ID="ID_1254122490" CREATED="1777544483784" MODIFIED="1777544483799" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/WeatherService.kt"/>
-<node TEXT="BorrowToolUseCase.kt" ID="ID_544643726" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/BorrowToolUseCase.kt"/>
-<node TEXT="ReturnToolUseCase.kt" ID="ID_1891923206" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/ReturnToolUseCase.kt"/>
-<node TEXT="SearchToolsUseCase.kt" ID="ID_294163763" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/SearchToolsUseCase.kt"/>
-</node>
-<node TEXT="LoanRepository.kt" ID="ID_1688255440" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/LoanRepository.kt">
-<node TEXT="InMemoryLoanRepository.kt" POSITION="bottom_or_right" ID="ID_376669799" CREATED="1777544483800" MODIFIED="1777544483800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/infrastructure/InMemoryLoanRepository.kt"/>
-</node>
-<node TEXT="Loan.kt" ID="ID_1235898000" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/Loan.kt"/>
-<node TEXT="ToolController.kt" ID="ID_489886285" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/presentation/ToolController.kt"/>
-<node TEXT="VerktoyService" FOLDED="true" ID="ID_203299877" CREATED="1777544613202" MODIFIED="1777544616429">
-<node TEXT="AddToolUseCase.kt" ID="ID_1949291274" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/AddToolUseCase.kt"/>
-<node TEXT="DeleteToolUseCase.kt" ID="ID_233777257" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/DeleteToolUseCase.kt"/>
-<node TEXT="ListToolsUseCase.kt" ID="ID_1930817793" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/ListToolsUseCase.kt"/>
-<node TEXT="UpdateToolUseCase.kt" ID="ID_697090600" CREATED="1777544483817" MODIFIED="1777544483833" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/UpdateToolUseCase.kt"/>
-</node>
-<node TEXT="ToolRepository.kt" FOLDED="true" ID="ID_505441494" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/core/ToolRepository.kt">
-<node TEXT="InMemoryToolRepository.kt" POSITION="bottom_or_right" ID="ID_1364682400" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/infrastructure/InMemoryToolRepository.kt"/>
-</node>
-<node TEXT="Tool.kt" ID="ID_192745561" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/core/Tool.kt"/>
-</node>
-<node TEXT="Hva har blitt løst?" FOLDED="true" ID="ID_752910985" CREATED="1777546806848" MODIFIED="1777551230393">
-<node TEXT="Hva skjer i hvilken klasse?" ID="ID_1959515672" CREATED="1777546242233" MODIFIED="1777551179327">
-<node TEXT="Teknologi og forretningslogikk har blitt separert (controller/repo vs service)" ID="ID_757455228" CREATED="1777551336759" MODIFIED="1777551380003"/>
-</node>
-<node TEXT="Hvordan lager vi automatiserte tester for dette?" ID="ID_693814511" CREATED="1777549140691" MODIFIED="1777551048105">
-<node TEXT="Ferre mocks å sette opp" ID="ID_760880253" CREATED="1777551385380" MODIFIED="1777551407370"/>
-<node TEXT="Ferre teknologier å mocke" ID="ID_569278255" CREATED="1777551408030" MODIFIED="1777551417323"/>
-</node>
-<node TEXT="Merge conflicts" ID="ID_4039835" CREATED="1777546279480" MODIFIED="1777546282834">
-<node TEXT="Ikke alle endringer skjer i samme fil" ID="ID_1484462467" CREATED="1777551439203" MODIFIED="1777551462199"/>
-</node>
-<node TEXT="Ekstremt krevende å se hva filen gjør og forstå konsekvensen av endringen" ID="ID_424750759" CREATED="1777546286358" MODIFIED="1777551105564">
-<node TEXT="Lettere å forstå ansvarsområdet til filen (repo, service, controller)" ID="ID_1010072204" CREATED="1777551467195" MODIFIED="1777551481316"/>
-</node>
-</node>
-<node TEXT="Hva er problemet med koden?" ID="ID_1050574481" CREATED="1777546186649" MODIFIED="1777546192728">
-<node TEXT="Mange filer i samme pakke kan forvirre" ID="ID_148631520" CREATED="1777551486598" MODIFIED="1777551499913"/>
-</node>
-<node TEXT="Teori" FOLDED="true" ID="ID_1190816016" CREATED="1777551547580" MODIFIED="1777551549892">
-<node TEXT="Package by layer vs feature" ID="ID_1129833472" CREATED="1777551549896" MODIFIED="1777551556030"/>
-<node TEXT="Locality of behaviour" ID="ID_1799654584" CREATED="1777551745235" MODIFIED="1777551752084"/>
-</node>
-</node>
-<node TEXT="kotlin" FOLDED="true" POSITION="top_or_left" ID="ID_31954519" CREATED="1777544483717" MODIFIED="1777544483736" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/">
-<node TEXT="brukere" ID="ID_1671115328" CREATED="1777544483736" MODIFIED="1777544483736" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/">
-<node TEXT="application" ID="ID_1434607216" CREATED="1777544483736" MODIFIED="1777544483736" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/">
-<node TEXT="DeleteUserUseCase.kt" ID="ID_123538834" CREATED="1777544483736" MODIFIED="1777544483736" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/DeleteUserUseCase.kt"/>
-<node TEXT="GetUserUseCase.kt" ID="ID_1753177101" CREATED="1777544483736" MODIFIED="1777544483749" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/GetUserUseCase.kt"/>
-<node TEXT="ListUsersUseCase.kt" ID="ID_257791188" CREATED="1777544483749" MODIFIED="1777544483750" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/ListUsersUseCase.kt"/>
-<node TEXT="RegisterUserUseCase.kt" ID="ID_1270063452" CREATED="1777544483750" MODIFIED="1777544483750" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/RegisterUserUseCase.kt"/>
-<node TEXT="UpdateUserUseCase.kt" ID="ID_933871607" CREATED="1777544483750" MODIFIED="1777544483750" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/UpdateUserUseCase.kt"/>
-<node TEXT="UserDto.kt" ID="ID_856436981" CREATED="1777544483750" MODIFIED="1777544483750" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/UserDto.kt"/>
-</node>
-<node TEXT="core" FOLDED="true" ID="ID_1934291414" CREATED="1777544483750" MODIFIED="1777544483760" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/core/">
-<node TEXT="User.kt" ID="ID_1601604033" CREATED="1777544483760" MODIFIED="1777544483760" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/core/User.kt"/>
-<node TEXT="UserRepository.kt" ID="ID_1976789071" CREATED="1777544483760" MODIFIED="1777544483760" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/core/UserRepository.kt"/>
-</node>
-<node TEXT="infrastructure" ID="ID_580317879" CREATED="1777544483760" MODIFIED="1777544483766" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/infrastructure/">
-<node TEXT="InMemoryUserRepository.kt" ID="ID_635376115" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/infrastructure/InMemoryUserRepository.kt"/>
-</node>
-<node TEXT="presentation" FOLDED="true" ID="ID_1334918846" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/presentation/">
-<node TEXT="UserController.kt" ID="ID_305786725" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/presentation/UserController.kt"/>
-</node>
-<node TEXT="BrukereFactory.kt" ID="ID_314940905" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/BrukereFactory.kt"/>
-</node>
-<node TEXT="nettbutikk" FOLDED="true" ID="ID_224199577" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/">
-<node TEXT="application" FOLDED="true" ID="ID_873462525" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/">
-<node TEXT="BorrowToolUseCase.kt" ID="ID_964311047" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/BorrowToolUseCase.kt"/>
-<node TEXT="LoanDto.kt" ID="ID_1854493536" CREATED="1777544483767" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/LoanDto.kt"/>
-<node TEXT="ReturnToolUseCase.kt" ID="ID_1826070525" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/ReturnToolUseCase.kt"/>
-<node TEXT="SearchToolsUseCase.kt" ID="ID_1296539122" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/SearchToolsUseCase.kt"/>
-</node>
-<node TEXT="core" FOLDED="true" ID="ID_214509182" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/">
-<node TEXT="Loan.kt" ID="ID_869067242" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/Loan.kt"/>
-<node TEXT="LoanRepository.kt" ID="ID_1691601505" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/LoanRepository.kt"/>
-<node TEXT="ToolQueryPort.kt" ID="ID_1203545319" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/ToolQueryPort.kt"/>
-<node TEXT="UserQueryPort.kt" ID="ID_944352253" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/UserQueryPort.kt"/>
-<node TEXT="WeatherService.kt" ID="ID_545429130" CREATED="1777544483784" MODIFIED="1777544483799" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/WeatherService.kt"/>
-</node>
-<node TEXT="infrastructure" FOLDED="true" ID="ID_481601220" CREATED="1777544483800" MODIFIED="1777544483800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/infrastructure/">
-<node TEXT="BrukereUserQueryAdapter.kt" ID="ID_1388588113" CREATED="1777544483800" MODIFIED="1777544483800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/infrastructure/BrukereUserQueryAdapter.kt"/>
-<node TEXT="InMemoryLoanRepository.kt" ID="ID_116126720" CREATED="1777544483800" MODIFIED="1777544483800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/infrastructure/InMemoryLoanRepository.kt"/>
-<node TEXT="StubWeatherAdapter.kt" ID="ID_367921703" CREATED="1777544483800" MODIFIED="1777544483800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/infrastructure/StubWeatherAdapter.kt"/>
-<node TEXT="VerktoyToolQueryAdapter.kt" ID="ID_1950051181" CREATED="1777544483800" MODIFIED="1777544483800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/infrastructure/VerktoyToolQueryAdapter.kt"/>
-</node>
-<node TEXT="presentation" FOLDED="true" ID="ID_1787411895" CREATED="1777544483815" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/presentation/">
-<node TEXT="NettbutikkController.kt" ID="ID_1881848376" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/presentation/NettbutikkController.kt"/>
-</node>
-<node TEXT="NettbutikkFactory.kt" ID="ID_1528633753" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/NettbutikkFactory.kt"/>
-</node>
-<node TEXT="verktoy" FOLDED="true" ID="ID_253379741" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/">
-<node TEXT="application" FOLDED="true" ID="ID_609493393" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/">
-<node TEXT="AddToolUseCase.kt" ID="ID_1670500849" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/AddToolUseCase.kt"/>
-<node TEXT="DeleteToolUseCase.kt" ID="ID_1201368790" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/DeleteToolUseCase.kt"/>
-<node TEXT="ListToolsUseCase.kt" ID="ID_1406374145" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/ListToolsUseCase.kt"/>
-<node TEXT="ToolDto.kt" ID="ID_937070407" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/ToolDto.kt"/>
-<node TEXT="UpdateToolUseCase.kt" ID="ID_1310948451" CREATED="1777544483817" MODIFIED="1777544483833" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/UpdateToolUseCase.kt"/>
-</node>
-<node TEXT="core" FOLDED="true" ID="ID_1079487256" CREATED="1777544483834" MODIFIED="1777544483834" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/core/">
-<node TEXT="Tool.kt" ID="ID_980240702" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/core/Tool.kt"/>
-<node TEXT="ToolRepository.kt" ID="ID_1078951550" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/core/ToolRepository.kt"/>
-</node>
-<node TEXT="infrastructure" FOLDED="true" ID="ID_1254027435" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/infrastructure/">
-<node TEXT="InMemoryToolRepository.kt" ID="ID_327741270" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/infrastructure/InMemoryToolRepository.kt"/>
-</node>
-<node TEXT="presentation" FOLDED="true" ID="ID_194412139" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/presentation/">
-<node TEXT="ToolController.kt" ID="ID_1432520682" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/presentation/ToolController.kt"/>
-</node>
-<node TEXT="VerktoyFactory.kt" ID="ID_979898719" CREATED="1777544483836" MODIFIED="1777544483850" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/VerktoyFactory.kt"/>
-</node>
-<node TEXT="ApplicationFactory.kt" ID="ID_1608645522" CREATED="1777544483850" MODIFIED="1777544483850" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/ApplicationFactory.kt"/>
-</node>
-<node TEXT="Systemarkitektur" POSITION="top_or_left" ID="ID_981605163" CREATED="1777545956552" MODIFIED="1777545956552">
-<node TEXT="Problemer ved store kodebaser" FOLDED="true" POSITION="bottom_or_right" ID="ID_1585866641" CREATED="1777545956552" MODIFIED="1777545956552">
-<node TEXT="Hvor finner jeg det i kildekoden?" FOLDED="true" ID="ID_1417593376" CREATED="1777545956552" MODIFIED="1777545956552">
-<node TEXT="Hvor i alle dager ligger problemet/feil?" ID="ID_719092105" CREATED="1777545956552" MODIFIED="1777545956552"/>
-</node>
-<node TEXT="Hva i helvete skjer i denne klassen?" ID="ID_1122076528" CREATED="1777545956552" MODIFIED="1777545956552"/>
-<node TEXT="Man gjør en endring -&gt; noe brekker et helt annet sted i appen" ID="ID_772066024" CREATED="1777545956552" MODIFIED="1777545956552"/>
-<node TEXT="Hvordan i alle dager skal jeg skrive tester på dette?" ID="ID_395884676" CREATED="1777545956552" MODIFIED="1777545956552"/>
-<node TEXT="Hvilke konsekvenser får det hvis jeg endrer denne?" ID="ID_910148710" CREATED="1777545956552" MODIFIED="1777545956552"/>
-<node TEXT="Det er vanskelig å legge til funksjonalitet" ID="ID_270758362" CREATED="1777545956552" MODIFIED="1777545956552"/>
-<node TEXT="En liten fiks medfører mange endringer ulike steder" ID="ID_639880481" CREATED="1777545956552" MODIFIED="1777545956552"/>
-</node>
-<node TEXT="Soft side of things" FOLDED="true" POSITION="bottom_or_right" ID="ID_1541803542" CREATED="1777545956552" MODIFIED="1777545956552">
-<node TEXT="Lære det grunnleggende - Bygge stein" ID="ID_1148575786" CREATED="1777545956552" MODIFIED="1777545956552"/>
-</node>
-<node TEXT="Presentasjon" POSITION="bottom_or_right" ID="ID_891099031" CREATED="1777545956553" MODIFIED="1777545956553"/>
-<node TEXT="Begreper" FOLDED="true" POSITION="bottom_or_right" ID="ID_1325467718" CREATED="1777545956553" MODIFIED="1777545956553">
-<node TEXT="Arv vs Komposisjon" ID="ID_621140715" CREATED="1777545956553" MODIFIED="1777545956553"/>
-<node TEXT="Seperation of concerns" ID="ID_1155800498" CREATED="1777545956553" MODIFIED="1777545956553"/>
-<node TEXT="High cohesion and low coupling" ID="ID_237540505" CREATED="1777545956553" MODIFIED="1777545956553"/>
-<node TEXT="Anti-corruption layers" ID="ID_147026296" CREATED="1777545956553" MODIFIED="1777545956553"/>
-<node TEXT="Inversion of control" ID="ID_1987329057" CREATED="1777545956553" MODIFIED="1777545956553"/>
-<node TEXT="Single responsibility principle (SRP)" ID="ID_333848047" CREATED="1777545956553" MODIFIED="1777545956553"/>
-<node TEXT="Ports and adapters" ID="ID_1838918620" CREATED="1777545956553" MODIFIED="1777545956553"/>
-<node TEXT="Encapsulation" ID="ID_1449073188" CREATED="1777545956553" MODIFIED="1777545956553"/>
-<node TEXT="Abstraksjonsnivå" ID="ID_1732719043" CREATED="1777545956553" MODIFIED="1777545956553"/>
-<node TEXT="Pakke-struktur" ID="ID_937761292" CREATED="1777545956553" MODIFIED="1777545956553"/>
-<node TEXT="Applikasjoner" ID="ID_1637777090" CREATED="1777545956553" MODIFIED="1777545956553"/>
-</node>
-<node TEXT="Anti-patterns" FOLDED="true" POSITION="bottom_or_right" ID="ID_823646417" CREATED="1777545956553" MODIFIED="1777545956553">
-<node TEXT="Avoid Shotgun Surgery" ID="ID_1572867802" CREATED="1777545956553" MODIFIED="1777545956553"/>
-</node>
-<node TEXT="Kjennetegn på en god arkitektur" FOLDED="true" POSITION="bottom_or_right" ID="ID_564415051" CREATED="1777545956553" MODIFIED="1777545956553">
-<node TEXT="Enkelt å skrive tester / TDD" ID="ID_1790120195" CREATED="1777545956553" MODIFIED="1777545956553"/>
-<node TEXT="Kjenne deg igjen på tvers av kodebaser" ID="ID_1625048618" CREATED="1777545956553" MODIFIED="1777545956553"/>
-</node>
-<node TEXT="DDD?" FOLDED="true" POSITION="bottom_or_right" ID="ID_61222626" CREATED="1777545956553" MODIFIED="1777545956553">
-<node TEXT="Bounded Context" ID="ID_737854247" CREATED="1777545956553" MODIFIED="1777545956553"/>
-</node>
-<node TEXT="Standard arkitekturer" FOLDED="true" POSITION="bottom_or_right" ID="ID_813267271" CREATED="1777545956553" MODIFIED="1777545956553">
-<node TEXT="Onion Architecture" ID="ID_988789976" CREATED="1777545956553" MODIFIED="1777545956553"/>
-<node TEXT="MVC" ID="ID_915062141" CREATED="1777545956553" MODIFIED="1777545956553"/>
-<node TEXT="MVVM" ID="ID_1695260436" CREATED="1777545956553" MODIFIED="1777545956553"/>
-<node TEXT="Clean Architecture" ID="ID_1002468551" CREATED="1777545956553" MODIFIED="1777545956553"/>
-<node TEXT="Hexagonal Architecture" ID="ID_228217988" CREATED="1777545956553" MODIFIED="1777545956553"/>
-</node>
-</node>
-<node TEXT="Steg 2 - Utforske mappestrukturer" POSITION="bottom_or_right" ID="ID_1853638931" CREATED="1777544483717" MODIFIED="1777555843207" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/">
-<node TEXT="PBL" FOLDED="true" ID="ID_479930724" CREATED="1777545749720" MODIFIED="1777551612447">
-<node TEXT="Kode" ID="ID_984874856" CREATED="1777552686816" MODIFIED="1777552688810">
-<node TEXT="Controller" FOLDED="true" ID="ID_1488942917" CREATED="1777551616372" MODIFIED="1777551619813">
-<node TEXT="UserController.kt" ID="ID_841221085" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/presentation/UserController.kt"/>
-<node TEXT="NettbutikkController.kt" ID="ID_1901291342" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/presentation/NettbutikkController.kt"/>
-<node TEXT="ToolController.kt" ID="ID_636764334" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/presentation/ToolController.kt"/>
-</node>
-<node TEXT="Service" ID="ID_541288505" CREATED="1777551622411" MODIFIED="1777551624103">
-<node TEXT="User.kt" ID="ID_595107885" CREATED="1777544483760" MODIFIED="1777544483760" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/core/User.kt"/>
-<node TEXT="Tool.kt" ID="ID_857028693" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/core/Tool.kt"/>
-<node TEXT="Loan.kt" ID="ID_501195701" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/Loan.kt"/>
-<node TEXT="UserService" FOLDED="true" ID="ID_974421546" CREATED="1777544789329" MODIFIED="1777546525718">
-<node TEXT="DeleteUserUseCase.kt" ID="ID_675790007" CREATED="1777544483736" MODIFIED="1777544483736" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/DeleteUserUseCase.kt"/>
-<node TEXT="ListUsersUseCase.kt" ID="ID_996380981" CREATED="1777544483749" MODIFIED="1777544483750" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/ListUsersUseCase.kt"/>
-<node TEXT="RegisterUserUseCase.kt" ID="ID_145337554" CREATED="1777544483750" MODIFIED="1777544483750" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/RegisterUserUseCase.kt"/>
-<node TEXT="UpdateUserUseCase.kt" ID="ID_1261979416" CREATED="1777544483750" MODIFIED="1777544483750" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/UpdateUserUseCase.kt"/>
-<node TEXT="GetUserUseCase.kt" ID="ID_1034606884" CREATED="1777544483736" MODIFIED="1777544483749" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/GetUserUseCase.kt"/>
-<node TEXT="FinnBrukereSomIkkeHarLåntVerktøySiste3MånederUseCase" ID="ID_1080646098" CREATED="1777552939424" MODIFIED="1777552957979"/>
-<node TEXT="LagRapportOverVerktøySomErLevertTilbakeEtterFristenUseCase" ID="ID_1529924150" CREATED="1777552958649" MODIFIED="1777552982426"/>
-</node>
-<node TEXT="NettbutikkService" FOLDED="true" ID="ID_1366476138" CREATED="1777544680202" MODIFIED="1777546572516">
-<node TEXT="BorrowToolUseCase.kt" ID="ID_1886614482" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/BorrowToolUseCase.kt"/>
-<node TEXT="ReturnToolUseCase.kt" ID="ID_1281119456" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/ReturnToolUseCase.kt"/>
-<node TEXT="SearchToolsUseCase.kt" ID="ID_153086065" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/SearchToolsUseCase.kt"/>
-</node>
-<node TEXT="VerktoyService" FOLDED="true" ID="ID_1311099668" CREATED="1777544613202" MODIFIED="1777544616429">
-<node TEXT="AddToolUseCase.kt" ID="ID_1376021040" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/AddToolUseCase.kt"/>
-<node TEXT="DeleteToolUseCase.kt" ID="ID_619816205" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/DeleteToolUseCase.kt"/>
-<node TEXT="ListToolsUseCase.kt" ID="ID_1266721829" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/ListToolsUseCase.kt"/>
-<node TEXT="UpdateToolUseCase.kt" ID="ID_270228075" CREATED="1777544483817" MODIFIED="1777544483833" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/UpdateToolUseCase.kt"/>
-</node>
-<node TEXT="WeatherService.kt" ID="ID_1226477120" CREATED="1777544483784" MODIFIED="1777544483799" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/WeatherService.kt"/>
-</node>
-<node TEXT="Repository" FOLDED="true" ID="ID_330846445" CREATED="1777551620082" MODIFIED="1777551622278">
-<node TEXT="UserRepository.kt" FOLDED="true" ID="ID_1932128635" CREATED="1777544483760" MODIFIED="1777544483760" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/core/UserRepository.kt">
-<node TEXT="InMemoryUserRepository.kt" ID="ID_68593323" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/infrastructure/InMemoryUserRepository.kt"/>
-</node>
-<node TEXT="LoanRepository.kt" FOLDED="true" ID="ID_369494443" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/LoanRepository.kt">
-<node TEXT="InMemoryLoanRepository.kt" POSITION="bottom_or_right" ID="ID_809694403" CREATED="1777544483800" MODIFIED="1777544483800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/infrastructure/InMemoryLoanRepository.kt"/>
-</node>
-<node TEXT="ToolRepository.kt" FOLDED="true" ID="ID_209753277" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/core/ToolRepository.kt">
-<node TEXT="InMemoryToolRepository.kt" POSITION="bottom_or_right" ID="ID_531123948" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/infrastructure/InMemoryToolRepository.kt"/>
-</node>
-</node>
-</node>
-<node TEXT="Hva har blitt løpst?" ID="ID_440285070" CREATED="1777552236282" MODIFIED="1777552240747">
-<node TEXT="Teknologi konfigurert samme sted" ID="ID_1270323321" CREATED="1777552715856" MODIFIED="1777552722787"/>
-<node TEXT="Kan ha lik teststrategi for lik teknologi" ID="ID_933324539" CREATED="1777552723248" MODIFIED="1777552742315"/>
-<node TEXT="Integrasjonstester kan skilles fra forretningslogikktester" ID="ID_1528760218" CREATED="1777552742705" MODIFIED="1777552758699"/>
-<node TEXT="Har du en bug relatert til forretningslogikk så vet du hvilken pakke du skal starte å lete i" ID="ID_918327663" CREATED="1777553149249" MODIFIED="1777553181059"/>
-</node>
-<node TEXT="Hva er problemet her?" ID="ID_1039299503" CREATED="1777552230738" MODIFIED="1777552235781">
-<node TEXT="Hver service driver med enormt mange ting!" ID="ID_272061440" CREATED="1777552783546" MODIFIED="1777552795347"/>
-<node TEXT="Hva har klassen ansvaret for, og klarer du å få hele klassen inn i tankene dine på en gang?" ID="ID_555837538" CREATED="1777552807207" MODIFIED="1777552834874"/>
-<node TEXT="Vanskelig å vite konsekvensen av endring på en privat metode i en service fordi den gjør veldig mye" ID="ID_1814670349" CREATED="1777552796056" MODIFIED="1777554876545"/>
-<node TEXT="Vil mocke klasser som ikke er relevant for det du egentlig ønsker å teste" ID="ID_1493956158" CREATED="1777553223732" MODIFIED="1777553266941"/>
-</node>
-<node TEXT="Teori" ID="ID_1979949423" CREATED="1777552854704" MODIFIED="1777553281939">
-<node TEXT="Separation of concerns" ID="ID_1567440019" CREATED="1777545761689" MODIFIED="1777545768506"/>
-<node TEXT="Single responsibility" ID="ID_1337182551" CREATED="1777545768826" MODIFIED="1777545775995"/>
-<node TEXT="Encapsulation" ID="ID_1312166632" CREATED="1777545776768" MODIFIED="1777545781593"/>
-</node>
-<node TEXT="Parkert" FOLDED="true" ID="ID_1158023367" CREATED="1777546530291" MODIFIED="1777546533391">
-<node TEXT="BrukereFactory.kt" POSITION="bottom_or_right" ID="ID_95518626" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/BrukereFactory.kt"/>
-<node TEXT="UserDto.kt" POSITION="bottom_or_right" ID="ID_1179285724" CREATED="1777544483750" MODIFIED="1777544483750" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/UserDto.kt"/>
-<node TEXT="NettbutikkFactory.kt" POSITION="bottom_or_right" ID="ID_783706573" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/NettbutikkFactory.kt"/>
-<node TEXT="LoanDto.kt" POSITION="bottom_or_right" ID="ID_1346416442" CREATED="1777544483767" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/LoanDto.kt"/>
-<node TEXT="BrukereUserQueryAdapter.kt" POSITION="bottom_or_right" ID="ID_610699941" CREATED="1777544483800" MODIFIED="1777544483800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/infrastructure/BrukereUserQueryAdapter.kt"/>
-<node TEXT="StubWeatherAdapter.kt" POSITION="bottom_or_right" ID="ID_1328586879" CREATED="1777544483800" MODIFIED="1777544483800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/infrastructure/StubWeatherAdapter.kt"/>
-<node TEXT="VerktoyToolQueryAdapter.kt" POSITION="bottom_or_right" ID="ID_721514850" CREATED="1777544483800" MODIFIED="1777544483800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/infrastructure/VerktoyToolQueryAdapter.kt"/>
-<node TEXT="ToolQueryPort.kt" POSITION="bottom_or_right" ID="ID_1073988339" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/ToolQueryPort.kt"/>
-<node TEXT="UserQueryPort.kt" POSITION="bottom_or_right" ID="ID_1871593328" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/UserQueryPort.kt"/>
-<node TEXT="VerktoyFactory.kt" POSITION="bottom_or_right" ID="ID_1089311425" CREATED="1777544483836" MODIFIED="1777544483850" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/VerktoyFactory.kt"/>
-<node TEXT="ToolDto.kt" POSITION="bottom_or_right" ID="ID_1684322532" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/ToolDto.kt"/>
-<node TEXT="ApplicationFactory.kt" POSITION="bottom_or_right" ID="ID_509500877" CREATED="1777544483850" MODIFIED="1777544483850" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/ApplicationFactory.kt"/>
-</node>
-</node>
-<node TEXT="PBF" FOLDED="true" ID="ID_363304265" CREATED="1777545749720" MODIFIED="1777551607854">
-<node TEXT="Parkert" FOLDED="true" ID="ID_1260341240" CREATED="1777546530291" MODIFIED="1777546533391">
-<node TEXT="BrukereFactory.kt" POSITION="bottom_or_right" ID="ID_1086370828" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/BrukereFactory.kt"/>
-<node TEXT="UserDto.kt" POSITION="bottom_or_right" ID="ID_1963082836" CREATED="1777544483750" MODIFIED="1777544483750" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/UserDto.kt"/>
-<node TEXT="NettbutikkFactory.kt" POSITION="bottom_or_right" ID="ID_1895278254" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/NettbutikkFactory.kt"/>
-<node TEXT="LoanDto.kt" POSITION="bottom_or_right" ID="ID_300116037" CREATED="1777544483767" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/LoanDto.kt"/>
-<node TEXT="BrukereUserQueryAdapter.kt" POSITION="bottom_or_right" ID="ID_1133394585" CREATED="1777544483800" MODIFIED="1777544483800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/infrastructure/BrukereUserQueryAdapter.kt"/>
-<node TEXT="StubWeatherAdapter.kt" POSITION="bottom_or_right" ID="ID_854891459" CREATED="1777544483800" MODIFIED="1777544483800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/infrastructure/StubWeatherAdapter.kt"/>
-<node TEXT="VerktoyToolQueryAdapter.kt" POSITION="bottom_or_right" ID="ID_379105100" CREATED="1777544483800" MODIFIED="1777544483800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/infrastructure/VerktoyToolQueryAdapter.kt"/>
-<node TEXT="ToolQueryPort.kt" POSITION="bottom_or_right" ID="ID_641244516" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/ToolQueryPort.kt"/>
-<node TEXT="UserQueryPort.kt" POSITION="bottom_or_right" ID="ID_858349096" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/UserQueryPort.kt"/>
-<node TEXT="VerktoyFactory.kt" POSITION="bottom_or_right" ID="ID_1500648435" CREATED="1777544483836" MODIFIED="1777544483850" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/VerktoyFactory.kt"/>
-<node TEXT="ToolDto.kt" POSITION="bottom_or_right" ID="ID_669039106" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/ToolDto.kt"/>
-<node TEXT="ApplicationFactory.kt" POSITION="bottom_or_right" ID="ID_718277897" CREATED="1777544483850" MODIFIED="1777544483850" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/ApplicationFactory.kt"/>
-</node>
-<node TEXT="User" FOLDED="true" ID="ID_337884510" CREATED="1777551678900" MODIFIED="1777551684126">
-<node TEXT="UserController.kt" POSITION="bottom_or_right" ID="ID_243470882" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/presentation/UserController.kt"/>
-<node TEXT="UserService" POSITION="bottom_or_right" ID="ID_1198235385" CREATED="1777544789329" MODIFIED="1777546525718">
-<node TEXT="DeleteUserUseCase.kt" ID="ID_1462693440" CREATED="1777544483736" MODIFIED="1777544483736" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/DeleteUserUseCase.kt"/>
-<node TEXT="ListUsersUseCase.kt" ID="ID_1849800046" CREATED="1777544483749" MODIFIED="1777544483750" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/ListUsersUseCase.kt"/>
-<node TEXT="RegisterUserUseCase.kt" ID="ID_945742444" CREATED="1777544483750" MODIFIED="1777544483750" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/RegisterUserUseCase.kt"/>
-<node TEXT="UpdateUserUseCase.kt" ID="ID_1425869866" CREATED="1777544483750" MODIFIED="1777544483750" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/UpdateUserUseCase.kt"/>
-<node TEXT="GetUserUseCase.kt" ID="ID_1847379826" CREATED="1777544483736" MODIFIED="1777544483749" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/GetUserUseCase.kt"/>
-<node TEXT="FinnBrukereSomIkkeHarLåntVerktøySiste3MånederUseCase" ID="ID_1561258843" CREATED="1777552939424" MODIFIED="1777552957979"/>
-<node TEXT="LagRapportOverVerktøySomErLevertTilbakeEtterFristenUseCase" ID="ID_1020246090" CREATED="1777552958649" MODIFIED="1777552982426"/>
-</node>
-<node TEXT="UserRepository.kt" FOLDED="true" POSITION="bottom_or_right" ID="ID_1634682045" CREATED="1777544483760" MODIFIED="1777544483760" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/core/UserRepository.kt">
-<node TEXT="InMemoryUserRepository.kt" ID="ID_1800778315" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/infrastructure/InMemoryUserRepository.kt"/>
-</node>
-<node TEXT="User.kt" POSITION="bottom_or_right" ID="ID_1490692428" CREATED="1777544483760" MODIFIED="1777544483760" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/core/User.kt"/>
-</node>
-<node TEXT="Tool" FOLDED="true" ID="ID_1851009060" CREATED="1777551684526" MODIFIED="1777551685414">
-<node TEXT="ToolController.kt" ID="ID_1667837120" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/presentation/ToolController.kt"/>
-<node TEXT="VerktoyService" FOLDED="true" ID="ID_1309416067" CREATED="1777544613202" MODIFIED="1777544616429">
-<node TEXT="AddToolUseCase.kt" ID="ID_651548865" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/AddToolUseCase.kt"/>
-<node TEXT="DeleteToolUseCase.kt" ID="ID_1271363947" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/DeleteToolUseCase.kt"/>
-<node TEXT="ListToolsUseCase.kt" ID="ID_366852361" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/ListToolsUseCase.kt"/>
-<node TEXT="UpdateToolUseCase.kt" ID="ID_1229021500" CREATED="1777544483817" MODIFIED="1777544483833" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/UpdateToolUseCase.kt"/>
-</node>
-<node TEXT="ToolRepository.kt" FOLDED="true" ID="ID_1298580328" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/core/ToolRepository.kt">
-<node TEXT="InMemoryToolRepository.kt" POSITION="bottom_or_right" ID="ID_1708570668" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/infrastructure/InMemoryToolRepository.kt"/>
-</node>
-<node TEXT="Tool.kt" ID="ID_716130961" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/core/Tool.kt"/>
-</node>
-<node TEXT="Nettbutikk" FOLDED="true" ID="ID_847931179" CREATED="1777551686083" MODIFIED="1777551694391">
-<node TEXT="NettbutikkController.kt" POSITION="bottom_or_right" ID="ID_1648553556" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/presentation/NettbutikkController.kt"/>
-<node TEXT="NettbutikkService" FOLDED="true" POSITION="bottom_or_right" ID="ID_171755296" CREATED="1777544680202" MODIFIED="1777546572516">
-<node TEXT="WeatherService.kt" ID="ID_1613509965" CREATED="1777544483784" MODIFIED="1777544483799" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/WeatherService.kt"/>
-<node TEXT="BorrowToolUseCase.kt" ID="ID_1262447827" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/BorrowToolUseCase.kt"/>
-<node TEXT="ReturnToolUseCase.kt" ID="ID_677689162" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/ReturnToolUseCase.kt"/>
-<node TEXT="SearchToolsUseCase.kt" ID="ID_1396062493" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/SearchToolsUseCase.kt"/>
-</node>
-<node TEXT="LoanRepository.kt" FOLDED="true" POSITION="bottom_or_right" ID="ID_1911146507" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/LoanRepository.kt">
-<node TEXT="InMemoryLoanRepository.kt" POSITION="bottom_or_right" ID="ID_1671093008" CREATED="1777544483800" MODIFIED="1777544483800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/infrastructure/InMemoryLoanRepository.kt"/>
-</node>
-<node TEXT="Loan.kt" POSITION="bottom_or_right" ID="ID_1873488824" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/Loan.kt"/>
-</node>
-<node TEXT="Hva har blitt løst?" ID="ID_1609413096" CREATED="1777552244411" MODIFIED="1777552256203">
-<node TEXT="Funksjonell encapsulation. Skal vi ikke drive med verktøy lenger så kan vi slette hele verktøymappa" ID="ID_97885217" CREATED="1777553391372" MODIFIED="1777553410964"/>
-<node TEXT="Slipper å scrolle langt for å finne de andre filene funksjonaliteten bruker" ID="ID_1213724274" CREATED="1777553411595" MODIFIED="1777553432196"/>
-<node TEXT="Avgrenset skadevirkninger på annen funksjonalitet" ID="ID_1313189744" CREATED="1777553447546" MODIFIED="1777553468563"/>
-<node TEXT="Kan være nyttig når det du jobber på er isolerte komponenter (Eks. React)" ID="ID_1883668763" CREATED="1777554918665" MODIFIED="1777554942107"/>
-</node>
-<node TEXT="Hva er problemet her?" ID="ID_655939297" CREATED="1777552248962" MODIFIED="1777552252398">
-<node TEXT="Teknologi fordelt over flere mapper og konfigurasjon må ta hensyn til det" ID="ID_556223108" CREATED="1777553487866" MODIFIED="1777553511756"/>
-<node TEXT="Hvordan sikre lik oppførsel på tilgangsstyring når du må lete i mange mapper?" ID="ID_1292298123" CREATED="1777553517074" MODIFIED="1777553658531"/>
-</node>
-</node>
-<node TEXT="Hva har blitt løst?" ID="ID_321325693" CREATED="1777546186649" MODIFIED="1777551853923">
-<node TEXT="Mange filer i samme pakke kan forvirre" ID="ID_1909879037" CREATED="1777551486598" MODIFIED="1777551499913"/>
-</node>
-<node TEXT="IRL" FOLDED="true" ID="ID_637302334" CREATED="1777545749720" MODIFIED="1777552602082">
-<node TEXT="Parkert" FOLDED="true" ID="ID_594599166" CREATED="1777546530291" MODIFIED="1777546533391">
-<node TEXT="BrukereFactory.kt" POSITION="bottom_or_right" ID="ID_414969971" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/BrukereFactory.kt"/>
-<node TEXT="UserDto.kt" POSITION="bottom_or_right" ID="ID_1656997435" CREATED="1777544483750" MODIFIED="1777544483750" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/UserDto.kt"/>
-<node TEXT="NettbutikkFactory.kt" POSITION="bottom_or_right" ID="ID_490048170" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/NettbutikkFactory.kt"/>
-<node TEXT="LoanDto.kt" POSITION="bottom_or_right" ID="ID_1656137258" CREATED="1777544483767" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/LoanDto.kt"/>
-<node TEXT="BrukereUserQueryAdapter.kt" POSITION="bottom_or_right" ID="ID_298357701" CREATED="1777544483800" MODIFIED="1777544483800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/infrastructure/BrukereUserQueryAdapter.kt"/>
-<node TEXT="StubWeatherAdapter.kt" POSITION="bottom_or_right" ID="ID_647014962" CREATED="1777544483800" MODIFIED="1777544483800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/infrastructure/StubWeatherAdapter.kt"/>
-<node TEXT="VerktoyToolQueryAdapter.kt" POSITION="bottom_or_right" ID="ID_1465532147" CREATED="1777544483800" MODIFIED="1777544483800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/infrastructure/VerktoyToolQueryAdapter.kt"/>
-<node TEXT="ToolQueryPort.kt" POSITION="bottom_or_right" ID="ID_313045499" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/ToolQueryPort.kt"/>
-<node TEXT="UserQueryPort.kt" POSITION="bottom_or_right" ID="ID_1757888525" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/UserQueryPort.kt"/>
-<node TEXT="VerktoyFactory.kt" POSITION="bottom_or_right" ID="ID_1989869404" CREATED="1777544483836" MODIFIED="1777544483850" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/VerktoyFactory.kt"/>
-<node TEXT="ToolDto.kt" POSITION="bottom_or_right" ID="ID_936277598" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/ToolDto.kt"/>
-<node TEXT="ApplicationFactory.kt" POSITION="bottom_or_right" ID="ID_338409638" CREATED="1777544483850" MODIFIED="1777544483850" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/ApplicationFactory.kt"/>
-</node>
-<node TEXT="Controller" ID="ID_220375568" CREATED="1777551616372" MODIFIED="1777551619813">
-<node TEXT="UserController.kt" ID="ID_611526194" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/presentation/UserController.kt"/>
-<node TEXT="NettbutikkController.kt" ID="ID_1840104505" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/presentation/NettbutikkController.kt"/>
-<node TEXT="ToolController.kt" ID="ID_289980254" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/presentation/ToolController.kt"/>
-</node>
-<node TEXT="entities/domain" ID="ID_107443118" CREATED="1777552505666" MODIFIED="1777552512067">
-<node TEXT="Tool.kt" ID="ID_4487977" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/core/Tool.kt"/>
-<node TEXT="User.kt" ID="ID_1002313003" CREATED="1777544483760" MODIFIED="1777544483760" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/core/User.kt"/>
-<node TEXT="Loan.kt" ID="ID_349126451" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/Loan.kt"/>
-</node>
-<node TEXT="Service" ID="ID_105431219" CREATED="1777551622411" MODIFIED="1777551624103">
-<node TEXT="User" FOLDED="true" ID="ID_413997190" CREATED="1777552436800" MODIFIED="1777552447236">
-<node TEXT="UserService" FOLDED="true" POSITION="bottom_or_right" ID="ID_351557797" CREATED="1777544789329" MODIFIED="1777546525718">
-<node TEXT="DeleteUserUseCase.kt" ID="ID_188615769" CREATED="1777544483736" MODIFIED="1777544483736" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/DeleteUserUseCase.kt"/>
-<node TEXT="ListUsersUseCase.kt" ID="ID_359436633" CREATED="1777544483749" MODIFIED="1777544483750" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/ListUsersUseCase.kt"/>
-<node TEXT="RegisterUserUseCase.kt" ID="ID_1418332883" CREATED="1777544483750" MODIFIED="1777544483750" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/RegisterUserUseCase.kt"/>
-<node TEXT="UpdateUserUseCase.kt" ID="ID_1609971179" CREATED="1777544483750" MODIFIED="1777544483750" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/UpdateUserUseCase.kt"/>
-<node TEXT="GetUserUseCase.kt" ID="ID_1288036536" CREATED="1777544483736" MODIFIED="1777544483749" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/GetUserUseCase.kt"/>
-<node TEXT="FinnBrukereSomIkkeHarLåntVerktøySiste3MånederUseCase" ID="ID_1607390296" CREATED="1777552939424" MODIFIED="1777552957979"/>
-<node TEXT="LagRapportOverVerktøySomErLevertTilbakeEtterFristenUseCase" ID="ID_1248707231" CREATED="1777552958649" MODIFIED="1777552982426"/>
-</node>
-</node>
-<node TEXT="Tool" FOLDED="true" ID="ID_980091267" CREATED="1777552442211" MODIFIED="1777552444524">
-<node TEXT="VerktoyService" FOLDED="true" POSITION="bottom_or_right" ID="ID_1046611466" CREATED="1777544613202" MODIFIED="1777544616429">
-<node TEXT="AddToolUseCase.kt" ID="ID_430320949" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/AddToolUseCase.kt"/>
-<node TEXT="DeleteToolUseCase.kt" ID="ID_1545413519" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/DeleteToolUseCase.kt"/>
-<node TEXT="ListToolsUseCase.kt" ID="ID_544223660" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/ListToolsUseCase.kt"/>
-<node TEXT="UpdateToolUseCase.kt" ID="ID_1668312613" CREATED="1777544483817" MODIFIED="1777544483833" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/UpdateToolUseCase.kt"/>
-</node>
-</node>
-<node TEXT="Nettbutikk" FOLDED="true" ID="ID_1161684856" CREATED="1777552448610" MODIFIED="1777552451372">
-<node TEXT="NettbutikkService" FOLDED="true" POSITION="bottom_or_right" ID="ID_415252265" CREATED="1777544680202" MODIFIED="1777546572516">
-<node TEXT="BorrowToolUseCase.kt" ID="ID_1107032052" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/BorrowToolUseCase.kt"/>
-<node TEXT="ReturnToolUseCase.kt" ID="ID_104666377" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/ReturnToolUseCase.kt"/>
-<node TEXT="SearchToolsUseCase.kt" ID="ID_1762156417" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/SearchToolsUseCase.kt"/>
-</node>
-<node TEXT="WeatherService.kt" POSITION="bottom_or_right" ID="ID_375592021" CREATED="1777544483784" MODIFIED="1777544483799" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/WeatherService.kt"/>
-</node>
-</node>
-<node TEXT="Repository" FOLDED="true" ID="ID_1051549903" CREATED="1777551620082" MODIFIED="1777551622278">
-<node TEXT="UserRepository.kt" FOLDED="true" ID="ID_994323948" CREATED="1777544483760" MODIFIED="1777544483760" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/core/UserRepository.kt">
-<node TEXT="InMemoryUserRepository.kt" ID="ID_1898692909" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/infrastructure/InMemoryUserRepository.kt"/>
-</node>
-<node TEXT="LoanRepository.kt" FOLDED="true" ID="ID_1511982442" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/LoanRepository.kt">
-<node TEXT="InMemoryLoanRepository.kt" POSITION="bottom_or_right" ID="ID_1132108058" CREATED="1777544483800" MODIFIED="1777544483800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/infrastructure/InMemoryLoanRepository.kt"/>
-</node>
-<node TEXT="ToolRepository.kt" FOLDED="true" ID="ID_234344745" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/core/ToolRepository.kt">
-<node TEXT="InMemoryToolRepository.kt" POSITION="bottom_or_right" ID="ID_1021895842" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/infrastructure/InMemoryToolRepository.kt"/>
-</node>
-</node>
-<node TEXT="Hva har blitt løpst?" ID="ID_1822412279" CREATED="1777552236282" MODIFIED="1777552240747"/>
-<node TEXT="Hva er problemet her?" ID="ID_418350918" CREATED="1777552230738" MODIFIED="1777552235781"/>
-</node>
-</node>
-<node TEXT="Steg 3 - Redusere mengde kode i klasser" POSITION="bottom_or_right" ID="ID_474771969" CREATED="1777554994943" MODIFIED="1777555870301">
-<node TEXT="PBL" ID="ID_1450586906" CREATED="1777545749720" MODIFIED="1777551612447">
-<node TEXT="Kode" ID="ID_1587275414" CREATED="1777552686816" MODIFIED="1777552688810">
-<node TEXT="Controller" FOLDED="true" ID="ID_1229209853" CREATED="1777551616372" MODIFIED="1777551619813">
-<node TEXT="UserController.kt" ID="ID_1851362470" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/presentation/UserController.kt"/>
-<node TEXT="NettbutikkController.kt" ID="ID_261815208" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/presentation/NettbutikkController.kt"/>
-<node TEXT="ToolController.kt" ID="ID_440727489" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/presentation/ToolController.kt"/>
-</node>
-<node TEXT="Domain" ID="ID_1409785991" CREATED="1777555248182" MODIFIED="1777555271809">
-<node TEXT="User.kt" ID="ID_783442115" CREATED="1777544483760" MODIFIED="1777544483760" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/core/User.kt"/>
-<node TEXT="Tool.kt" ID="ID_793600372" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/core/Tool.kt"/>
-<node TEXT="Loan.kt" ID="ID_1243914190" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/Loan.kt"/>
-</node>
-<node TEXT="Service" ID="ID_1247862638" CREATED="1777551622411" MODIFIED="1777551624103">
-<node TEXT="User" FOLDED="true" ID="ID_276349143" CREATED="1777555212335" MODIFIED="1777555214984">
-<node TEXT="DeleteUserCommand.kt" ID="ID_1973321733" CREATED="1777544483736" MODIFIED="1777555154768" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/DeleteUserUseCase.kt"/>
-<node TEXT="ListUsersCommand.kt" ID="ID_1330409432" CREATED="1777544483749" MODIFIED="1777555162294" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/ListUsersUseCase.kt"/>
-<node TEXT="RegisterUserCommand.kt" ID="ID_142023247" CREATED="1777544483750" MODIFIED="1777555169158" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/RegisterUserUseCase.kt"/>
-<node TEXT="UpdateUserCommand.kt" ID="ID_357843567" CREATED="1777544483750" MODIFIED="1777555175800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/UpdateUserUseCase.kt"/>
-<node TEXT="GetUserCommand.kt" ID="ID_612089691" CREATED="1777544483736" MODIFIED="1777555181006" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/GetUserUseCase.kt"/>
-<node TEXT="FinnBrukereSomIkkeHarLåntVerktøySiste3MånederCommand" ID="ID_1368216266" CREATED="1777552939424" MODIFIED="1777555186853"/>
-<node TEXT="LagRapportOverVerktøySomErLevertTilbakeEtterFristenCommand" ID="ID_982896980" CREATED="1777552958649" MODIFIED="1777555192112"/>
-</node>
-<node TEXT="Nettbutikk" FOLDED="true" ID="ID_688218316" CREATED="1777555221517" MODIFIED="1777555224975">
-<node TEXT="BorrowToolUseCase.kt" ID="ID_1322682446" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/BorrowToolUseCase.kt"/>
-<node TEXT="ReturnToolUseCase.kt" ID="ID_1545448837" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/ReturnToolUseCase.kt"/>
-<node TEXT="SearchToolsUseCase.kt" ID="ID_347828598" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/SearchToolsUseCase.kt"/>
-</node>
-<node TEXT="Verktoy" FOLDED="true" ID="ID_849631574" CREATED="1777544613202" MODIFIED="1777555236022">
-<node TEXT="AddToolUseCase.kt" ID="ID_856107246" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/AddToolUseCase.kt"/>
-<node TEXT="DeleteToolUseCase.kt" ID="ID_403822632" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/DeleteToolUseCase.kt"/>
-<node TEXT="ListToolsUseCase.kt" ID="ID_937925808" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/ListToolsUseCase.kt"/>
-<node TEXT="UpdateToolUseCase.kt" ID="ID_23743580" CREATED="1777544483817" MODIFIED="1777544483833" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/UpdateToolUseCase.kt"/>
-</node>
-<node TEXT="WeatherService.kt" ID="ID_1361201726" CREATED="1777544483784" MODIFIED="1777544483799" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/WeatherService.kt"/>
-</node>
-<node TEXT="Repository" ID="ID_271004754" CREATED="1777551620082" MODIFIED="1777551622278">
-<node TEXT="UserRepository.kt" FOLDED="true" ID="ID_1346068083" CREATED="1777544483760" MODIFIED="1777544483760" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/core/UserRepository.kt">
-<node TEXT="InMemoryUserRepository.kt" ID="ID_87096467" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/infrastructure/InMemoryUserRepository.kt"/>
-</node>
-<node TEXT="LoanRepository.kt" FOLDED="true" ID="ID_1091692532" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/LoanRepository.kt">
-<node TEXT="InMemoryLoanRepository.kt" POSITION="bottom_or_right" ID="ID_1852126822" CREATED="1777544483800" MODIFIED="1777544483800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/infrastructure/InMemoryLoanRepository.kt"/>
-</node>
-<node TEXT="ToolRepository.kt" FOLDED="true" ID="ID_1380102998" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/core/ToolRepository.kt">
-<node TEXT="InMemoryToolRepository.kt" POSITION="bottom_or_right" ID="ID_563068941" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/infrastructure/InMemoryToolRepository.kt"/>
-</node>
-</node>
-</node>
-<node TEXT="Hva har blitt løst?" FOLDED="true" ID="ID_1115983824" CREATED="1777552236282" MODIFIED="1777555076269">
-<node TEXT="Hver service driver med enormt mange ting!" ID="ID_1874191829" CREATED="1777552783546" MODIFIED="1777552795347"/>
-<node TEXT="Hva har klassen ansvaret for, og klarer du å få hele klassen inn i tankene dine på en gang?" ID="ID_1660873128" CREATED="1777552807207" MODIFIED="1777552834874"/>
-<node TEXT="Vanskelig å vite konsekvensen av endring på en privat metode i en service fordi den gjør veldig mye" ID="ID_941756865" CREATED="1777552796056" MODIFIED="1777554876545"/>
-<node TEXT="Vil mocke klasser som ikke er relevant for det du egentlig ønsker å teste" ID="ID_1360604806" CREATED="1777553223732" MODIFIED="1777553266941"/>
-</node>
-<node TEXT="Hva er problemet her?" ID="ID_1749319638" CREATED="1777552230738" MODIFIED="1777552235781"/>
-<node TEXT="Teori" ID="ID_1778764801" CREATED="1777552854704" MODIFIED="1777553281939">
-<node TEXT="Separation of concerns" ID="ID_469329289" CREATED="1777545761689" MODIFIED="1777545768506"/>
-<node TEXT="Single responsibility" ID="ID_979007694" CREATED="1777545768826" MODIFIED="1777545775995"/>
-<node TEXT="Encapsulation" ID="ID_1928939182" CREATED="1777545776768" MODIFIED="1777545781593"/>
-</node>
-</node>
-</node>
-<node TEXT="Steg 4 - Rikt domene - Mere løk" POSITION="bottom_or_right" ID="ID_1788948710" CREATED="1777554994943" MODIFIED="1777555921918">
-<node TEXT="Kode" ID="ID_1308245751" CREATED="1777552686816" MODIFIED="1777552688810">
-<node TEXT="Presentation(driving)" ID="ID_793545488" CREATED="1777551616372" MODIFIED="1777555542525">
-<node TEXT="UserController.kt" ID="ID_1297606280" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/presentation/UserController.kt"/>
-<node TEXT="NettbutikkController.kt" ID="ID_1061378049" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/presentation/NettbutikkController.kt"/>
-<node TEXT="ToolController.kt" ID="ID_686959189" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/presentation/ToolController.kt"/>
-</node>
-<node TEXT="Aplication" ID="ID_711265689" CREATED="1777551622411" MODIFIED="1777555359317">
-<node TEXT="User" FOLDED="true" ID="ID_1793155468" CREATED="1777555212335" MODIFIED="1777555214984">
-<node TEXT="DeleteUserCommand.kt" ID="ID_383842418" CREATED="1777544483736" MODIFIED="1777555154768" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/DeleteUserUseCase.kt"/>
-<node TEXT="ListUsersCommand.kt" ID="ID_827238713" CREATED="1777544483749" MODIFIED="1777555162294" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/ListUsersUseCase.kt"/>
-<node TEXT="RegisterUserCommand.kt" ID="ID_1390644782" CREATED="1777544483750" MODIFIED="1777555169158" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/RegisterUserUseCase.kt"/>
-<node TEXT="UpdateUserCommand.kt" ID="ID_443560510" CREATED="1777544483750" MODIFIED="1777555175800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/UpdateUserUseCase.kt"/>
-<node TEXT="GetUserCommand.kt" ID="ID_1624838783" CREATED="1777544483736" MODIFIED="1777555181006" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/GetUserUseCase.kt"/>
-<node TEXT="FinnBrukereSomIkkeHarLåntVerktøySiste3MånederCommand" ID="ID_322318751" CREATED="1777552939424" MODIFIED="1777555186853"/>
-<node TEXT="LagRapportOverVerktøySomErLevertTilbakeEtterFristenCommand" ID="ID_1770034017" CREATED="1777552958649" MODIFIED="1777555192112"/>
-</node>
-<node TEXT="Nettbutikk" ID="ID_372765820" CREATED="1777555221517" MODIFIED="1777555224975">
-<node TEXT="BorrowToolUseCase.kt" ID="ID_1633205805" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/BorrowToolUseCase.kt"/>
-<node TEXT="ReturnToolUseCase.kt" ID="ID_1224708898" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/ReturnToolUseCase.kt"/>
-<node TEXT="SearchToolsUseCase.kt" ID="ID_1016854688" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/SearchToolsUseCase.kt"/>
-</node>
-<node TEXT="Verktoy" FOLDED="true" ID="ID_1839401748" CREATED="1777544613202" MODIFIED="1777555236022">
-<node TEXT="AddToolUseCase.kt" ID="ID_51837695" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/AddToolUseCase.kt"/>
-<node TEXT="DeleteToolUseCase.kt" ID="ID_1943150676" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/DeleteToolUseCase.kt"/>
-<node TEXT="ListToolsUseCase.kt" ID="ID_1234790169" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/ListToolsUseCase.kt"/>
-<node TEXT="UpdateToolUseCase.kt" ID="ID_901959794" CREATED="1777544483817" MODIFIED="1777544483833" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/UpdateToolUseCase.kt"/>
-</node>
-</node>
-<node TEXT="Core" ID="ID_1407331697" CREATED="1777555248182" MODIFIED="1777555362987">
-<node TEXT="User.kt" ID="ID_926372622" CREATED="1777544483760" MODIFIED="1777544483760" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/core/User.kt"/>
-<node TEXT="Tool.kt" ID="ID_1216592796" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/core/Tool.kt"/>
-<node TEXT="Loan.kt" ID="ID_790374149" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/Loan.kt"/>
-</node>
-<node TEXT="Integration(Driven)" ID="ID_1689375460" CREATED="1777555393371" MODIFIED="1777555552286">
-<node TEXT="Repository" ID="ID_365488355" CREATED="1777551620082" MODIFIED="1777551622278">
-<node TEXT="UserRepository.kt" FOLDED="true" ID="ID_1280043849" CREATED="1777544483760" MODIFIED="1777544483760" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/core/UserRepository.kt">
-<node TEXT="InMemoryUserRepository.kt" ID="ID_1236287075" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/infrastructure/InMemoryUserRepository.kt"/>
-</node>
-<node TEXT="LoanRepository.kt" FOLDED="true" ID="ID_676059925" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/LoanRepository.kt">
-<node TEXT="InMemoryLoanRepository.kt" POSITION="bottom_or_right" ID="ID_283450411" CREATED="1777544483800" MODIFIED="1777544483800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/infrastructure/InMemoryLoanRepository.kt"/>
-</node>
-<node TEXT="ToolRepository.kt" FOLDED="true" ID="ID_189864226" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/core/ToolRepository.kt">
-<node TEXT="InMemoryToolRepository.kt" POSITION="bottom_or_right" ID="ID_1922043893" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/infrastructure/InMemoryToolRepository.kt"/>
-</node>
-</node>
-<node TEXT="External" ID="ID_219136985" CREATED="1777555404242" MODIFIED="1777555513228">
-<node TEXT="WeatherService.kt" ID="ID_551536523" CREATED="1777544483784" MODIFIED="1777544483799" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/WeatherService.kt"/>
-</node>
-</node>
-</node>
-<node TEXT="Hva har blitt løst?" ID="ID_306978506" CREATED="1777552236282" MODIFIED="1777555076269"/>
-<node TEXT="Hva er problemet her?" ID="ID_742611362" CREATED="1777552230738" MODIFIED="1777552235781"/>
-<node TEXT="Teori" ID="ID_1080768640" CREATED="1777552854704" MODIFIED="1777553281939"/>
-</node>
-<node TEXT="Steg 5 - Anti corruption layer" POSITION="bottom_or_right" ID="ID_640106074" CREATED="1777554994943" MODIFIED="1777556185355">
-<node TEXT="Kode" ID="ID_1176440535" CREATED="1777552686816" MODIFIED="1777552688810">
-<node TEXT="Presentation(driving)" ID="ID_1527421787" CREATED="1777551616372" MODIFIED="1777555542525">
-<node TEXT="api" ID="ID_385994737" CREATED="1777556094166" MODIFIED="1777556136473">
-<node TEXT="UserController.kt" ID="ID_1849340385" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/presentation/UserController.kt"/>
-<node TEXT="NettbutikkController.kt" ID="ID_1302376025" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/presentation/NettbutikkController.kt"/>
-<node TEXT="ToolController.kt" ID="ID_1728070422" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/presentation/ToolController.kt"/>
-</node>
-<node TEXT="DataTransferObjects" POSITION="bottom_or_right" ID="ID_662493603" CREATED="1777555708341" MODIFIED="1777556059374">
-<node TEXT="UserDto.kt" ID="ID_795790982" CREATED="1777544483750" MODIFIED="1777544483750" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/UserDto.kt"/>
-<node TEXT="LoanDto.kt" ID="ID_962102231" CREATED="1777544483767" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/LoanDto.kt"/>
-<node TEXT="ToolDto.kt" ID="ID_397189159" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/ToolDto.kt"/>
-</node>
-</node>
-<node TEXT="Aplication" ID="ID_1369979402" CREATED="1777551622411" MODIFIED="1777555359317">
-<node TEXT="User" ID="ID_1222836665" CREATED="1777555212335" MODIFIED="1777555214984">
-<node TEXT="DeleteUserCommand.kt" ID="ID_1788195442" CREATED="1777544483736" MODIFIED="1777555154768" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/DeleteUserUseCase.kt"/>
-<node TEXT="ListUsersCommand.kt" ID="ID_1732307027" CREATED="1777544483749" MODIFIED="1777555162294" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/ListUsersUseCase.kt"/>
-<node TEXT="RegisterUserCommand.kt" ID="ID_249033492" CREATED="1777544483750" MODIFIED="1777555169158" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/RegisterUserUseCase.kt"/>
-<node TEXT="UpdateUserCommand.kt" ID="ID_1760583441" CREATED="1777544483750" MODIFIED="1777555175800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/UpdateUserUseCase.kt"/>
-<node TEXT="GetUserCommand.kt" ID="ID_718204099" CREATED="1777544483736" MODIFIED="1777555181006" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/GetUserUseCase.kt"/>
-<node TEXT="FinnBrukereSomIkkeHarLåntVerktøySiste3MånederCommand" ID="ID_1310967160" CREATED="1777552939424" MODIFIED="1777555186853"/>
-<node TEXT="LagRapportOverVerktøySomErLevertTilbakeEtterFristenCommand" ID="ID_142169164" CREATED="1777552958649" MODIFIED="1777555192112"/>
-</node>
-<node TEXT="Nettbutikk" ID="ID_412893534" CREATED="1777555221517" MODIFIED="1777555224975">
-<node TEXT="BorrowToolUseCase.kt" ID="ID_1512672539" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/BorrowToolUseCase.kt"/>
-<node TEXT="ReturnToolUseCase.kt" ID="ID_1313089288" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/ReturnToolUseCase.kt"/>
-<node TEXT="SearchToolsUseCase.kt" ID="ID_586860261" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/SearchToolsUseCase.kt"/>
-</node>
-<node TEXT="Verktoy" FOLDED="true" ID="ID_1458762123" CREATED="1777544613202" MODIFIED="1777555236022">
-<node TEXT="AddToolUseCase.kt" ID="ID_839416255" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/AddToolUseCase.kt"/>
-<node TEXT="DeleteToolUseCase.kt" ID="ID_1343220387" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/DeleteToolUseCase.kt"/>
-<node TEXT="ListToolsUseCase.kt" ID="ID_629096909" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/ListToolsUseCase.kt"/>
-<node TEXT="UpdateToolUseCase.kt" ID="ID_555046478" CREATED="1777544483817" MODIFIED="1777544483833" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/UpdateToolUseCase.kt"/>
-</node>
-</node>
-<node TEXT="Core" ID="ID_528611929" CREATED="1777555248182" MODIFIED="1777555362987">
-<node TEXT="User.kt" ID="ID_1451196584" CREATED="1777544483760" MODIFIED="1777544483760" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/core/User.kt"/>
-<node TEXT="Tool.kt" ID="ID_1795590051" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/core/Tool.kt"/>
-<node TEXT="Loan.kt" ID="ID_1988227990" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/Loan.kt"/>
-</node>
-<node TEXT="Integration(Driven)" ID="ID_84731775" CREATED="1777555393371" MODIFIED="1777555552286">
-<node TEXT="Repository" ID="ID_230761972" CREATED="1777551620082" MODIFIED="1777551622278">
-<node TEXT="UserRepository.kt" FOLDED="true" ID="ID_1913719383" CREATED="1777544483760" MODIFIED="1777544483760" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/core/UserRepository.kt">
-<node TEXT="InMemoryUserRepository.kt" ID="ID_508636960" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/infrastructure/InMemoryUserRepository.kt"/>
-</node>
-<node TEXT="LoanRepository.kt" FOLDED="true" ID="ID_761071839" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/LoanRepository.kt">
-<node TEXT="InMemoryLoanRepository.kt" POSITION="bottom_or_right" ID="ID_1784592329" CREATED="1777544483800" MODIFIED="1777544483800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/infrastructure/InMemoryLoanRepository.kt"/>
-</node>
-<node TEXT="ToolRepository.kt" FOLDED="true" ID="ID_1819291229" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/core/ToolRepository.kt">
-<node TEXT="InMemoryToolRepository.kt" POSITION="bottom_or_right" ID="ID_1153436713" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/infrastructure/InMemoryToolRepository.kt"/>
-</node>
-</node>
-<node TEXT="External" ID="ID_1747905541" CREATED="1777555404242" MODIFIED="1777555513228">
-<node TEXT="WeatherService.kt" ID="ID_1027187659" CREATED="1777544483784" MODIFIED="1777544483799" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/WeatherService.kt"/>
-</node>
-</node>
-</node>
-<node TEXT="Hva har blitt løst?" ID="ID_419776398" CREATED="1777552236282" MODIFIED="1777555076269">
-<node TEXT="Hver service driver med enormt mange ting!" ID="ID_1839575102" CREATED="1777552783546" MODIFIED="1777552795347"/>
-<node TEXT="Hva har klassen ansvaret for, og klarer du å få hele klassen inn i tankene dine på en gang?" ID="ID_1765678537" CREATED="1777552807207" MODIFIED="1777552834874"/>
-<node TEXT="Vanskelig å vite konsekvensen av endring på en privat metode i en service fordi den gjør veldig mye" ID="ID_867079715" CREATED="1777552796056" MODIFIED="1777554876545"/>
-<node TEXT="Vil mocke klasser som ikke er relevant for det du egentlig ønsker å teste" ID="ID_1690126747" CREATED="1777553223732" MODIFIED="1777553266941"/>
-</node>
-<node TEXT="Hva er problemet her?" ID="ID_480453423" CREATED="1777552230738" MODIFIED="1777552235781"/>
-<node TEXT="Teori" ID="ID_438653016" CREATED="1777552854704" MODIFIED="1777553281939">
-<node TEXT="Separation of concerns" ID="ID_1399498694" CREATED="1777545761689" MODIFIED="1777545768506"/>
-<node TEXT="Single responsibility" ID="ID_213698094" CREATED="1777545768826" MODIFIED="1777545775995"/>
-<node TEXT="Encapsulation" ID="ID_874634274" CREATED="1777545776768" MODIFIED="1777545781593"/>
-</node>
-</node>
-<node TEXT="Steg 6 - Slices" POSITION="bottom_or_right" ID="ID_1679732708" CREATED="1777544483717" MODIFIED="1777557270019" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/">
-<node TEXT="kode" ID="ID_509580156" CREATED="1777557285497" MODIFIED="1777557287219">
-<node TEXT="brukere" ID="ID_1246953778" CREATED="1777544483736" MODIFIED="1777544483736" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/">
-<node TEXT="application" ID="ID_33818025" CREATED="1777544483736" MODIFIED="1777544483736" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/">
-<node TEXT="DeleteUserUseCase.kt" ID="ID_1393745748" CREATED="1777544483736" MODIFIED="1777544483736" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/DeleteUserUseCase.kt"/>
-<node TEXT="GetUserUseCase.kt" ID="ID_812935532" CREATED="1777544483736" MODIFIED="1777544483749" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/GetUserUseCase.kt"/>
-<node TEXT="ListUsersUseCase.kt" ID="ID_484900148" CREATED="1777544483749" MODIFIED="1777544483750" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/ListUsersUseCase.kt"/>
-<node TEXT="RegisterUserUseCase.kt" ID="ID_1583679203" CREATED="1777544483750" MODIFIED="1777544483750" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/RegisterUserUseCase.kt"/>
-<node TEXT="UpdateUserUseCase.kt" ID="ID_1152570831" CREATED="1777544483750" MODIFIED="1777544483750" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/UpdateUserUseCase.kt"/>
-<node TEXT="UserDto.kt" ID="ID_758666500" CREATED="1777544483750" MODIFIED="1777544483750" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/application/UserDto.kt"/>
-</node>
-<node TEXT="core" FOLDED="true" ID="ID_1113250670" CREATED="1777544483750" MODIFIED="1777544483760" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/core/">
-<node TEXT="User.kt" ID="ID_1730542162" CREATED="1777544483760" MODIFIED="1777544483760" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/core/User.kt"/>
-<node TEXT="UserRepository.kt" ID="ID_259236448" CREATED="1777544483760" MODIFIED="1777544483760" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/core/UserRepository.kt"/>
-</node>
-<node TEXT="infrastructure" ID="ID_1427135405" CREATED="1777544483760" MODIFIED="1777544483766" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/infrastructure/">
-<node TEXT="InMemoryUserRepository.kt" ID="ID_268153121" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/infrastructure/InMemoryUserRepository.kt"/>
-</node>
-<node TEXT="presentation" FOLDED="true" ID="ID_481183864" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/presentation/">
-<node TEXT="UserController.kt" ID="ID_1708741162" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/presentation/UserController.kt"/>
-</node>
-<node TEXT="BrukereFactory.kt" ID="ID_227157261" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/brukere/BrukereFactory.kt"/>
-</node>
-<node TEXT="nettbutikk" FOLDED="true" ID="ID_171829081" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/">
-<node TEXT="application" FOLDED="true" ID="ID_1630592917" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/">
-<node TEXT="BorrowToolUseCase.kt" ID="ID_573250414" CREATED="1777544483767" MODIFIED="1777544483767" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/BorrowToolUseCase.kt"/>
-<node TEXT="LoanDto.kt" ID="ID_1444064109" CREATED="1777544483767" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/LoanDto.kt"/>
-<node TEXT="ReturnToolUseCase.kt" ID="ID_16321472" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/ReturnToolUseCase.kt"/>
-<node TEXT="SearchToolsUseCase.kt" ID="ID_1354759290" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/application/SearchToolsUseCase.kt"/>
-</node>
-<node TEXT="core" FOLDED="true" ID="ID_1256491767" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/">
-<node TEXT="Loan.kt" ID="ID_615239129" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/Loan.kt"/>
-<node TEXT="LoanRepository.kt" ID="ID_1566151966" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/LoanRepository.kt"/>
-<node TEXT="ToolQueryPort.kt" ID="ID_339439228" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/ToolQueryPort.kt"/>
-<node TEXT="UserQueryPort.kt" ID="ID_1917574694" CREATED="1777544483784" MODIFIED="1777544483784" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/UserQueryPort.kt"/>
-<node TEXT="WeatherService.kt" ID="ID_1527620202" CREATED="1777544483784" MODIFIED="1777544483799" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/core/WeatherService.kt"/>
-</node>
-<node TEXT="infrastructure" FOLDED="true" ID="ID_30422382" CREATED="1777544483800" MODIFIED="1777544483800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/infrastructure/">
-<node TEXT="BrukereUserQueryAdapter.kt" ID="ID_1018915488" CREATED="1777544483800" MODIFIED="1777544483800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/infrastructure/BrukereUserQueryAdapter.kt"/>
-<node TEXT="InMemoryLoanRepository.kt" ID="ID_719713182" CREATED="1777544483800" MODIFIED="1777544483800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/infrastructure/InMemoryLoanRepository.kt"/>
-<node TEXT="StubWeatherAdapter.kt" ID="ID_1116016962" CREATED="1777544483800" MODIFIED="1777544483800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/infrastructure/StubWeatherAdapter.kt"/>
-<node TEXT="VerktoyToolQueryAdapter.kt" ID="ID_59169915" CREATED="1777544483800" MODIFIED="1777544483800" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/infrastructure/VerktoyToolQueryAdapter.kt"/>
-</node>
-<node TEXT="presentation" FOLDED="true" ID="ID_468724713" CREATED="1777544483815" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/presentation/">
-<node TEXT="NettbutikkController.kt" ID="ID_1960175330" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/presentation/NettbutikkController.kt"/>
-</node>
-<node TEXT="NettbutikkFactory.kt" ID="ID_1688806529" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/nettbutikk/NettbutikkFactory.kt"/>
-</node>
-<node TEXT="verktoy" FOLDED="true" ID="ID_1104132196" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/">
-<node TEXT="application" FOLDED="true" ID="ID_1178930751" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/">
-<node TEXT="AddToolUseCase.kt" ID="ID_1354829237" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/AddToolUseCase.kt"/>
-<node TEXT="DeleteToolUseCase.kt" ID="ID_30676885" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/DeleteToolUseCase.kt"/>
-<node TEXT="ListToolsUseCase.kt" ID="ID_179553005" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/ListToolsUseCase.kt"/>
-<node TEXT="ToolDto.kt" ID="ID_853432941" CREATED="1777544483817" MODIFIED="1777544483817" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/ToolDto.kt"/>
-<node TEXT="UpdateToolUseCase.kt" ID="ID_1711100658" CREATED="1777544483817" MODIFIED="1777544483833" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/application/UpdateToolUseCase.kt"/>
-</node>
-<node TEXT="core" FOLDED="true" ID="ID_1689629134" CREATED="1777544483834" MODIFIED="1777544483834" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/core/">
-<node TEXT="Tool.kt" ID="ID_1530484081" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/core/Tool.kt"/>
-<node TEXT="ToolRepository.kt" ID="ID_953200505" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/core/ToolRepository.kt"/>
-</node>
-<node TEXT="infrastructure" FOLDED="true" ID="ID_1817064151" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/infrastructure/">
-<node TEXT="InMemoryToolRepository.kt" ID="ID_20598459" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/infrastructure/InMemoryToolRepository.kt"/>
-</node>
-<node TEXT="presentation" FOLDED="true" ID="ID_1761732733" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/presentation/">
-<node TEXT="ToolController.kt" ID="ID_1844323642" CREATED="1777544483836" MODIFIED="1777544483836" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/presentation/ToolController.kt"/>
-</node>
-<node TEXT="VerktoyFactory.kt" ID="ID_187998503" CREATED="1777544483836" MODIFIED="1777544483850" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/verktoy/VerktoyFactory.kt"/>
-</node>
-<node TEXT="ApplicationFactory.kt" ID="ID_684458264" CREATED="1777544483850" MODIFIED="1777544483850" LINK="file:/C:/Users/oasbjorn/kode/arkitekturdemo-ignite/src/main/kotlin/ApplicationFactory.kt"/>
-</node>
+<node TEXT="arbeidsmappe" FOLDED="true" POSITION="bottom_or_right" ID="ID_1160626790" CREATED="1777882669215" MODIFIED="1777882669215" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/">
+<node TEXT="utlaan" FOLDED="true" ID="ID_898311772" CREATED="1777882669216" MODIFIED="1777882669216" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/utlaan/">
+<node TEXT="core" FOLDED="true" ID="ID_356701215" CREATED="1777882669216" MODIFIED="1777882669216" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/utlaan/core/">
+<node TEXT="Utlaan.kt" ID="ID_1369950436" CREATED="1777882669216" MODIFIED="1777882669216" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/utlaan/core/Utlaan.kt"/>
+<node TEXT="VaerPort.kt" ID="ID_1069785665" CREATED="1777882669216" MODIFIED="1777882669217" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/utlaan/core/VaerPort.kt"/>
+<node TEXT="BrukerQueryPort.kt" ID="ID_168739132" CREATED="1777882669217" MODIFIED="1777882669217" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/utlaan/core/BrukerQueryPort.kt"/>
+<node TEXT="VerktoyStatusPort.kt" ID="ID_1429321627" CREATED="1777882669217" MODIFIED="1777882669217" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/utlaan/core/VerktoyStatusPort.kt"/>
+<node TEXT="VerktoyQueryPort.kt" ID="ID_1485447921" CREATED="1777882669217" MODIFIED="1777882669217" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/utlaan/core/VerktoyQueryPort.kt"/>
+<node TEXT="UtlaanRepository.kt" ID="ID_580263888" CREATED="1777882669217" MODIFIED="1777882669217" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/utlaan/core/UtlaanRepository.kt"/>
+</node>
+<node TEXT="application" FOLDED="true" ID="ID_810308989" CREATED="1777882669217" MODIFIED="1777882669217" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/utlaan/application/">
+<node TEXT="SoekVerktoyUseCase.kt" ID="ID_1559361558" CREATED="1777882669217" MODIFIED="1777882669217" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/utlaan/application/SoekVerktoyUseCase.kt"/>
+<node TEXT="LaanVerktoyUseCase.kt" ID="ID_1972301629" CREATED="1777882669217" MODIFIED="1777882669218" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/utlaan/application/LaanVerktoyUseCase.kt"/>
+<node TEXT="VerktoyResultatDto.kt" ID="ID_1349529536" CREATED="1777882669218" MODIFIED="1777882669218" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/utlaan/application/VerktoyResultatDto.kt"/>
+<node TEXT="ReturnerVerktoyUseCase.kt" ID="ID_912471693" CREATED="1777882669218" MODIFIED="1777882669218" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/utlaan/application/ReturnerVerktoyUseCase.kt"/>
+<node TEXT="UtlaanDto.kt" ID="ID_459916055" CREATED="1777882669218" MODIFIED="1777882669218" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/utlaan/application/UtlaanDto.kt"/>
+</node>
+<node TEXT="infrastructure" FOLDED="true" ID="ID_1620464524" CREATED="1777882669218" MODIFIED="1777882669218" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/utlaan/infrastructure/">
+<node TEXT="database" FOLDED="true" ID="ID_570582390" CREATED="1777882669218" MODIFIED="1777882669218" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/utlaan/infrastructure/database/">
+<node TEXT="UtlaanRepositoryAdapter.kt" ID="ID_111768674" CREATED="1777882669218" MODIFIED="1777882669218" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/utlaan/infrastructure/database/UtlaanRepositoryAdapter.kt"/>
+</node>
+<node TEXT="external" FOLDED="true" ID="ID_1524974947" CREATED="1777882669218" MODIFIED="1777882669219" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/utlaan/infrastructure/external/">
+<node TEXT="StubVermeldingAdapter.kt" ID="ID_337724302" CREATED="1777882669219" MODIFIED="1777882669219" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/utlaan/infrastructure/external/StubVermeldingAdapter.kt"/>
+</node>
+<node TEXT="acl" FOLDED="true" ID="ID_1847628981" CREATED="1777882669219" MODIFIED="1777882669219" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/utlaan/infrastructure/acl/">
+<node TEXT="VerktoyQueryAdapter.kt" ID="ID_1980410883" CREATED="1777882669219" MODIFIED="1777882669219" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/utlaan/infrastructure/acl/VerktoyQueryAdapter.kt"/>
+<node TEXT="VerktoyStatusAdapter.kt" ID="ID_1253554269" CREATED="1777882669219" MODIFIED="1777882669219" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/utlaan/infrastructure/acl/VerktoyStatusAdapter.kt"/>
+<node TEXT="BrukerQueryAdapter.kt" ID="ID_1444294610" CREATED="1777882669219" MODIFIED="1777882669220" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/utlaan/infrastructure/acl/BrukerQueryAdapter.kt"/>
+</node>
+</node>
+<node TEXT="presentation" FOLDED="true" ID="ID_1369237031" CREATED="1777882669220" MODIFIED="1777882669220" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/utlaan/presentation/">
+<node TEXT="api" FOLDED="true" ID="ID_174019689" CREATED="1777882669220" MODIFIED="1777882669220" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/utlaan/presentation/api/">
+<node TEXT="UtlaanController.kt" ID="ID_1037183553" CREATED="1777882669220" MODIFIED="1777882669220" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/utlaan/presentation/api/UtlaanController.kt"/>
+</node>
+</node>
+<node TEXT="UtlaanFactory.kt" ID="ID_928014963" CREATED="1777882669220" MODIFIED="1777882669220" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/utlaan/UtlaanFactory.kt"/>
+</node>
+<node TEXT="brukere" FOLDED="true" ID="ID_481442598" CREATED="1777882669220" MODIFIED="1777882669220" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/brukere/">
+<node TEXT="core" FOLDED="true" ID="ID_1352185731" CREATED="1777882669221" MODIFIED="1777882669221" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/brukere/core/">
+<node TEXT="BrukerRepository.kt" ID="ID_655118329" CREATED="1777882669221" MODIFIED="1777882669221" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/brukere/core/BrukerRepository.kt"/>
+<node TEXT="Bruker.kt" ID="ID_1814246642" CREATED="1777882669221" MODIFIED="1777882669221" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/brukere/core/Bruker.kt"/>
+</node>
+<node TEXT="application" FOLDED="true" ID="ID_517260327" CREATED="1777882669221" MODIFIED="1777882669221" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/brukere/application/">
+<node TEXT="SlettBrukerUseCase.kt" ID="ID_560740692" CREATED="1777882669222" MODIFIED="1777882669223" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/brukere/application/SlettBrukerUseCase.kt"/>
+<node TEXT="HentBrukerUseCase.kt" ID="ID_1196579487" CREATED="1777882669223" MODIFIED="1777882669223" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/brukere/application/HentBrukerUseCase.kt"/>
+<node TEXT="RegistrerBrukerUseCase.kt" ID="ID_1008832800" CREATED="1777882669223" MODIFIED="1777882669223" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/brukere/application/RegistrerBrukerUseCase.kt"/>
+<node TEXT="OppdaterBrukerUseCase.kt" ID="ID_932533187" CREATED="1777882669223" MODIFIED="1777882669223" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/brukere/application/OppdaterBrukerUseCase.kt"/>
+<node TEXT="BrukerDto.kt" ID="ID_1206955832" CREATED="1777882669223" MODIFIED="1777882669223" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/brukere/application/BrukerDto.kt"/>
+<node TEXT="ListBrukereUseCase.kt" ID="ID_669018768" CREATED="1777882669223" MODIFIED="1777882669223" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/brukere/application/ListBrukereUseCase.kt"/>
+</node>
+<node TEXT="infrastructure" FOLDED="true" ID="ID_516902706" CREATED="1777882669223" MODIFIED="1777882669223" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/brukere/infrastructure/">
+<node TEXT="database" FOLDED="true" ID="ID_1027774563" CREATED="1777882669223" MODIFIED="1777882669224" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/brukere/infrastructure/database/">
+<node TEXT="BrukerRepositoryAdapter.kt" ID="ID_583706948" CREATED="1777882669224" MODIFIED="1777882669224" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/brukere/infrastructure/database/BrukerRepositoryAdapter.kt"/>
+</node>
+</node>
+<node TEXT="presentation" FOLDED="true" ID="ID_644078121" CREATED="1777882669224" MODIFIED="1777882669224" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/brukere/presentation/">
+<node TEXT="api" FOLDED="true" ID="ID_289146504" CREATED="1777882669224" MODIFIED="1777882669224" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/brukere/presentation/api/">
+<node TEXT="BrukerController.kt" ID="ID_1915793354" CREATED="1777882669224" MODIFIED="1777882669224" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/brukere/presentation/api/BrukerController.kt"/>
+</node>
+</node>
+<node TEXT="BrukereFactory.kt" ID="ID_1810119201" CREATED="1777882669224" MODIFIED="1777882669224" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/brukere/BrukereFactory.kt"/>
+</node>
+<node TEXT="verktoy" FOLDED="true" ID="ID_1523116581" CREATED="1777882669224" MODIFIED="1777882669224" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/verktoy/">
+<node TEXT="core" FOLDED="true" ID="ID_1763499445" CREATED="1777882669224" MODIFIED="1777882669225" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/verktoy/core/">
+<node TEXT="Verktoy.kt" ID="ID_425629436" CREATED="1777882669225" MODIFIED="1777882669225" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/verktoy/core/Verktoy.kt"/>
+<node TEXT="VerktoyRepository.kt" ID="ID_1740066255" CREATED="1777882669225" MODIFIED="1777882669225" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/verktoy/core/VerktoyRepository.kt"/>
+</node>
+<node TEXT="application" FOLDED="true" ID="ID_1067602425" CREATED="1777882669225" MODIFIED="1777882669225" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/verktoy/application/">
+<node TEXT="SlettVerktoyUseCase.kt" ID="ID_1897867944" CREATED="1777882669225" MODIFIED="1777882669226" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/verktoy/application/SlettVerktoyUseCase.kt"/>
+<node TEXT="VerktoyDto.kt" ID="ID_594694982" CREATED="1777882669226" MODIFIED="1777882669226" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/verktoy/application/VerktoyDto.kt"/>
+<node TEXT="LeggTilVerktoyUseCase.kt" ID="ID_416860403" CREATED="1777882669226" MODIFIED="1777882669226" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/verktoy/application/LeggTilVerktoyUseCase.kt"/>
+<node TEXT="OppdaterVerktoyUseCase.kt" ID="ID_118916124" CREATED="1777882669226" MODIFIED="1777882669226" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/verktoy/application/OppdaterVerktoyUseCase.kt"/>
+<node TEXT="ListVerktoyUseCase.kt" ID="ID_218469409" CREATED="1777882669226" MODIFIED="1777882669226" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/verktoy/application/ListVerktoyUseCase.kt"/>
+</node>
+<node TEXT="infrastructure" FOLDED="true" ID="ID_1575336842" CREATED="1777882669226" MODIFIED="1777882669226" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/verktoy/infrastructure/">
+<node TEXT="database" FOLDED="true" ID="ID_1626555951" CREATED="1777882669226" MODIFIED="1777882669226" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/verktoy/infrastructure/database/">
+<node TEXT="VerktoyRepositoryAdapter.kt" ID="ID_1639617126" CREATED="1777882669226" MODIFIED="1777882669227" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/verktoy/infrastructure/database/VerktoyRepositoryAdapter.kt"/>
+</node>
+</node>
+<node TEXT="presentation" FOLDED="true" ID="ID_837024830" CREATED="1777882669227" MODIFIED="1777882669227" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/verktoy/presentation/">
+<node TEXT="api" FOLDED="true" ID="ID_329950868" CREATED="1777882669227" MODIFIED="1777882669227" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/verktoy/presentation/api/">
+<node TEXT="VerktoyController.kt" ID="ID_96775174" CREATED="1777882669227" MODIFIED="1777882669227" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/verktoy/presentation/api/VerktoyController.kt"/>
+</node>
+</node>
+<node TEXT="VerktoyFactory.kt" ID="ID_2296700" CREATED="1777882669227" MODIFIED="1777882669227" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/verktoy/VerktoyFactory.kt"/>
+</node>
+<node TEXT="ApplicationFactory.kt" ID="ID_1831150232" CREATED="1777882669227" MODIFIED="1777882669227" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/arbeidsmappe/src/main/kotlin/ApplicationFactory.kt"/>
+</node>
+<node TEXT="steg-0" FOLDED="true" POSITION="bottom_or_right" ID="ID_644890673" CREATED="1777882669211" MODIFIED="1777882669211" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-0/">
+<node TEXT="App.kt" ID="ID_362501604" CREATED="1777882669212" MODIFIED="1777882669212" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-0/src/main/kotlin/App.kt"/>
+</node>
+<node TEXT="steg-1" FOLDED="true" POSITION="bottom_or_right" ID="ID_1809072822" CREATED="1777882669670" MODIFIED="1777882669670" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-1/">
+<node TEXT="VerktoyController.kt" ID="ID_488423688" CREATED="1777882669671" MODIFIED="1777882669671" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-1/src/main/kotlin/VerktoyController.kt"/>
+<node TEXT="BrukerRepository.kt" ID="ID_1338959507" CREATED="1777882669671" MODIFIED="1777882669671" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-1/src/main/kotlin/BrukerRepository.kt"/>
+<node TEXT="UtlaanController.kt" ID="ID_742090858" CREATED="1777882669671" MODIFIED="1777882669671" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-1/src/main/kotlin/UtlaanController.kt"/>
+<node TEXT="Utlaan.kt" ID="ID_1469240414" CREATED="1777882669671" MODIFIED="1777882669671" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-1/src/main/kotlin/Utlaan.kt"/>
+<node TEXT="Verktoy.kt" ID="ID_1732378482" CREATED="1777882669671" MODIFIED="1777882669674" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-1/src/main/kotlin/Verktoy.kt"/>
+<node TEXT="UtlaanService.kt" ID="ID_654259334" CREATED="1777882669674" MODIFIED="1777882669674" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-1/src/main/kotlin/UtlaanService.kt"/>
+<node TEXT="BrukerService.kt" ID="ID_468927549" CREATED="1777882669674" MODIFIED="1777882669674" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-1/src/main/kotlin/BrukerService.kt"/>
+<node TEXT="VerktoyRepository.kt" ID="ID_779031699" CREATED="1777882669674" MODIFIED="1777882669674" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-1/src/main/kotlin/VerktoyRepository.kt"/>
+<node TEXT="VerktoyService.kt" ID="ID_180550720" CREATED="1777882669674" MODIFIED="1777882669674" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-1/src/main/kotlin/VerktoyService.kt"/>
+<node TEXT="Vaermelding.kt" ID="ID_1128279523" CREATED="1777882669674" MODIFIED="1777882669674" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-1/src/main/kotlin/Vaermelding.kt"/>
+<node TEXT="Bruker.kt" ID="ID_31158650" CREATED="1777882669675" MODIFIED="1777882669675" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-1/src/main/kotlin/Bruker.kt"/>
+<node TEXT="UtlaanRepository.kt" ID="ID_1228379069" CREATED="1777882669675" MODIFIED="1777882669675" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-1/src/main/kotlin/UtlaanRepository.kt"/>
+<node TEXT="StubVaerService.kt" ID="ID_1868483667" CREATED="1777882669675" MODIFIED="1777882669675" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-1/src/main/kotlin/StubVaerService.kt"/>
+<node TEXT="BrukerController.kt" ID="ID_1526906302" CREATED="1777882669675" MODIFIED="1777882669675" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-1/src/main/kotlin/BrukerController.kt"/>
+</node>
+<node TEXT="steg-2-pbl" FOLDED="true" POSITION="bottom_or_right" ID="ID_555010959" CREATED="1777882669188" MODIFIED="1777882669189" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbl/">
+<node TEXT="repositories" FOLDED="true" ID="ID_1286056501" CREATED="1777882669191" MODIFIED="1777882669191" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbl/src/main/kotlin/repositories/">
+<node TEXT="BrukerRepository.kt" ID="ID_1556196826" CREATED="1777882669191" MODIFIED="1777882669192" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbl/src/main/kotlin/repositories/BrukerRepository.kt"/>
+<node TEXT="VerktoyRepository.kt" ID="ID_1043362076" CREATED="1777882669192" MODIFIED="1777882669192" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbl/src/main/kotlin/repositories/VerktoyRepository.kt"/>
+<node TEXT="UtlaanRepository.kt" ID="ID_1136351270" CREATED="1777882669192" MODIFIED="1777882669192" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbl/src/main/kotlin/repositories/UtlaanRepository.kt"/>
+</node>
+<node TEXT="services" FOLDED="true" ID="ID_1361721952" CREATED="1777882669193" MODIFIED="1777882669193" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbl/src/main/kotlin/services/">
+<node TEXT="UtlaanService.kt" ID="ID_1246106445" CREATED="1777882669194" MODIFIED="1777882669194" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbl/src/main/kotlin/services/UtlaanService.kt"/>
+<node TEXT="BrukerService.kt" ID="ID_609629055" CREATED="1777882669195" MODIFIED="1777882669195" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbl/src/main/kotlin/services/BrukerService.kt"/>
+<node TEXT="VerktoyService.kt" ID="ID_235528868" CREATED="1777882669195" MODIFIED="1777882669195" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbl/src/main/kotlin/services/VerktoyService.kt"/>
+<node TEXT="StubVaerService.kt" ID="ID_78682079" CREATED="1777882669195" MODIFIED="1777882669195" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbl/src/main/kotlin/services/StubVaerService.kt"/>
+</node>
+<node TEXT="domain" FOLDED="true" ID="ID_364169826" CREATED="1777882669195" MODIFIED="1777882669196" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbl/src/main/kotlin/domain/">
+<node TEXT="Utlaan.kt" ID="ID_1654411299" CREATED="1777882669196" MODIFIED="1777882669196" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbl/src/main/kotlin/domain/Utlaan.kt"/>
+<node TEXT="Verktoy.kt" ID="ID_994033624" CREATED="1777882669196" MODIFIED="1777882669196" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbl/src/main/kotlin/domain/Verktoy.kt"/>
+<node TEXT="Vaermelding.kt" ID="ID_1654544488" CREATED="1777882669196" MODIFIED="1777882669200" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbl/src/main/kotlin/domain/Vaermelding.kt"/>
+<node TEXT="Bruker.kt" ID="ID_1943888143" CREATED="1777882669200" MODIFIED="1777882669200" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbl/src/main/kotlin/domain/Bruker.kt"/>
+</node>
+<node TEXT="controllers" FOLDED="true" ID="ID_235349028" CREATED="1777882669200" MODIFIED="1777882669200" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbl/src/main/kotlin/controllers/">
+<node TEXT="VerktoyController.kt" ID="ID_802256777" CREATED="1777882669201" MODIFIED="1777882669201" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbl/src/main/kotlin/controllers/VerktoyController.kt"/>
+<node TEXT="UtlaanController.kt" ID="ID_744733638" CREATED="1777882669201" MODIFIED="1777882669201" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbl/src/main/kotlin/controllers/UtlaanController.kt"/>
+<node TEXT="BrukerController.kt" ID="ID_825566278" CREATED="1777882669201" MODIFIED="1777882669201" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbl/src/main/kotlin/controllers/BrukerController.kt"/>
+</node>
+</node>
+<node TEXT="steg-2-pbf" FOLDED="true" POSITION="bottom_or_right" ID="ID_1732716479" CREATED="1777882669781" MODIFIED="1777882669781" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbf/">
+<node TEXT="utlaan" FOLDED="true" ID="ID_1487206416" CREATED="1777882669782" MODIFIED="1777882669782" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbf/src/main/kotlin/utlaan/">
+<node TEXT="UtlaanController.kt" ID="ID_56815939" CREATED="1777882669782" MODIFIED="1777882669782" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbf/src/main/kotlin/utlaan/UtlaanController.kt"/>
+<node TEXT="Utlaan.kt" ID="ID_452622280" CREATED="1777882669782" MODIFIED="1777882669782" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbf/src/main/kotlin/utlaan/Utlaan.kt"/>
+<node TEXT="UtlaanService.kt" ID="ID_1430547301" CREATED="1777882669782" MODIFIED="1777882669782" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbf/src/main/kotlin/utlaan/UtlaanService.kt"/>
+<node TEXT="Vaermelding.kt" ID="ID_264732331" CREATED="1777882669782" MODIFIED="1777882669782" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbf/src/main/kotlin/utlaan/Vaermelding.kt"/>
+<node TEXT="UtlaanRepository.kt" ID="ID_1167330636" CREATED="1777882669782" MODIFIED="1777882669782" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbf/src/main/kotlin/utlaan/UtlaanRepository.kt"/>
+</node>
+<node TEXT="brukere" FOLDED="true" ID="ID_1812403422" CREATED="1777882669783" MODIFIED="1777882669783" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbf/src/main/kotlin/brukere/">
+<node TEXT="BrukerRepository.kt" ID="ID_684545631" CREATED="1777882669783" MODIFIED="1777882669783" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbf/src/main/kotlin/brukere/BrukerRepository.kt"/>
+<node TEXT="BrukerService.kt" ID="ID_86923168" CREATED="1777882669783" MODIFIED="1777882669783" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbf/src/main/kotlin/brukere/BrukerService.kt"/>
+<node TEXT="Bruker.kt" ID="ID_1533405795" CREATED="1777882669783" MODIFIED="1777882669783" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbf/src/main/kotlin/brukere/Bruker.kt"/>
+<node TEXT="BrukerController.kt" ID="ID_1983904782" CREATED="1777882669783" MODIFIED="1777882669783" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbf/src/main/kotlin/brukere/BrukerController.kt"/>
+</node>
+<node TEXT="verktoy" FOLDED="true" ID="ID_1595703183" CREATED="1777882669783" MODIFIED="1777882669783" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbf/src/main/kotlin/verktoy/">
+<node TEXT="VerktoyController.kt" ID="ID_604982991" CREATED="1777882669784" MODIFIED="1777882669784" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbf/src/main/kotlin/verktoy/VerktoyController.kt"/>
+<node TEXT="Verktoy.kt" ID="ID_636000199" CREATED="1777882669784" MODIFIED="1777882669784" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbf/src/main/kotlin/verktoy/Verktoy.kt"/>
+<node TEXT="VerktoyRepository.kt" ID="ID_305534409" CREATED="1777882669784" MODIFIED="1777882669784" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbf/src/main/kotlin/verktoy/VerktoyRepository.kt"/>
+<node TEXT="VerktoyService.kt" ID="ID_1076868001" CREATED="1777882669784" MODIFIED="1777882669784" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-2-pbf/src/main/kotlin/verktoy/VerktoyService.kt"/>
+</node>
+</node>
+<node TEXT="steg-3" FOLDED="true" POSITION="bottom_or_right" ID="ID_1099290380" CREATED="1777882669261" MODIFIED="1777882669261" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-3/">
+<node TEXT="utlaan" FOLDED="true" ID="ID_19215325" CREATED="1777882669261" MODIFIED="1777882669261" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-3/src/main/kotlin/utlaan/">
+<node TEXT="SoekVerktoyUseCase.kt" ID="ID_38585691" CREATED="1777882669261" MODIFIED="1777882669262" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-3/src/main/kotlin/utlaan/SoekVerktoyUseCase.kt"/>
+<node TEXT="UtlaanController.kt" ID="ID_1197867026" CREATED="1777882669262" MODIFIED="1777882669262" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-3/src/main/kotlin/utlaan/UtlaanController.kt"/>
+<node TEXT="LaanVerktoyUseCase.kt" ID="ID_1123117079" CREATED="1777882669262" MODIFIED="1777882669262" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-3/src/main/kotlin/utlaan/LaanVerktoyUseCase.kt"/>
+<node TEXT="Utlaan.kt" ID="ID_1556302701" CREATED="1777882669262" MODIFIED="1777882669262" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-3/src/main/kotlin/utlaan/Utlaan.kt"/>
+<node TEXT="Vaermelding.kt" ID="ID_1000981920" CREATED="1777882669262" MODIFIED="1777882669262" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-3/src/main/kotlin/utlaan/Vaermelding.kt"/>
+<node TEXT="VerktoyResultatDto.kt" ID="ID_1695061424" CREATED="1777882669262" MODIFIED="1777882669262" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-3/src/main/kotlin/utlaan/VerktoyResultatDto.kt"/>
+<node TEXT="ReturnerVerktoyUseCase.kt" ID="ID_596095489" CREATED="1777882669262" MODIFIED="1777882669262" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-3/src/main/kotlin/utlaan/ReturnerVerktoyUseCase.kt"/>
+<node TEXT="UtlaanDto.kt" ID="ID_1991716854" CREATED="1777882669262" MODIFIED="1777882669263" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-3/src/main/kotlin/utlaan/UtlaanDto.kt"/>
+<node TEXT="UtlaanRepository.kt" ID="ID_1833086388" CREATED="1777882669263" MODIFIED="1777882669263" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-3/src/main/kotlin/utlaan/UtlaanRepository.kt"/>
+</node>
+<node TEXT="brukere" FOLDED="true" ID="ID_1490139545" CREATED="1777882669263" MODIFIED="1777882669263" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-3/src/main/kotlin/brukere/">
+<node TEXT="SlettBrukerUseCase.kt" ID="ID_1322516318" CREATED="1777882669263" MODIFIED="1777882669263" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-3/src/main/kotlin/brukere/SlettBrukerUseCase.kt"/>
+<node TEXT="BrukerRepository.kt" ID="ID_1275136949" CREATED="1777882669263" MODIFIED="1777882669263" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-3/src/main/kotlin/brukere/BrukerRepository.kt"/>
+<node TEXT="HentBrukerUseCase.kt" ID="ID_506770587" CREATED="1777882669263" MODIFIED="1777882669263" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-3/src/main/kotlin/brukere/HentBrukerUseCase.kt"/>
+<node TEXT="Bruker.kt" ID="ID_560591647" CREATED="1777882669263" MODIFIED="1777882669263" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-3/src/main/kotlin/brukere/Bruker.kt"/>
+<node TEXT="RegistrerBrukerUseCase.kt" ID="ID_1912196884" CREATED="1777882669263" MODIFIED="1777882669263" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-3/src/main/kotlin/brukere/RegistrerBrukerUseCase.kt"/>
+<node TEXT="OppdaterBrukerUseCase.kt" ID="ID_1044926164" CREATED="1777882669264" MODIFIED="1777882669264" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-3/src/main/kotlin/brukere/OppdaterBrukerUseCase.kt"/>
+<node TEXT="BrukerDto.kt" ID="ID_356232906" CREATED="1777882669264" MODIFIED="1777882669264" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-3/src/main/kotlin/brukere/BrukerDto.kt"/>
+<node TEXT="ListBrukereUseCase.kt" ID="ID_1696373723" CREATED="1777882669264" MODIFIED="1777882669264" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-3/src/main/kotlin/brukere/ListBrukereUseCase.kt"/>
+<node TEXT="BrukerController.kt" ID="ID_179146516" CREATED="1777882669264" MODIFIED="1777882669264" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-3/src/main/kotlin/brukere/BrukerController.kt"/>
+</node>
+<node TEXT="verktoy" FOLDED="true" ID="ID_710897639" CREATED="1777882669264" MODIFIED="1777882669264" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-3/src/main/kotlin/verktoy/">
+<node TEXT="VerktoyController.kt" ID="ID_26726782" CREATED="1777882669264" MODIFIED="1777882669264" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-3/src/main/kotlin/verktoy/VerktoyController.kt"/>
+<node TEXT="SlettVerktoyUseCase.kt" ID="ID_1814489341" CREATED="1777882669264" MODIFIED="1777882669264" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-3/src/main/kotlin/verktoy/SlettVerktoyUseCase.kt"/>
+<node TEXT="VerktoyDto.kt" ID="ID_819150912" CREATED="1777882669264" MODIFIED="1777882669264" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-3/src/main/kotlin/verktoy/VerktoyDto.kt"/>
+<node TEXT="LeggTilVerktoyUseCase.kt" ID="ID_1338765971" CREATED="1777882669264" MODIFIED="1777882669265" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-3/src/main/kotlin/verktoy/LeggTilVerktoyUseCase.kt"/>
+<node TEXT="Verktoy.kt" ID="ID_1598427578" CREATED="1777882669265" MODIFIED="1777882669265" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-3/src/main/kotlin/verktoy/Verktoy.kt"/>
+<node TEXT="VerktoyRepository.kt" ID="ID_1283782596" CREATED="1777882669265" MODIFIED="1777882669265" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-3/src/main/kotlin/verktoy/VerktoyRepository.kt"/>
+<node TEXT="OppdaterVerktoyUseCase.kt" ID="ID_1259548407" CREATED="1777882669265" MODIFIED="1777882669265" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-3/src/main/kotlin/verktoy/OppdaterVerktoyUseCase.kt"/>
+<node TEXT="ListVerktoyUseCase.kt" ID="ID_488437321" CREATED="1777882669265" MODIFIED="1777882669265" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-3/src/main/kotlin/verktoy/ListVerktoyUseCase.kt"/>
+</node>
+</node>
+<node TEXT="steg-4" FOLDED="true" POSITION="bottom_or_right" ID="ID_676492816" CREATED="1777882669722" MODIFIED="1777882669722" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/">
+<node TEXT="core" FOLDED="true" ID="ID_1115946283" CREATED="1777882669723" MODIFIED="1777882669723" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/core/">
+<node TEXT="BrukerRepository.kt" ID="ID_961889953" CREATED="1777882669723" MODIFIED="1777882669723" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/core/BrukerRepository.kt"/>
+<node TEXT="Utlaan.kt" ID="ID_957791804" CREATED="1777882669723" MODIFIED="1777882669723" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/core/Utlaan.kt"/>
+<node TEXT="Verktoy.kt" ID="ID_1106501001" CREATED="1777882669723" MODIFIED="1777882669723" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/core/Verktoy.kt"/>
+<node TEXT="VerktoyRepository.kt" ID="ID_1114528505" CREATED="1777882669723" MODIFIED="1777882669723" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/core/VerktoyRepository.kt"/>
+<node TEXT="Vaermelding.kt" ID="ID_954979733" CREATED="1777882669723" MODIFIED="1777882669724" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/core/Vaermelding.kt"/>
+<node TEXT="Bruker.kt" ID="ID_1960235971" CREATED="1777882669724" MODIFIED="1777882669724" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/core/Bruker.kt"/>
+<node TEXT="UtlaanRepository.kt" ID="ID_704398347" CREATED="1777882669724" MODIFIED="1777882669724" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/core/UtlaanRepository.kt"/>
+</node>
+<node TEXT="application" FOLDED="true" ID="ID_446429938" CREATED="1777882669724" MODIFIED="1777882669724" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/application/">
+<node TEXT="SlettBrukerUseCase.kt" ID="ID_362577953" CREATED="1777882669724" MODIFIED="1777882669724" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/application/SlettBrukerUseCase.kt"/>
+<node TEXT="SoekVerktoyUseCase.kt" ID="ID_1319746973" CREATED="1777882669724" MODIFIED="1777882669724" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/application/SoekVerktoyUseCase.kt"/>
+<node TEXT="SlettVerktoyUseCase.kt" ID="ID_1120212381" CREATED="1777882669724" MODIFIED="1777882669725" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/application/SlettVerktoyUseCase.kt"/>
+<node TEXT="VerktoyDto.kt" ID="ID_1702791383" CREATED="1777882669725" MODIFIED="1777882669725" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/application/VerktoyDto.kt"/>
+<node TEXT="LaanVerktoyUseCase.kt" ID="ID_951950849" CREATED="1777882669725" MODIFIED="1777882669725" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/application/LaanVerktoyUseCase.kt"/>
+<node TEXT="LeggTilVerktoyUseCase.kt" ID="ID_865790686" CREATED="1777882669725" MODIFIED="1777882669725" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/application/LeggTilVerktoyUseCase.kt"/>
+<node TEXT="HentBrukerUseCase.kt" ID="ID_497307742" CREATED="1777882669725" MODIFIED="1777882669725" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/application/HentBrukerUseCase.kt"/>
+<node TEXT="RegistrerBrukerUseCase.kt" ID="ID_182227062" CREATED="1777882669725" MODIFIED="1777882669725" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/application/RegistrerBrukerUseCase.kt"/>
+<node TEXT="OppdaterBrukerUseCase.kt" ID="ID_1114924176" CREATED="1777882669725" MODIFIED="1777882669725" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/application/OppdaterBrukerUseCase.kt"/>
+<node TEXT="VerktoyResultatDto.kt" ID="ID_275484423" CREATED="1777882669725" MODIFIED="1777882669725" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/application/VerktoyResultatDto.kt"/>
+<node TEXT="OppdaterVerktoyUseCase.kt" ID="ID_1006835635" CREATED="1777882669725" MODIFIED="1777882669726" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/application/OppdaterVerktoyUseCase.kt"/>
+<node TEXT="ReturnerVerktoyUseCase.kt" ID="ID_1268324046" CREATED="1777882669726" MODIFIED="1777882669726" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/application/ReturnerVerktoyUseCase.kt"/>
+<node TEXT="UtlaanDto.kt" ID="ID_513869250" CREATED="1777882669726" MODIFIED="1777882669726" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/application/UtlaanDto.kt"/>
+<node TEXT="ListVerktoyUseCase.kt" ID="ID_893543421" CREATED="1777882669726" MODIFIED="1777882669726" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/application/ListVerktoyUseCase.kt"/>
+<node TEXT="BrukerDto.kt" ID="ID_354824055" CREATED="1777882669726" MODIFIED="1777882669726" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/application/BrukerDto.kt"/>
+<node TEXT="ListBrukereUseCase.kt" ID="ID_1154939478" CREATED="1777882669726" MODIFIED="1777882669726" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/application/ListBrukereUseCase.kt"/>
+</node>
+<node TEXT="infrastructure" FOLDED="true" ID="ID_329853861" CREATED="1777882669726" MODIFIED="1777882669726" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/infrastructure/">
+<node TEXT="InMemoryVerktoyRepository.kt" ID="ID_615582813" CREATED="1777882669727" MODIFIED="1777882669727" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/infrastructure/InMemoryVerktoyRepository.kt"/>
+<node TEXT="InMemoryUtlaanRepository.kt" ID="ID_1221441616" CREATED="1777882669727" MODIFIED="1777882669727" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/infrastructure/InMemoryUtlaanRepository.kt"/>
+<node TEXT="InMemoryBrukerRepository.kt" ID="ID_952487400" CREATED="1777882669727" MODIFIED="1777882669727" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/infrastructure/InMemoryBrukerRepository.kt"/>
+<node TEXT="StubVaerService.kt" ID="ID_169306634" CREATED="1777882669727" MODIFIED="1777882669727" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/infrastructure/StubVaerService.kt"/>
+</node>
+<node TEXT="presentation" FOLDED="true" ID="ID_268894582" CREATED="1777882669727" MODIFIED="1777882669727" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/presentation/">
+<node TEXT="VerktoyController.kt" ID="ID_1053499165" CREATED="1777882669727" MODIFIED="1777882669727" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/presentation/VerktoyController.kt"/>
+<node TEXT="UtlaanController.kt" ID="ID_1337014344" CREATED="1777882669727" MODIFIED="1777882669727" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/presentation/UtlaanController.kt"/>
+<node TEXT="BrukerController.kt" ID="ID_1328867389" CREATED="1777882669727" MODIFIED="1777882669728" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/presentation/BrukerController.kt"/>
+</node>
+<node TEXT="ApplicationFactory.kt" ID="ID_157897099" CREATED="1777882669728" MODIFIED="1777882669728" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-4/src/main/kotlin/ApplicationFactory.kt"/>
+</node>
+<node TEXT="steg-5" FOLDED="true" POSITION="bottom_or_right" ID="ID_1452641691" CREATED="1777882669245" MODIFIED="1777882669245" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/">
+<node TEXT="core" FOLDED="true" ID="ID_511328345" CREATED="1777882669246" MODIFIED="1777882669246" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/core/">
+<node TEXT="BrukerRepository.kt" ID="ID_1536654082" CREATED="1777882669246" MODIFIED="1777882669246" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/core/BrukerRepository.kt"/>
+<node TEXT="Utlaan.kt" ID="ID_847822472" CREATED="1777882669246" MODIFIED="1777882669246" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/core/Utlaan.kt"/>
+<node TEXT="Verktoy.kt" ID="ID_981459682" CREATED="1777882669246" MODIFIED="1777882669246" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/core/Verktoy.kt"/>
+<node TEXT="VaerPort.kt" ID="ID_1593063170" CREATED="1777882669246" MODIFIED="1777882669246" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/core/VaerPort.kt"/>
+<node TEXT="VerktoyRepository.kt" ID="ID_731907670" CREATED="1777882669246" MODIFIED="1777882669246" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/core/VerktoyRepository.kt"/>
+<node TEXT="BrukerQueryPort.kt" ID="ID_195362543" CREATED="1777882669246" MODIFIED="1777882669246" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/core/BrukerQueryPort.kt"/>
+<node TEXT="Bruker.kt" ID="ID_1789761347" CREATED="1777882669246" MODIFIED="1777882669246" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/core/Bruker.kt"/>
+<node TEXT="VerktoyStatusPort.kt" ID="ID_1003430891" CREATED="1777882669247" MODIFIED="1777882669247" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/core/VerktoyStatusPort.kt"/>
+<node TEXT="VerktoyQueryPort.kt" ID="ID_1912320030" CREATED="1777882669247" MODIFIED="1777882669247" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/core/VerktoyQueryPort.kt"/>
+<node TEXT="UtlaanRepository.kt" ID="ID_1939499829" CREATED="1777882669247" MODIFIED="1777882669247" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/core/UtlaanRepository.kt"/>
+</node>
+<node TEXT="application" FOLDED="true" ID="ID_1902417314" CREATED="1777882669247" MODIFIED="1777882669247" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/application/">
+<node TEXT="SlettBrukerUseCase.kt" ID="ID_487989771" CREATED="1777882669247" MODIFIED="1777882669248" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/application/SlettBrukerUseCase.kt"/>
+<node TEXT="SoekVerktoyUseCase.kt" ID="ID_395927131" CREATED="1777882669248" MODIFIED="1777882669248" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/application/SoekVerktoyUseCase.kt"/>
+<node TEXT="SlettVerktoyUseCase.kt" ID="ID_733815876" CREATED="1777882669248" MODIFIED="1777882669248" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/application/SlettVerktoyUseCase.kt"/>
+<node TEXT="VerktoyDto.kt" ID="ID_1539250512" CREATED="1777882669248" MODIFIED="1777882669248" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/application/VerktoyDto.kt"/>
+<node TEXT="LaanVerktoyUseCase.kt" ID="ID_608987613" CREATED="1777882669248" MODIFIED="1777882669248" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/application/LaanVerktoyUseCase.kt"/>
+<node TEXT="LeggTilVerktoyUseCase.kt" ID="ID_188500269" CREATED="1777882669248" MODIFIED="1777882669248" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/application/LeggTilVerktoyUseCase.kt"/>
+<node TEXT="HentBrukerUseCase.kt" ID="ID_745066272" CREATED="1777882669248" MODIFIED="1777882669248" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/application/HentBrukerUseCase.kt"/>
+<node TEXT="RegistrerBrukerUseCase.kt" ID="ID_630596089" CREATED="1777882669248" MODIFIED="1777882669248" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/application/RegistrerBrukerUseCase.kt"/>
+<node TEXT="OppdaterBrukerUseCase.kt" ID="ID_1992132361" CREATED="1777882669248" MODIFIED="1777882669248" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/application/OppdaterBrukerUseCase.kt"/>
+<node TEXT="VerktoyResultatDto.kt" ID="ID_1590546673" CREATED="1777882669248" MODIFIED="1777882669248" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/application/VerktoyResultatDto.kt"/>
+<node TEXT="OppdaterVerktoyUseCase.kt" ID="ID_1458507976" CREATED="1777882669249" MODIFIED="1777882669249" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/application/OppdaterVerktoyUseCase.kt"/>
+<node TEXT="ReturnerVerktoyUseCase.kt" ID="ID_513251538" CREATED="1777882669249" MODIFIED="1777882669249" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/application/ReturnerVerktoyUseCase.kt"/>
+<node TEXT="UtlaanDto.kt" ID="ID_1543956299" CREATED="1777882669249" MODIFIED="1777882669249" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/application/UtlaanDto.kt"/>
+<node TEXT="ListVerktoyUseCase.kt" ID="ID_312893563" CREATED="1777882669249" MODIFIED="1777882669249" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/application/ListVerktoyUseCase.kt"/>
+<node TEXT="BrukerDto.kt" ID="ID_1482161388" CREATED="1777882669249" MODIFIED="1777882669249" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/application/BrukerDto.kt"/>
+<node TEXT="ListBrukereUseCase.kt" ID="ID_1103191647" CREATED="1777882669249" MODIFIED="1777882669249" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/application/ListBrukereUseCase.kt"/>
+</node>
+<node TEXT="infrastructure" FOLDED="true" ID="ID_1847080306" CREATED="1777882669249" MODIFIED="1777882669249" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/infrastructure/">
+<node TEXT="StubVaermeldingAdapter.kt" ID="ID_1708490172" CREATED="1777882669249" MODIFIED="1777882669249" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/infrastructure/StubVaermeldingAdapter.kt"/>
+<node TEXT="VerktoyQueryAdapter.kt" ID="ID_1935878878" CREATED="1777882669250" MODIFIED="1777882669250" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/infrastructure/VerktoyQueryAdapter.kt"/>
+<node TEXT="VerktoyStatusAdapter.kt" ID="ID_1758421321" CREATED="1777882669250" MODIFIED="1777882669250" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/infrastructure/VerktoyStatusAdapter.kt"/>
+<node TEXT="BrukerQueryAdapter.kt" ID="ID_168568540" CREATED="1777882669250" MODIFIED="1777882669250" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/infrastructure/BrukerQueryAdapter.kt"/>
+<node TEXT="InMemoryVerktoyRepository.kt" ID="ID_700304211" CREATED="1777882669250" MODIFIED="1777882669250" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/infrastructure/InMemoryVerktoyRepository.kt"/>
+<node TEXT="InMemoryUtlaanRepository.kt" ID="ID_1585143552" CREATED="1777882669250" MODIFIED="1777882669250" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/infrastructure/InMemoryUtlaanRepository.kt"/>
+<node TEXT="InMemoryBrukerRepository.kt" ID="ID_135697238" CREATED="1777882669250" MODIFIED="1777882669250" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/infrastructure/InMemoryBrukerRepository.kt"/>
+</node>
+<node TEXT="presentation" FOLDED="true" ID="ID_214500723" CREATED="1777882669250" MODIFIED="1777882669250" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/presentation/">
+<node TEXT="VerktoyController.kt" ID="ID_1525998897" CREATED="1777882669250" MODIFIED="1777882669250" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/presentation/VerktoyController.kt"/>
+<node TEXT="UtlaanController.kt" ID="ID_1023518268" CREATED="1777882669251" MODIFIED="1777882669251" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/presentation/UtlaanController.kt"/>
+<node TEXT="BrukerController.kt" ID="ID_1083351184" CREATED="1777882669251" MODIFIED="1777882669251" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/presentation/BrukerController.kt"/>
+</node>
+<node TEXT="ApplicationFactory.kt" ID="ID_1868767075" CREATED="1777882669251" MODIFIED="1777882669251" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-5/src/main/kotlin/ApplicationFactory.kt"/>
+</node>
+<node TEXT="steg-6" FOLDED="true" POSITION="bottom_or_right" ID="ID_1032866177" CREATED="1777882669693" MODIFIED="1777882669693" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/">
+<node TEXT="utlaan" FOLDED="true" ID="ID_1733284738" CREATED="1777882669694" MODIFIED="1777882669694" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/utlaan/">
+<node TEXT="core" FOLDED="true" ID="ID_1340186726" CREATED="1777882669694" MODIFIED="1777882669694" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/utlaan/core/">
+<node TEXT="Utlaan.kt" ID="ID_959024689" CREATED="1777882669694" MODIFIED="1777882669694" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/utlaan/core/Utlaan.kt"/>
+<node TEXT="VaerPort.kt" ID="ID_1684389770" CREATED="1777882669694" MODIFIED="1777882669694" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/utlaan/core/VaerPort.kt"/>
+<node TEXT="BrukerQueryPort.kt" ID="ID_1287850928" CREATED="1777882669694" MODIFIED="1777882669695" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/utlaan/core/BrukerQueryPort.kt"/>
+<node TEXT="VerktoyStatusPort.kt" ID="ID_81498556" CREATED="1777882669695" MODIFIED="1777882669695" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/utlaan/core/VerktoyStatusPort.kt"/>
+<node TEXT="VerktoyQueryPort.kt" ID="ID_751485984" CREATED="1777882669695" MODIFIED="1777882669695" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/utlaan/core/VerktoyQueryPort.kt"/>
+<node TEXT="UtlaanRepository.kt" ID="ID_55117028" CREATED="1777882669695" MODIFIED="1777882669695" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/utlaan/core/UtlaanRepository.kt"/>
+</node>
+<node TEXT="application" FOLDED="true" ID="ID_1035294456" CREATED="1777882669695" MODIFIED="1777882669695" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/utlaan/application/">
+<node TEXT="SoekVerktoyUseCase.kt" ID="ID_1231306524" CREATED="1777882669695" MODIFIED="1777882669695" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/utlaan/application/SoekVerktoyUseCase.kt"/>
+<node TEXT="LaanVerktoyUseCase.kt" ID="ID_236949644" CREATED="1777882669696" MODIFIED="1777882669696" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/utlaan/application/LaanVerktoyUseCase.kt"/>
+<node TEXT="VerktoyResultatDto.kt" ID="ID_1484820264" CREATED="1777882669696" MODIFIED="1777882669696" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/utlaan/application/VerktoyResultatDto.kt"/>
+<node TEXT="ReturnerVerktoyUseCase.kt" ID="ID_1714528241" CREATED="1777882669696" MODIFIED="1777882669696" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/utlaan/application/ReturnerVerktoyUseCase.kt"/>
+<node TEXT="UtlaanDto.kt" ID="ID_1174341046" CREATED="1777882669696" MODIFIED="1777882669696" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/utlaan/application/UtlaanDto.kt"/>
+</node>
+<node TEXT="infrastructure" FOLDED="true" ID="ID_1431430003" CREATED="1777882669696" MODIFIED="1777882669696" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/utlaan/infrastructure/">
+<node TEXT="database" FOLDED="true" ID="ID_1967266222" CREATED="1777882669696" MODIFIED="1777882669696" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/utlaan/infrastructure/database/">
+<node TEXT="UtlaanRepositoryAdapter.kt" ID="ID_1806106692" CREATED="1777882669696" MODIFIED="1777882669697" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/utlaan/infrastructure/database/UtlaanRepositoryAdapter.kt"/>
+</node>
+<node TEXT="external" FOLDED="true" ID="ID_612184795" CREATED="1777882669697" MODIFIED="1777882669697" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/utlaan/infrastructure/external/">
+<node TEXT="StubVermeldingAdapter.kt" ID="ID_580804016" CREATED="1777882669697" MODIFIED="1777882669697" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/utlaan/infrastructure/external/StubVermeldingAdapter.kt"/>
+</node>
+<node TEXT="acl" FOLDED="true" ID="ID_279263417" CREATED="1777882669697" MODIFIED="1777882669697" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/utlaan/infrastructure/acl/">
+<node TEXT="VerktoyQueryAdapter.kt" ID="ID_122865743" CREATED="1777882669697" MODIFIED="1777882669697" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/utlaan/infrastructure/acl/VerktoyQueryAdapter.kt"/>
+<node TEXT="VerktoyStatusAdapter.kt" ID="ID_1568998078" CREATED="1777882669697" MODIFIED="1777882669697" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/utlaan/infrastructure/acl/VerktoyStatusAdapter.kt"/>
+<node TEXT="BrukerQueryAdapter.kt" ID="ID_874731721" CREATED="1777882669697" MODIFIED="1777882669697" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/utlaan/infrastructure/acl/BrukerQueryAdapter.kt"/>
+</node>
+</node>
+<node TEXT="presentation" FOLDED="true" ID="ID_709386284" CREATED="1777882669698" MODIFIED="1777882669698" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/utlaan/presentation/">
+<node TEXT="api" FOLDED="true" ID="ID_401192414" CREATED="1777882669698" MODIFIED="1777882669698" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/utlaan/presentation/api/">
+<node TEXT="UtlaanController.kt" ID="ID_1762035472" CREATED="1777882669698" MODIFIED="1777882669698" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/utlaan/presentation/api/UtlaanController.kt"/>
+</node>
+</node>
+<node TEXT="UtlaanFactory.kt" ID="ID_818770563" CREATED="1777882669698" MODIFIED="1777882669698" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/utlaan/UtlaanFactory.kt"/>
+</node>
+<node TEXT="brukere" FOLDED="true" ID="ID_1023769773" CREATED="1777882669698" MODIFIED="1777882669698" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/brukere/">
+<node TEXT="core" FOLDED="true" ID="ID_416343826" CREATED="1777882669698" MODIFIED="1777882669699" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/brukere/core/">
+<node TEXT="BrukerRepository.kt" ID="ID_269098298" CREATED="1777882669699" MODIFIED="1777882669699" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/brukere/core/BrukerRepository.kt"/>
+<node TEXT="Bruker.kt" ID="ID_1156579218" CREATED="1777882669699" MODIFIED="1777882669699" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/brukere/core/Bruker.kt"/>
+</node>
+<node TEXT="application" FOLDED="true" ID="ID_1094569526" CREATED="1777882669699" MODIFIED="1777882669699" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/brukere/application/">
+<node TEXT="SlettBrukerUseCase.kt" ID="ID_260880232" CREATED="1777882669699" MODIFIED="1777882669699" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/brukere/application/SlettBrukerUseCase.kt"/>
+<node TEXT="HentBrukerUseCase.kt" ID="ID_991510712" CREATED="1777882669699" MODIFIED="1777882669699" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/brukere/application/HentBrukerUseCase.kt"/>
+<node TEXT="RegistrerBrukerUseCase.kt" ID="ID_1597773481" CREATED="1777882669699" MODIFIED="1777882669699" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/brukere/application/RegistrerBrukerUseCase.kt"/>
+<node TEXT="OppdaterBrukerUseCase.kt" ID="ID_1952616971" CREATED="1777882669699" MODIFIED="1777882669700" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/brukere/application/OppdaterBrukerUseCase.kt"/>
+<node TEXT="BrukerDto.kt" ID="ID_586222382" CREATED="1777882669700" MODIFIED="1777882669700" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/brukere/application/BrukerDto.kt"/>
+<node TEXT="ListBrukereUseCase.kt" ID="ID_456185003" CREATED="1777882669700" MODIFIED="1777882669700" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/brukere/application/ListBrukereUseCase.kt"/>
+</node>
+<node TEXT="infrastructure" FOLDED="true" ID="ID_906449560" CREATED="1777882669700" MODIFIED="1777882669700" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/brukere/infrastructure/">
+<node TEXT="database" FOLDED="true" ID="ID_529535203" CREATED="1777882669700" MODIFIED="1777882669700" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/brukere/infrastructure/database/">
+<node TEXT="BrukerRepositoryAdapter.kt" ID="ID_1644476880" CREATED="1777882669701" MODIFIED="1777882669701" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/brukere/infrastructure/database/BrukerRepositoryAdapter.kt"/>
+</node>
+</node>
+<node TEXT="presentation" FOLDED="true" ID="ID_1881988919" CREATED="1777882669701" MODIFIED="1777882669701" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/brukere/presentation/">
+<node TEXT="api" FOLDED="true" ID="ID_1310906854" CREATED="1777882669701" MODIFIED="1777882669701" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/brukere/presentation/api/">
+<node TEXT="BrukerController.kt" ID="ID_1809128394" CREATED="1777882669701" MODIFIED="1777882669701" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/brukere/presentation/api/BrukerController.kt"/>
+</node>
+</node>
+<node TEXT="BrukereFactory.kt" ID="ID_747393843" CREATED="1777882669701" MODIFIED="1777882669701" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/brukere/BrukereFactory.kt"/>
+</node>
+<node TEXT="verktoy" FOLDED="true" ID="ID_776556088" CREATED="1777882669701" MODIFIED="1777882669702" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/verktoy/">
+<node TEXT="core" FOLDED="true" ID="ID_1800885739" CREATED="1777882669702" MODIFIED="1777882669702" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/verktoy/core/">
+<node TEXT="Verktoy.kt" ID="ID_1990506245" CREATED="1777882669702" MODIFIED="1777882669702" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/verktoy/core/Verktoy.kt"/>
+<node TEXT="VerktoyRepository.kt" ID="ID_1222343810" CREATED="1777882669702" MODIFIED="1777882669702" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/verktoy/core/VerktoyRepository.kt"/>
+</node>
+<node TEXT="application" FOLDED="true" ID="ID_720851570" CREATED="1777882669703" MODIFIED="1777882669703" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/verktoy/application/">
+<node TEXT="SlettVerktoyUseCase.kt" ID="ID_1591608894" CREATED="1777882669704" MODIFIED="1777882669704" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/verktoy/application/SlettVerktoyUseCase.kt"/>
+<node TEXT="VerktoyDto.kt" ID="ID_1046687757" CREATED="1777882669704" MODIFIED="1777882669704" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/verktoy/application/VerktoyDto.kt"/>
+<node TEXT="LeggTilVerktoyUseCase.kt" ID="ID_1813899174" CREATED="1777882669704" MODIFIED="1777882669704" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/verktoy/application/LeggTilVerktoyUseCase.kt"/>
+<node TEXT="OppdaterVerktoyUseCase.kt" ID="ID_727131921" CREATED="1777882669704" MODIFIED="1777882669704" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/verktoy/application/OppdaterVerktoyUseCase.kt"/>
+<node TEXT="ListVerktoyUseCase.kt" ID="ID_968405619" CREATED="1777882669704" MODIFIED="1777882669704" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/verktoy/application/ListVerktoyUseCase.kt"/>
+</node>
+<node TEXT="infrastructure" FOLDED="true" ID="ID_803494183" CREATED="1777882669704" MODIFIED="1777882669704" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/verktoy/infrastructure/">
+<node TEXT="database" FOLDED="true" ID="ID_1620774868" CREATED="1777882669704" MODIFIED="1777882669705" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/verktoy/infrastructure/database/">
+<node TEXT="VerktoyRepositoryAdapter.kt" ID="ID_43496964" CREATED="1777882669705" MODIFIED="1777882669705" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/verktoy/infrastructure/database/VerktoyRepositoryAdapter.kt"/>
+</node>
+</node>
+<node TEXT="presentation" FOLDED="true" ID="ID_946054305" CREATED="1777882669705" MODIFIED="1777882669705" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/verktoy/presentation/">
+<node TEXT="api" FOLDED="true" ID="ID_66068468" CREATED="1777882669705" MODIFIED="1777882669705" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/verktoy/presentation/api/">
+<node TEXT="VerktoyController.kt" ID="ID_1096919117" CREATED="1777882669705" MODIFIED="1777882669705" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/verktoy/presentation/api/VerktoyController.kt"/>
+</node>
+</node>
+<node TEXT="VerktoyFactory.kt" ID="ID_756054442" CREATED="1777882669705" MODIFIED="1777882669705" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/verktoy/VerktoyFactory.kt"/>
+</node>
+<node TEXT="ApplicationFactory.kt" ID="ID_112914927" CREATED="1777882669706" MODIFIED="1777882669706" LINK="file:/home/besolh/kode/annet/arkitekturdemo-ignite/steg-6/src/main/kotlin/ApplicationFactory.kt"/>
 </node>
 </node>
 </map>
