@@ -4,7 +4,7 @@ import utlaan.application.LaanVerktoyCommand
 import utlaan.application.ReturnerVerktoyCommand
 import utlaan.application.SoekVerktoyCommand
 import utlaan.application.UtlaanDto
-import utlaan.application.VerktoyResultatDto
+import utlaan.application.VerktoyOppslagDto
 
 class UtlaanController(
     private val soekVerktoyCommand: SoekVerktoyCommand,
@@ -12,7 +12,7 @@ class UtlaanController(
     private val returnerVerktoyCommand: ReturnerVerktoyCommand
 ) {
 
-    fun soekTilgjengeligeVerktoy(navn: String? = null): List<VerktoyResultatDto> {
+    fun soekTilgjengeligeVerktoy(navn: String? = null): List<VerktoyOppslagDto> {
         return soekVerktoyCommand.execute(SoekVerktoyCommand.Command(navn = navn, kunTilgjengelige = true))
     }
 

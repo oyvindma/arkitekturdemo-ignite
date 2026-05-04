@@ -1,7 +1,7 @@
 package utlaan
 
 class UtlaanController(private val utlaanService: UtlaanService) {
-    fun soekTilgjengeligeVerktoy(navn: String? = null): List<UtlaanService.VerktoyResultatDto> =
+    fun soekTilgjengeligeVerktoy(navn: String? = null): List<UtlaanService.VerktoyOppslagDto> =
         utlaanService.soekTilgjengelige(navn)
     fun laanVerktoy(verktoyId: String, brukerId: String): UtlaanService.LaanResultat =
         utlaanService.laanVerktoy(verktoyId, brukerId)

@@ -17,7 +17,7 @@ class UtlaanService(
         val aktiv: Boolean
     )
 
-    data class VerktoyResultatDto(
+    data class VerktoyOppslagDto(
         val id: String,
         val navn: String,
         val beskrivelse: String,
@@ -30,14 +30,14 @@ class UtlaanService(
         data class Feil(val grunn: String) : LaanResultat()
     }
 
-    fun soekTilgjengelige(navn: String? = null): List<VerktoyResultatDto> {
+    fun soekTilgjengelige(navn: String? = null): List<VerktoyOppslagDto> {
         val verktoy = if (navn != null) {
             verktoyRepository.finnMedNavn(navn)
         } else {
             verktoyRepository.finnAlle()
         }
         return verktoy.filter { it.erTilgjengelig() }.map {
-            VerktoyResultatDto(
+            VerktoyOppslagDto(
                 id = it.id, navn = it.navn, beskrivelse = it.beskrivelse,
                 taalerRegn = it.taalerRegn, tilgjengelig = true
             )

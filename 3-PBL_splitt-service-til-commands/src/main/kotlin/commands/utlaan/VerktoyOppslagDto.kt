@@ -1,6 +1,6 @@
 package commands.utlaan
 
-data class VerktoyResultatDto(
+data class VerktoyOppslagDto(
     val id: String,
     val navn: String,
     val beskrivelse: String,

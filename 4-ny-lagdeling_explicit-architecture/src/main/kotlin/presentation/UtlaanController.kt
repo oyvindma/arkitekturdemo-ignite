@@ -1,13 +1,13 @@
 package presentation
 import application.*
-import application.utlaan.VerktoyResultatDto
+import application.utlaan.VerktoyOppslagDto
 
 class UtlaanController(
     private val soekVerktoyCommand: SoekVerktoyCommand,
     private val laanVerktoyCommand: LaanVerktoyCommand,
     private val returnerVerktoyCommand: ReturnerVerktoyCommand
 ) {
-    fun soekTilgjengeligeVerktoy(navn: String? = null): List<VerktoyResultatDto> =
+    fun soekTilgjengeligeVerktoy(navn: String? = null): List<VerktoyOppslagDto> =
         soekVerktoyCommand.execute(SoekVerktoyCommand.Command(navn = navn, kunTilgjengelige = true))
     fun laanVerktoy(verktoyId: String, brukerId: String): LaanVerktoyCommand.LaanResultat =
         laanVerktoyCommand.execute(LaanVerktoyCommand.Command(verktoyId = verktoyId, brukerId = brukerId))

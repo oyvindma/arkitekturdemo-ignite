@@ -3,13 +3,13 @@ import application.utlaan.LaanVerktoyCommand
 import application.utlaan.ReturnerVerktoyCommand
 import application.utlaan.SoekVerktoyCommand
 import application.utlaan.UtlaanDto
-import application.utlaan.VerktoyResultatDto
+import application.utlaan.VerktoyOppslagDto
 class UtlaanController(
     private val soekVerktoyCommand: SoekVerktoyCommand,
     private val laanVerktoyCommand: LaanVerktoyCommand,
     private val returnerVerktoyCommand: ReturnerVerktoyCommand
 ) {
-    fun soekTilgjengeligeVerktoy(navn: String? = null): List<VerktoyResultatDto> {
+    fun soekTilgjengeligeVerktoy(navn: String? = null): List<VerktoyOppslagDto> {
         return soekVerktoyCommand.execute(SoekVerktoyCommand.Command(navn = navn, kunTilgjengelige = true))
     }
     fun laanVerktoy(verktoyId: String, brukerId: String): LaanVerktoyCommand.LaanResultat {
