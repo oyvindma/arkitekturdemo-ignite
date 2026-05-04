@@ -1,4 +1,7 @@
-package verktoy
+package commands.verktoy
+
+import repositories.VerktoyRepository
+
 class SlettVerktoyUseCase(private val verktoyRepository: VerktoyRepository) {
     fun execute(verktoyId: String) {
         val verktoy = verktoyRepository.finnMedId(verktoyId)

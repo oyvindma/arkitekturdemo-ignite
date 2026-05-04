@@ -1,4 +1,5 @@
-package verktoy
+package commands.verktoy
+
 data class VerktoyDto(
     val id: String,
     val navn: String,

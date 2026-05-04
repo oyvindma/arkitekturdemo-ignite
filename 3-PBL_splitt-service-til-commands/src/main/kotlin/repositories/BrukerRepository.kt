@@ -1,4 +1,7 @@
-package brukere
+package repositories
+
+import domain.Bruker
+
 class BrukerRepository {
     private val store: MutableMap<String, Bruker> = mutableMapOf()
     fun lagre(bruker: Bruker) { store[bruker.id] = bruker }

@@ -1,5 +1,8 @@
-package utlaan
-import verktoy.VerktoyRepository
+package commands.utlaan
+
+import repositories.UtlaanRepository
+import repositories.VerktoyRepository
+
 class ReturnerVerktoyUseCase(
     private val utlaanRepository: UtlaanRepository,
     private val verktoyRepository: VerktoyRepository

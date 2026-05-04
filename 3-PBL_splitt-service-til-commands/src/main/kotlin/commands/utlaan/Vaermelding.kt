@@ -1,4 +1,5 @@
-package utlaan
+package commands.utlaan
+
 data class Vaermelding(val blirRegn: Boolean, val beskrivelse: String)
 class StubVaerService {
     fun hentVarsel(): Vaermelding {

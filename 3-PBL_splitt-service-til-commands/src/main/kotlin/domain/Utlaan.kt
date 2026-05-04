@@ -1,5 +1,7 @@
-package utlaan
+package domain
+
 import java.time.Instant
+
 data class Utlaan(
     val id: String,
     val verktoyId: String,

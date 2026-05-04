@@ -1,4 +1,6 @@
-package verktoy
+package commands.verktoy
+import domain.Verktoy
+import repositories.VerktoyRepository
 import java.util.UUID
 class LeggTilVerktoyUseCase(private val verktoyRepository: VerktoyRepository) {
     data class Command(val navn: String, val beskrivelse: String, val taalerRegn: Boolean)

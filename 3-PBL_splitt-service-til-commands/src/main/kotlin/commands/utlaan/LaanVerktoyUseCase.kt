@@ -1,6 +1,8 @@
-package utlaan
-import brukere.BrukerRepository
-import verktoy.VerktoyRepository
+package commands.utlaan
+import domain.Utlaan
+import repositories.BrukerRepository
+import repositories.UtlaanRepository
+import repositories.VerktoyRepository
 import java.time.Instant
 import java.util.UUID
 class LaanVerktoyUseCase(

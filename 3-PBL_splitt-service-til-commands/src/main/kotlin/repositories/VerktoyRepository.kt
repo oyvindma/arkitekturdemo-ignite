@@ -1,4 +1,7 @@
-package verktoy
+package repositories
+
+import domain.Verktoy
+
 class VerktoyRepository {
     private val store: MutableMap<String, Verktoy> = mutableMapOf()
     fun lagre(verktoy: Verktoy) { store[verktoy.id] = verktoy }

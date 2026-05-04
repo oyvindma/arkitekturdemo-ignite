@@ -1,4 +1,6 @@
-package brukere
+package commands.bruker
+import domain.Bruker
+import repositories.BrukerRepository
 import java.util.UUID
 class RegistrerBrukerUseCase(private val brukerRepository: BrukerRepository) {
     data class Command(val navn: String)

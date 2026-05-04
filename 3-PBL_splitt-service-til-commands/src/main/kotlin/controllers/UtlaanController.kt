@@ -1,4 +1,11 @@
-package utlaan
+package controllers
+
+import commands.utlaan.LaanVerktoyUseCase
+import commands.utlaan.ReturnerVerktoyUseCase
+import commands.utlaan.SoekVerktoyUseCase
+import commands.utlaan.UtlaanDto
+import commands.utlaan.VerktoyResultatDto
+
 class UtlaanController(
     private val soekVerktoyUseCase: SoekVerktoyUseCase,
     private val laanVerktoyUseCase: LaanVerktoyUseCase,

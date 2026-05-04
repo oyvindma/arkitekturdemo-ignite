@@ -1,4 +1,7 @@
-package brukere
+package commands.bruker
+
+import repositories.BrukerRepository
+
 class OppdaterBrukerUseCase(private val brukerRepository: BrukerRepository) {
     data class Command(val brukerId: String, val navn: String)
     fun execute(command: Command): BrukerDto {

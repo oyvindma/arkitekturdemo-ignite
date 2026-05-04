@@ -1,4 +1,7 @@
-package brukere
+package commands.bruker
+
+import repositories.BrukerRepository
+
 class HentBrukerUseCase(private val brukerRepository: BrukerRepository) {
     fun execute(brukerId: String): BrukerDto {
         val bruker = brukerRepository.finnMedId(brukerId)

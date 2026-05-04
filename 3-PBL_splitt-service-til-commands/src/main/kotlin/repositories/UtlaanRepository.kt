@@ -1,4 +1,7 @@
-package utlaan
+package repositories
+
+import domain.Utlaan
+
 class UtlaanRepository {
     private val store: MutableMap<String, Utlaan> = mutableMapOf()
     fun lagre(utlaan: Utlaan) { store[utlaan.id] = utlaan }

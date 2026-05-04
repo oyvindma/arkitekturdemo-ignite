@@ -1,4 +1,5 @@
-package utlaan
+package commands.utlaan
+
 data class VerktoyResultatDto(
     val id: String,
     val navn: String,

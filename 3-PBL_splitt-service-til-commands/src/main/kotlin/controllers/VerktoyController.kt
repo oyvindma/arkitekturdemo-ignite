@@ -1,4 +1,11 @@
-package verktoy
+package controllers
+
+import commands.verktoy.LeggTilVerktoyUseCase
+import commands.verktoy.ListVerktoyUseCase
+import commands.verktoy.OppdaterVerktoyUseCase
+import commands.verktoy.SlettVerktoyUseCase
+import commands.verktoy.VerktoyDto
+
 class VerktoyController(
     private val leggTilVerktoyUseCase: LeggTilVerktoyUseCase,
     private val listVerktoyUseCase: ListVerktoyUseCase,

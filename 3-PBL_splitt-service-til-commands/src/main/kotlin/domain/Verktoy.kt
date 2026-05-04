@@ -1,4 +1,5 @@
-package verktoy
+package domain
+
 data class Verktoy(
     val id: String,
     val navn: String,

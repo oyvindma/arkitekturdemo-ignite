@@ -1,4 +1,7 @@
-package verktoy
+package commands.verktoy
+
+import repositories.VerktoyRepository
+
 class OppdaterVerktoyUseCase(private val verktoyRepository: VerktoyRepository) {
     data class Command(val verktoyId: String, val navn: String, val beskrivelse: String, val taalerRegn: Boolean)
     fun execute(command: Command): VerktoyDto {

@@ -1,4 +1,12 @@
-package brukere
+package controllers
+
+import commands.bruker.BrukerDto
+import commands.bruker.HentBrukerUseCase
+import commands.bruker.ListBrukereUseCase
+import commands.bruker.OppdaterBrukerUseCase
+import commands.bruker.RegistrerBrukerUseCase
+import commands.bruker.SlettBrukerUseCase
+
 class BrukerController(
     private val registrerBrukerUseCase: RegistrerBrukerUseCase,
     private val listBrukereUseCase: ListBrukereUseCase,

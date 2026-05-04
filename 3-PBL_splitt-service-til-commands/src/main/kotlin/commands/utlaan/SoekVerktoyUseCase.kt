@@ -1,6 +1,8 @@
-package utlaan
-import verktoy.Verktoy
-import verktoy.VerktoyRepository
+package commands.utlaan
+
+import domain.Verktoy
+import repositories.VerktoyRepository
+
 class SoekVerktoyUseCase(private val verktoyRepository: VerktoyRepository) {
     data class Command(val navn: String? = null, val kunTilgjengelige: Boolean = true)
     fun execute(command: Command): List<VerktoyResultatDto> {
