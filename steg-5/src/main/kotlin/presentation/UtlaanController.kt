@@ -1,9 +1,9 @@
 package presentation
-import application.LaanVerktoyUseCase
-import application.ReturnerVerktoyUseCase
-import application.SoekVerktoyUseCase
-import application.UtlaanDto
-import application.VerktoyResultatDto
+import application.utlaan.LaanVerktoyUseCase
+import application.utlaan.ReturnerVerktoyUseCase
+import application.utlaan.SoekVerktoyUseCase
+import application.utlaan.UtlaanDto
+import application.utlaan.VerktoyResultatDto
 class UtlaanController(
     private val soekVerktoyUseCase: SoekVerktoyUseCase,
     private val laanVerktoyUseCase: LaanVerktoyUseCase,

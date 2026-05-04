@@ -1,5 +1,23 @@
-import application.*
+import application.bruker.HentBrukerUseCase
+import application.bruker.ListBrukereUseCase
+import application.bruker.OppdaterBrukerUseCase
+import application.bruker.RegistrerBrukerUseCase
+import application.bruker.SlettBrukerUseCase
+import application.utlaan.LaanVerktoyUseCase
+import application.utlaan.ReturnerVerktoyUseCase
+import application.utlaan.SoekVerktoyUseCase
+import application.verktoy.LeggTilVerktoyUseCase
+import application.verktoy.ListVerktoyUseCase
+import application.verktoy.OppdaterVerktoyUseCase
+import application.verktoy.SlettVerktoyUseCase
 import infrastructure.*
+import infrastructure.bruker.BrukerQueryAdapter
+import infrastructure.bruker.InMemoryBrukerRepository
+import infrastructure.utlaan.InMemoryUtlaanRepository
+import infrastructure.utlaan.StubVaermeldingAdapter
+import infrastructure.utlaan.VerktoyQueryAdapter
+import infrastructure.verktoy.InMemoryVerktoyRepository
+import infrastructure.verktoy.VerktoyStatusAdapter
 import presentation.*
 /**
  * Fabrikkklasse som kobler sammen alle lag.
@@ -27,7 +45,8 @@ class ApplicationFactory {
     private val vaerPort = StubVaermeldingAdapter()
     // Use cases - utlaan
     private val soekVerktoyUseCase = SoekVerktoyUseCase(verktoyQueryPort)
-    private val laanVerktoyUseCase = LaanVerktoyUseCase(utlaanRepository, verktoyQueryPort, brukerQueryPort, vaerPort, verktoyStatusPort)
+    private val laanVerktoyUseCase =
+        LaanVerktoyUseCase(utlaanRepository, verktoyQueryPort, brukerQueryPort, vaerPort, verktoyStatusPort)
     private val returnerVerktoyUseCase = ReturnerVerktoyUseCase(utlaanRepository, verktoyStatusPort)
     // Controllers
     val brukerController = BrukerController(

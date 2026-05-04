@@ -1,9 +1,9 @@
 package presentation
-import application.LeggTilVerktoyUseCase
-import application.ListVerktoyUseCase
-import application.OppdaterVerktoyUseCase
-import application.SlettVerktoyUseCase
-import application.VerktoyDto
+import application.verktoy.LeggTilVerktoyUseCase
+import application.verktoy.ListVerktoyUseCase
+import application.verktoy.OppdaterVerktoyUseCase
+import application.verktoy.SlettVerktoyUseCase
+import application.verktoy.VerktoyDto
 class VerktoyController(
     private val leggTilVerktoyUseCase: LeggTilVerktoyUseCase,
     private val listVerktoyUseCase: ListVerktoyUseCase,

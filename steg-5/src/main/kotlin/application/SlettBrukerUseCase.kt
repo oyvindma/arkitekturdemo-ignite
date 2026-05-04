@@ -1,8 +1,0 @@
-package application
-import core.BrukerRepository
-class SlettBrukerUseCase(private val brukerRepository: BrukerRepository) {
-    fun execute(brukerId: String) {
-        require(brukerRepository.finnes(brukerId)) { "Bruker med id $brukerId ikke funnet" }
-        brukerRepository.slett(brukerId)
-    }
-}

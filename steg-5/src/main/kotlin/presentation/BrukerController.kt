@@ -1,10 +1,10 @@
 package presentation
-import application.BrukerDto
-import application.HentBrukerUseCase
-import application.ListBrukereUseCase
-import application.OppdaterBrukerUseCase
-import application.RegistrerBrukerUseCase
-import application.SlettBrukerUseCase
+import application.bruker.BrukerDto
+import application.bruker.HentBrukerUseCase
+import application.bruker.ListBrukereUseCase
+import application.bruker.OppdaterBrukerUseCase
+import application.bruker.RegistrerBrukerUseCase
+import application.bruker.SlettBrukerUseCase
 class BrukerController(
     private val registrerBrukerUseCase: RegistrerBrukerUseCase,
     private val listBrukereUseCase: ListBrukereUseCase,
