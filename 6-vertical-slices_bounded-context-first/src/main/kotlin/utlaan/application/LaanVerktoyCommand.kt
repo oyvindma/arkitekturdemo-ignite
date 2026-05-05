@@ -3,7 +3,7 @@ package utlaan.application
 import utlaan.core.BrukerQueryPort
 import utlaan.core.Utlaan
 import utlaan.core.UtlaanRepositoryPort
-import utlaan.core.VaerPort
+import utlaan.core.VaermeldingPort
 import utlaan.core.VerktoyQueryPort
 import utlaan.core.VerktoyStatusPort
 import java.time.Instant
@@ -13,7 +13,7 @@ class LaanVerktoyCommand(
     private val utlaanRepositoryPort: UtlaanRepositoryPort,
     private val verktoyQueryPort: VerktoyQueryPort,
     private val brukerQueryPort: BrukerQueryPort,
-    private val vaerPort: VaerPort,
+    private val vaermeldingPort: VaermeldingPort,
     private val verktoyStatusPort: VerktoyStatusPort
 ) {
 
@@ -32,7 +32,7 @@ class LaanVerktoyCommand(
         }
 
         if (!verktoy.taalerRegn) {
-            val varsel = vaerPort.hentVarsel()
+            val varsel = vaermeldingPort.hentVarsel()
             if (varsel.blirRegn) {
                 return LaanResultat.Feil(
                     "Verktoy '${verktoy.navn}' kan ikke laanes ut: regn er meldt (${varsel.beskrivelse})"

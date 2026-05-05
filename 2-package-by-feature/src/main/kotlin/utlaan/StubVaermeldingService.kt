@@ -1,8 +1,7 @@
-package services
+package utlaan
 
-import domain.Vaermelding
-
-class StubVaerService {
+data class Vaermelding(val blirRegn: Boolean, val beskrivelse: String)
+class StubVaermeldingService {
     fun hentVarsel(): Vaermelding {
         return Vaermelding(blirRegn = false, beskrivelse = "Klart vaer (stub)")
     }

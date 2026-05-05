@@ -5,7 +5,7 @@ class UtlaanService(
     private val utlaanRepository: UtlaanRepository,
     private val verktoyRepository: VerktoyRepository,
     private val brukerRepository: BrukerRepository,
-    private val vaerService: StubVaerService
+    private val vaerService: StubVaermeldingService
 ) {
 
     data class UtlaanDto(

@@ -1,9 +1,9 @@
 package utlaan.infrastructure.external
 
-import utlaan.core.VaerPort
+import utlaan.core.VaermeldingPort
 import utlaan.core.Vaermelding
 
-class StubVermeldingAdapter : VaerPort {
+class StubVaermeldingAdapter : VaermeldingPort {
 
     override fun hentVarsel(): Vaermelding {
         return Vaermelding(blirRegn = false, beskrivelse = "Klart vaer (stub)")

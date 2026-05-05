@@ -1,9 +1,9 @@
 package infrastructure
 
-import core.VaerService
+import core.VaermeldingService
 import core.Vaermelding
 
-class StubVaermeldingService : VaerService {
+class StubVaermeldingServiceImpl : VaermeldingService {
     override fun hentVarsel(): Vaermelding {
         return Vaermelding(blirRegn = false, beskrivelse = "Sol og klar himmel (stub)")
     }

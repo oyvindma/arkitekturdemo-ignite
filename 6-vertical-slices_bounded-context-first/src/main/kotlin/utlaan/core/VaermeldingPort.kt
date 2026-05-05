@@ -1,6 +1,8 @@
-package core
+package utlaan.core
 
 data class Vaermelding(val blirRegn: Boolean, val beskrivelse: String)
-interface VaerService {
+
+interface VaermeldingPort {
     fun hentVarsel(): Vaermelding
 }
+

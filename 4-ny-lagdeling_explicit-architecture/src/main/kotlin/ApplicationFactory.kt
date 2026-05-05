@@ -10,7 +10,7 @@ import application.ReturnerVerktoyCommand
 import application.SlettBrukerCommand
 import application.SlettVerktoyCommand
 import application.SoekVerktoyCommand
-import infrastructure.StubVaermeldingService
+import infrastructure.StubVaermeldingServiceImpl
 import infrastructure.bruker.InMemoryBrukerRepository
 import infrastructure.utlaan.InMemoryUtlaanRepository
 import infrastructure.verktoy.InMemoryVerktoyRepository
@@ -22,7 +22,7 @@ class ApplicationFactory {
     private val brukerRepository = InMemoryBrukerRepository()
     private val verktoyRepository = InMemoryVerktoyRepository()
     private val utlaanRepository = InMemoryUtlaanRepository()
-    private val vaerService = StubVaermeldingService()
+    private val vaerService = StubVaermeldingServiceImpl()
 
     // Use cases - brukere
     private val registrerBrukerCommand = RegistrerBrukerCommand(brukerRepository)

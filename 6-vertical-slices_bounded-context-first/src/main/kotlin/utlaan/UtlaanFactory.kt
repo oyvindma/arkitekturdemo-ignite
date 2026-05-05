@@ -8,7 +8,7 @@ import utlaan.infrastructure.acl.BrukerQueryAdapter
 import utlaan.infrastructure.acl.VerktoyQueryAdapter
 import utlaan.infrastructure.acl.VerktoyStatusAdapter
 import utlaan.infrastructure.database.UtlaanRepositoryAdapter
-import utlaan.infrastructure.external.StubVermeldingAdapter
+import utlaan.infrastructure.external.StubVaermeldingAdapter
 import utlaan.presentation.api.UtlaanController
 import verktoy.application.ListVerktoyCommand
 import verktoy.core.VerktoyRepositoryPort
@@ -21,7 +21,7 @@ object UtlaanFactory {
         verktoyRepositoryPort: VerktoyRepositoryPort
     ): UtlaanController {
         val utlaanRepository = UtlaanRepositoryAdapter()
-        val vaerPort = StubVermeldingAdapter()
+        val vaerPort = StubVaermeldingAdapter()
 
         val verktoyQueryPort = VerktoyQueryAdapter(listVerktoyCommand)
         val brukerQueryPort = BrukerQueryAdapter(hentBrukerCommand)

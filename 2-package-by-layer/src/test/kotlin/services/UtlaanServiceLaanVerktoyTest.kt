@@ -38,7 +38,7 @@ class UtlaanServiceLaanVerktoyTest {
     private val utlaanRepository: UtlaanRepository = mock()
     private val verktoyRepository: VerktoyRepository = mock()
     private val brukerRepository: BrukerRepository = mock()
-    private val vaerService: StubVaerService = mock()
+    private val vaerService: StubVaermeldingService = mock()
 
     private val service = UtlaanService(utlaanRepository, verktoyRepository, brukerRepository, vaerService)
 

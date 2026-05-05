@@ -3,7 +3,7 @@ package application
 import core.BrukerRepository
 import core.Utlaan
 import core.UtlaanRepository
-import core.VaerService
+import core.VaermeldingService
 import core.VerktoyRepository
 import java.time.Instant
 import java.util.*
@@ -12,7 +12,7 @@ class LaanVerktoyCommand(
     private val utlaanRepository: UtlaanRepository,
     private val verktoyRepository: VerktoyRepository,
     private val brukerRepository: BrukerRepository,
-    private val vaerService: VaerService
+    private val vaermeldingService: VaermeldingService
 ) {
     data class Command(val verktoyId: String, val brukerId: String)
 
@@ -26,7 +26,7 @@ class LaanVerktoyCommand(
             return LaanResultat.Feil("Bruker med id ${command.brukerId} ikke funnet")
         }
         if (!verktoy.taalerRegn) {
-            val varsel = vaerService.hentVarsel()
+            val varsel = vaermeldingService.hentVarsel()
             if (varsel.blirRegn) {
                 return LaanResultat.Feil(
                     "Verktoy '${verktoy.navn}' kan ikke laanes ut: regn er meldt (${varsel.beskrivelse})"
